@@ -1,0 +1,139 @@
+{
+    "technical_capability": {
+        "technical_skills": [
+            {
+                "name": "Tailwind",
+                "score": 0.647
+            },
+            {
+                "name": "NLP",
+                "score": 0.793
+            },
+            {
+                "name": "Image Classification",
+                "score": 0.876
+            },
+            {
+                "name": "Fine-tuning LLMs",
+                "score": 0.822
+            },
+            {
+                "name": "Weights & Biases",
+                "score": 0.72
+            },
+            {
+                "name": "Speech Recognition",
+                "score": 0.84
+            },
+            {
+                "name": "Photoshop",
+                "score": 0.7
+            },
+            {
+                "name": "TTS",
+                "score": 0.969
+            },
+            {
+                "name": "LoRA",
+                "score": 0.713
+            },
+            {
+                "name": "Apache Beam",
+                "score": 0.616
+            },
+            {
+                "name": "AWS",
+                "score": 0.45
+            },
+            {
+                "name": "Flask",
+                "score": 0.503
+            },
+            {
+                "name": "BentoML",
+                "score": 0.736
+            },
+            {
+                "name": "Milvus",
+                "score": 0.921
+            },
+            {
+                "name": "GANs",
+                "score": 0.867
+            },
+            {
+                "name": "Statistical Modeling",
+                "score": 0.607
+            },
+            {
+                "name": "GCP",
+                "score": 0.35
+            }
+        ]
+    },
+    "professional_experience": {
+        "roles": [
+            {
+                "title": "Backend Engineer",
+                "yoe": 2.2,
+                "work_done": [
+                    "Implemented streaming data pipelines on Kafka and Spark Streaming for a real-time user-activity processing platform",
+                    "Designed the schema-registry integration, the watermark/state management approach, and the deduplication logic for late-arriving events",
+                    "Worked closely with the data science team to make sure feature pipelines aligned with what their models needed",
+                    "Most of my career has been data engineering, with some adjacent ML exposure"
+                ]
+            },
+            {
+                "title": "Analytics Engineer",
+                "yoe": 4.6,
+                "work_done": [
+                    "Built and maintained data pipelines on Apache Airflow processing ~500GB of daily transactional data across 12 source systems",
+                    "Worked extensively with Spark (PySpark) for batch processing and dbt for the transformation/modeling layer in our Snowflake warehouse",
+                    "Owned the on-call rotation for data quality issues — wrote most of the data quality checks that detect schema drift and unusual volume changes",
+                    "The pipeline supports the analytics team and a few internal ML models"
+                ]
+            }
+        ]
+    },
+    "organizational_context": [
+        {
+            "company": "Mindtree",
+            "industry": "IT Services",
+            "company_size": "10001+",
+            "years": 2.2
+        },
+        {
+            "company": "Dunder Mifflin",
+            "industry": "Paper Products",
+            "company_size": "201-500",
+            "years": 4.6
+        }
+    ],
+    "education_credentials": {
+        "education": [
+            {
+                "degree": "B.E.",
+                "field": "Computer Science",
+                "institution": "Lovely Professional University",
+                "tier": "tier_3",
+                "grade": "8.24 CGPA"
+            }
+        ],
+        "certifications": []
+    },
+    "logistics": {
+        "location": "Toronto",
+        "preferred_work_mode": "onsite",
+        "willing_to_relocate": false,
+        "notice_period_days": 60,
+        "salary_expectation": {
+            "min_lpa": 18.7,
+            "max_lpa": 36.1
+        }
+    },
+    "execution_impact": {
+        "production_experience": 1.0,
+        "ownership_leadership": 0.431,
+        "impact": 0.431
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "technical_capability": {
+        "technical_skills": [
+            {
+                "name": "",
+                "proficiency": 0.0,
+                "confidence": 0.0,
+                "evidence": []
+            }
+        ]
+    },
+    "professional_experience": {
+        "yoe": 0.0,
+        "roles": [],
+        "work_done": [
+            {
+                "name": "",
+                "evidence": []
+            }
+        ],
+        "career_progression": {
+            "strength": 0.0,
+            "evidence": []
+        }
+    },
+    "execution_impact": {
+        "production_experience": {
+            "strength": 0.0,
+            "evidence": []
+        },
+        "ownership_leadership": {
+            "strength": 0.0,
+            "evidence": []
+        },
+        "impact": {
+            "strength": 0.0,
+            "evidence": []
+        }
+    },
+    "organizational_context": [
+        {
+            "company": "",
+            "industry": "",
+            "years": 0.0
+        }
+    ],
+    "education_credentials": {
+        "education": [
+            {
+                "degree": "",
+                "field": "",
+                "institution": "",
+                "tier": "",
+                "grade": ""
+            }
+        ],
+        "certifications": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "logistics": {
+        "location": "",
+        "preferred_work_mode": "",
+        "willing_to_relocate": false,
+        "notice_period_days": 0,
+        "salary_expectation": {
+            "min_lpa": 0.0,
+            "max_lpa": 0.0
+        }
+    }
+}
