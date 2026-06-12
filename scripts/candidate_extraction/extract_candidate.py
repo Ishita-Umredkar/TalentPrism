@@ -20,6 +20,10 @@ def extract_candidate(candidate: dict) -> dict:
 
     schema = {
 
+        "candidate_id": (
+            candidate.get("candidate_id")
+        ),
+
         "technical_capability": {
             "technical_skills":
                 extract_technical_skills(candidate)

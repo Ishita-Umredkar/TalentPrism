@@ -1,0 +1,90 @@
+{
+    "technical_capability": {
+        "technical_skills": [
+            {
+                "name": "",
+                "score": 0.0,
+                "weight": 0.0
+            }
+        ]
+    },
+    "professional_experience": {
+        "roles": [
+            {
+                "title": "",
+                "yoe": 0.0,
+                "work_done": [],
+                "weight": 0.0
+            }
+        ]
+    },
+    "execution_impact": {
+        "production_experience": {
+            "score": 0.0,
+            "weight": 0.0
+        },
+        "ownership_leadership": {
+            "score": 0.0,
+            "weight": 0.0
+        },
+        "impact": {
+            "score": 0.0,
+            "weight": 0.0
+        }
+    },
+    "organizational_context": [
+        {
+            "company": {
+                "name": "",
+                "weight": 0.0
+            },
+            "industry": {
+                "name": "",
+                "weight": 0.0
+            },
+            "company_size": {
+                "size": "",
+                "weight": 0.0
+            },
+            "years": {
+                "number_of_years": 0.0,
+                "weight": 0.0
+            }
+        }
+    ],
+    "education_credentials": {
+        "education": [
+            {
+                "degree": "",
+                "field": "",
+                "institution": "",
+                "tier": "",
+                "grade": "",
+                "score": 0.0
+            }
+        ]
+    },
+    "logistics": {
+        "location": {
+            "name": "",
+            "weight": 0.0
+        },
+        "preferred_work_mode": {
+            "name": "",
+            "weight": 0.0
+        },
+        "willing_to_relocate": {
+            "value": false,
+            "weight": 0.0
+        },
+        "notice_period_days": {
+            "value": 0,
+            "weight": 0.0
+        },
+        "salary_expectation": {
+            "min_lpa": 0.0,
+            "max_lpa": 0.0,
+            "weight": 0.0
+        }
+    }
+}

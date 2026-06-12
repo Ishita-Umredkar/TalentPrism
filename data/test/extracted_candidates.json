@@ -1,0 +1,330 @@
+[
+    {
+        "candidate_id": "CAND_0000001",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Tailwind",
+                    "score": 0.647
+                },
+                {
+                    "name": "NLP",
+                    "score": 0.793
+                },
+                {
+                    "name": "Image Classification",
+                    "score": 0.876
+                },
+                {
+                    "name": "Fine-tuning LLMs",
+                    "score": 0.822
+                },
+                {
+                    "name": "Weights & Biases",
+                    "score": 0.72
+                },
+                {
+                    "name": "Speech Recognition",
+                    "score": 0.84
+                },
+                {
+                    "name": "Photoshop",
+                    "score": 0.7
+                },
+                {
+                    "name": "TTS",
+                    "score": 0.969
+                },
+                {
+                    "name": "LoRA",
+                    "score": 0.713
+                },
+                {
+                    "name": "Apache Beam",
+                    "score": 0.616
+                },
+                {
+                    "name": "AWS",
+                    "score": 0.45
+                },
+                {
+                    "name": "Flask",
+                    "score": 0.503
+                },
+                {
+                    "name": "BentoML",
+                    "score": 0.736
+                },
+                {
+                    "name": "Milvus",
+                    "score": 0.921
+                },
+                {
+                    "name": "GANs",
+                    "score": 0.867
+                },
+                {
+                    "name": "Statistical Modeling",
+                    "score": 0.607
+                },
+                {
+                    "name": "GCP",
+                    "score": 0.35
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Backend Engineer",
+                    "yoe": 2.2,
+                    "work_done": [
+                        "Implemented streaming data pipelines on Kafka and Spark Streaming for a real-time user-activity processing platform",
+                        "Designed the schema-registry integration, the watermark/state management approach, and the deduplication logic for late-arriving events",
+                        "Worked closely with the data science team to make sure feature pipelines aligned with what their models needed",
+                        "Most of my career has been data engineering, with some adjacent ML exposure"
+                    ]
+                },
+                {
+                    "title": "Analytics Engineer",
+                    "yoe": 4.6,
+                    "work_done": [
+                        "Built and maintained data pipelines on Apache Airflow processing ~500GB of daily transactional data across 12 source systems",
+                        "Worked extensively with Spark (PySpark) for batch processing and dbt for the transformation/modeling layer in our Snowflake warehouse",
+                        "Owned the on-call rotation for data quality issues — wrote most of the data quality checks that detect schema drift and unusual volume changes",
+                        "The pipeline supports the analytics team and a few internal ML models"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Mindtree"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 2.2
+                }
+            },
+            {
+                "company": {
+                    "name": "Dunder Mifflin"
+                },
+                "industry": {
+                    "name": "Paper Products"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 4.6
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.E.",
+                    "field": "Computer Science",
+                    "institution": "Lovely Professional University",
+                    "tier": "tier_3",
+                    "grade": "8.24 CGPA"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Toronto",
+            "preferred_work_mode": "onsite",
+            "willing_to_relocate": false,
+            "notice_period_days": 60,
+            "salary_expectation": {
+                "min_lpa": 18.7,
+                "max_lpa": 36.1
+            }
+        },
+        "execution_impact": {
+            "production_experience": 1.0,
+            "ownership_leadership": 0.431,
+            "impact": 0.431
+        }
+    },
+    {
+        "candidate_id": "CAND_0000002",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Project Management",
+                    "score": 0.696
+                },
+                {
+                    "name": "React",
+                    "score": 0.733
+                },
+                {
+                    "name": "Photoshop",
+                    "score": 0.733
+                },
+                {
+                    "name": "TypeScript",
+                    "score": 0.376
+                },
+                {
+                    "name": "Marketing",
+                    "score": 0.477
+                },
+                {
+                    "name": "Kafka",
+                    "score": 0.665
+                },
+                {
+                    "name": "JavaScript",
+                    "score": 0.376
+                },
+                {
+                    "name": "Feature Engineering",
+                    "score": 0.71
+                },
+                {
+                    "name": "GCP",
+                    "score": 0.72
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Operations Manager",
+                    "yoe": 3.6,
+                    "work_done": [
+                        "Customer support team lead at a SaaS product",
+                        "Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product",
+                        "Built out the support knowledge base and the agent training program",
+                        "Strong on the people-management side and the process side; lighter on technical depth beyond product expertise"
+                    ]
+                },
+                {
+                    "title": "Operations Manager",
+                    "yoe": 1.2,
+                    "work_done": [
+                        "Mechanical engineering design role at a hardware-product company",
+                        "Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling",
+                        "Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence",
+                        "Worked closely with manufacturing partners on production scale-up"
+                    ]
+                },
+                {
+                    "title": "Marketing Manager",
+                    "yoe": 4.5,
+                    "work_done": [
+                        "Content writing and SEO strategy for a tech-focused publication",
+                        "Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords",
+                        "Managed a freelance writer pool and the editorial calendar",
+                        "Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality"
+                    ]
+                },
+                {
+                    "title": "Marketing Manager",
+                    "yoe": 3.2,
+                    "work_done": [
+                        "Brand design and creative direction at a consumer-products company",
+                        "Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social",
+                        "Led the recent rebrand and managed a small external agency for production work",
+                        "Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 3.6
+                }
+            },
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 1.2
+                }
+            },
+            {
+                "company": {
+                    "name": "Acme Corp"
+                },
+                "industry": {
+                    "name": "Manufacturing"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 4.5
+                }
+            },
+            {
+                "company": {
+                    "name": "Dunder Mifflin"
+                },
+                "industry": {
+                    "name": "Paper Products"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 3.2
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.Sc",
+                    "field": "Mathematics",
+                    "institution": "Local Engineering College",
+                    "tier": "tier_4",
+                    "grade": "77%"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Chennai, Tamil Nadu",
+            "preferred_work_mode": "flexible",
+            "willing_to_relocate": false,
+            "notice_period_days": 60,
+            "salary_expectation": {
+                "min_lpa": 8.8,
+                "max_lpa": 9.0
+            }
+        },
+        "execution_impact": {
+            "production_experience": 1.0,
+            "ownership_leadership": 1.0,
+            "impact": 0.431
+        }
+    }
+]

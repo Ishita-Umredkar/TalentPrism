@@ -4,30 +4,34 @@ from scripts.candidate_extraction.extract_candidate import (
     extract_candidate
 )
 
-
-INPUT_FILE = "data/test/test_candidate.json"
-OUTPUT_FILE = "data/test/extracted_candidate.json"
+INPUT_FILE = "data/test/test_candidates.json"
+OUTPUT_FILE = "data/test/extracted_candidates.json"
 
 
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
     candidates = json.load(f)
 
-candidate = candidates[0]
+results = []
 
-result = extract_candidate(candidate)
+for candidate in candidates:
+
+    extracted = extract_candidate(candidate)
+
+    results.append(extracted)
 
 with open(
     OUTPUT_FILE,
     "w",
     encoding="utf-8"
 ) as f:
+
     json.dump(
-        result,
+        results,
         f,
         indent=4,
         ensure_ascii=False
     )
 
 print(
-    f"Saved extracted candidate to {OUTPUT_FILE}"
+    f"Saved {len(results)} extracted candidates to {OUTPUT_FILE}"
 )

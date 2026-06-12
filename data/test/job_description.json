@@ -1,0 +1,140 @@
+{
+    "technical_capability": {
+        "technical_skills": [
+            {
+                "name": "Embeddings-based Retrieval Systems",
+                "score": 0.95,
+                "weight": 0.039409
+            },
+            {
+                "name": "Vector Databases",
+                "score": 0.85,
+                "weight": 0.034483
+            },
+            {
+                "name": "Hybrid Search Infrastructure",
+                "score": 0.85,
+                "weight": 0.034483
+            },
+            {
+                "name": "Python",
+                "score": 0.95,
+                "weight": 0.029557
+            },
+            {
+                "name": "Ranking System Evaluation (NDCG, MRR, MAP, A/B Testing)",
+                "score": 0.9,
+                "weight": 0.034483
+            },
+            {
+                "name": "LLM Fine-tuning (LoRA, QLoRA, PEFT)",
+                "score": 0.75,
+                "weight": 0.014778
+            },
+            {
+                "name": "Learning-to-Rank Models (XGBoost, Neural)",
+                "score": 0.7,
+                "weight": 0.014778
+            },
+            {
+                "name": "Distributed Systems",
+                "score": 0.7,
+                "weight": 0.009852
+            },
+            {
+                "name": "Large-scale Inference Optimization",
+                "score": 0.7,
+                "weight": 0.009852
+            },
+            {
+                "name": "Information Retrieval",
+                "score": 0.9,
+                "weight": 0.014778
+            },
+            {
+                "name": "Natural Language Processing (NLP)",
+                "score": 0.8,
+                "weight": 0.009852
+            },
+            {
+                "name": "Machine Learning Systems Design",
+                "score": 0.9,
+                "weight": 0.014778
+            }
+        ]
+    },
+    "professional_experience": {
+        "roles": [
+            {
+                "title": "Senior AI Engineer",
+                "yoe": 6,
+                "work_done": [
+                    "Designed, built, and deployed production-grade retrieval, ranking, and matching systems, specifically for candidate-job description matching.",
+                    "Led the architectural design and implementation of intelligence layers within product platforms.",
+                    "Performed technical audits of existing ML systems, identified critical areas for improvement, and delivered high-impact solutions.",
+                    "Developed and deployed V2 ranking systems incorporating embeddings, hybrid retrieval, and LLM-based re-ranking to enhance user engagement metrics.",
+                    "Established robust evaluation frameworks, including offline benchmarks, online A/B testing, and user-feedback loops for continuous system improvement.",
+                    "Mentored and provided technical guidance to engineering teams on ML system design and deployment.",
+                    "Collaborated closely with product managers to define roadmaps and translate business needs into technical solutions for AI-driven features.",
+                    "Demonstrated a strong product-engineering mindset, balancing technical excellence with rapid iteration and shipping valuable features quickly.",
+                    "Possessed substantial pre-LLM era ML production experience, particularly in information retrieval and ranking.",
+                    "Actively writes and contributes to production-level code, taking ownership from design to deployment and operationalization."
+                ],
+                "weight": 0.344828
+            }
+        ]
+    },
+    "execution_impact": {
+        "production_experience": {
+            "score": 1.0,
+            "weight": 0.098522
+        },
+        "ownership_leadership": {
+            "score": 0.9,
+            "weight": 0.059113
+        },
+        "impact": {
+            "score": 0.9,
+            "weight": 0.039409
+        }
+    },
+    "organizational_context": {
+        "company": {
+            "name": "",
+            "weight": 0.0
+        },
+        "industry": {
+            "name": "Talent Intelligence / HR Technology / AI Product Development",
+            "weight": 0.039409
+        },
+        "company_size": {
+            "size": "50-500 employees",
+            "weight": 0.039409
+        },
+        "years": {
+            "number_of_years": 4,
+            "weight": 0.019704
+        }
+    },
+    "education_credentials": {
+        "education": [
+            {
+                "degree": "Bachelor's or Master's",
+                "field": "Computer Science, AI, or related technical field",
+                "institution": "",
+                "tier": "",
+                "grade": "",
+                "score": 0.5
+            }
+        ],
+        "weight": 0.019704
+    },
+    "logistics": {
+        "location": "Pune/Noida, India",
+        "preferred_work_mode": "Hybrid",
+        "willing_to_relocate": true,
+        "notice_period_days": 30,
+        "salary_expectation": "",
+        "weight": 0.078818
+    }
+}
