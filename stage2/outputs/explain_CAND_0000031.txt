@@ -1,0 +1,64 @@
+
+# Candidate Fit Analysis: Ela Singh (CAND_0000031)
+**Headline:** Recommendation Systems Engineer | Search, Ranking & Retrieval
+
+## 📊 Detailed Sub-Constraint Category Matching Breakdown
+
+| Section | Constraint | Sub-Constraint | Category Item | Strategy | Matched Content | Raw Score | Normalized Score |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: | :---: |
+| must_have | Production experience with embedding-based retrieval and vector databases | Deployed embedding-based retrieval systems using sentence-transformers, BGE, E5, or OpenAI embeddings to production users | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.66523576 | 0.9077 |
+| must_have | Production experience with embedding-based retrieval and vector databases | Deployed embedding-based retrieval systems using sentence-transformers, BGE, E5, or OpenAI embeddings to production users | profile.summary | max | profile.summary embedding | 0.6443131 | 0.7770 |
+| must_have | Production experience with embedding-based retrieval and vector databases | sentence-transformers/ BGE/ E5/ OpenAI embeddings | skills | max | Skill: 'Sentence Transformers' | 0.8073643 | 1.0000 |
+| must_have | Production experience with embedding-based retrieval and vector databases | Handled embedding drift, index refresh, and mitigated retrieval-quality regression in production environments | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.67326367 | 0.9579 |
+| must_have | Production experience with embedding-based retrieval and vector databases | Operated vector databases or hybrid search infrastructure such as Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, or FAISS | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.635957 | 0.7247 |
+| must_have | Production experience with embedding-based retrieval and vector databases | Pinecone/ Weaviate/ Qdrant/ Milvus/ OpenSearch/ Elasticsearch/ FAISS | skills | max | Skill: 'FAISS' | 0.64822376 | 0.2411 |
+| must_have | Hands-on experience designing evaluation frameworks for ranking systems | Designed evaluation frameworks for ranking systems using metrics like NDCG, MRR, or MAP | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.6607361 | 0.8796 |
+| must_have | Hands-on experience designing evaluation frameworks for ranking systems | Designed evaluation frameworks for ranking systems using metrics like NDCG, MRR, or MAP | skills | max | Skill: 'Information Retrieval' | 0.67427504 | 0.3714 |
+| must_have | Hands-on experience designing evaluation frameworks for ranking systems | Interpreted A/B tests and established offline-to-online correlation for search or ranking algorithms | career_history.description | max | Role block Recommendation Systems Engineer at Swiggy | 0.70424855 | 1.0000 |
+| must_have | Shipped end-to-end machine learning systems at product companies | Built and shipped end-to-end candidate ranking, search engines, or recommendation systems to real users at scale | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.7079636 | 0.6482 |
+| must_have | Shipped end-to-end machine learning systems at product companies | Built and shipped end-to-end candidate ranking, search engines, or recommendation systems to real users at scale | profile.company_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| must_have | Shipped end-to-end machine learning systems at product companies | Years of applied ML or AI experience | profile.years_of_experience | direct | 6.0 YOE (Target: 5-9) | 6.0000 | 1.0000 |
+| must_have | Strong Python programming skills | Wrote high-quality production code in Python | skills | max | Skill: 'Feature Engineering' | 0.6199286 | 0.0996 |
+| must_have | Strong Python programming skills | Wrote high-quality production code in Python | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.55188537 | 0.1993 |
+| must_have | Location in or willing to relocate to targeted Tier 1 Indian cities | Located in Pune, Noida, Delhi NCR, Mumbai, or Hyderabad | profile.location | direct | 'Hyderabad, Telangana', relocate=True (Target: Pune, Noida, Delhi NCR, Mumbai, Hyderabad) | 1.0000 | 1.0000 |
+| preferred | Advanced LLM Fine-tuning and Ranking Models | Fine-tuned Large Language Models using LoRA, QLoRA, or PEFT | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.6337393 | 0.7109 |
+| preferred | Advanced LLM Fine-tuning and Ranking Models | Fine-tuned Large Language Models using LoRA, QLoRA, or PEFT | skills | max | Skill: 'Speech Recognition' | 0.6857273 | 0.3429 |
+| preferred | Advanced LLM Fine-tuning and Ranking Models | Built learning-to-rank models using XGBoost or neural networks | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.68591774 | 1.0000 |
+| preferred | Advanced LLM Fine-tuning and Ranking Models | Built learning-to-rank models using XGBoost or neural networks | skills | max | Skill: 'Machine Learning' | 0.72955614 | 0.6478 |
+| preferred | Domain Expertise and Distributed Systems Optimization | Developed HR-tech, recruiting technology, or marketplace matching products | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.6134541 | 0.5841 |
+| preferred | Domain Expertise and Distributed Systems Optimization | Developed HR-tech, recruiting technology, or marketplace matching products | profile.company_progression | max | Unknown strategy | 0.0000 | 0.0000 |
+| preferred | Domain Expertise and Distributed Systems Optimization | Optimized large-scale inference and distributed systems | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.603588 | 0.5224 |
+| preferred | Open-source AI/ML Contributions | Contributed to open-source AI or machine learning projects | profile.summary | max | profile.summary embedding | 0.66204596 | 0.8878 |
+| preferred | Open-source AI/ML Contributions | Contributed to open-source AI or machine learning projects | redrob_signals.github_activity_score | behavioral | github_activity_score: 32.6 | 32.6000 | 0.3260 |
+| preferred | Immediate or short notice period | Notice period is 30 days or less | redrob_signals.notice_period_days | direct | 60 days (Target: <=30 days) | 60 | 0.5000 |
+| rejection | Pure academic research without production code | Worked exclusively in academic labs or research-only roles without deploying to production | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.5695876 | 0.1350 |
+| rejection | Pure academic research without production code | Worked exclusively in academic labs or research-only roles without deploying to production | profile.title_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| rejection | Pure academic research without production code | Deployed machine learning models to production environments serving real users | career_history.description | max | Role block Applied ML Engineer at Zomato | 0.6988182 | 1.0000 |
+| rejection | Superficial LLM API experience | Machine learning experience consists primarily of recent projects using LangChain to call OpenAI APIs | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.6592954 | 0.3325 |
+| rejection | Superficial LLM API experience | Demonstrated substantial pre-LLM era machine learning production experience including retrieval and ranking | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.75945437 | 0.6263 |
+| rejection | Hands-off Architects or Tech Leads | Transitioned into architecture or tech lead roles and has not written production code in the last 18 months | profile.title_progression | max | Unknown strategy | 0.0000 | 0.0000 |
+| rejection | Hands-off Architects or Tech Leads | Transitioned into architecture or tech lead roles and has not written production code in the last 18 months | profile.summary | max | profile.summary embedding | 0.5591189 | 0.2445 |
+| rejection | Hands-off Architects or Tech Leads | Actively writes production code as an individual contributor | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.51411545 | 0.0000 |
+| rejection | Exclusively consulting or services background | Worked entirely at consulting or IT services firms such as TCS, Infosys, Wipro, Accenture, Cognizant, or Capgemini | profile.company_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| rejection | Exclusively consulting or services background | Built end-to-end features or owned platforms at product companies | profile.company_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| rejection | Mismatched AI specializations (Computer Vision, Speech, Robotics) | Primary technical expertise is focused on computer vision, speech recognition, or robotics | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.59153223 | 0.0961 |
+| rejection | Mismatched AI specializations (Computer Vision, Speech, Robotics) | Primary technical expertise is focused on computer vision, speech recognition, or robotics | skills | aggregate | Skills: 'Machine Learning' (0.0065), 'Speech Recognition' (0.3729) | 0.51438224 | 0.0223 |
+| rejection | Mismatched AI specializations (Computer Vision, Speech, Robotics) | Has significant exposure to Natural Language Processing or Information Retrieval | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.64743483 | 0.4569 |
+| rejection | Mismatched AI specializations (Computer Vision, Speech, Robotics) | Has significant exposure to Natural Language Processing or Information Retrieval | skills | aggregate | Skills: 'Information Retrieval' (0.5687) | 0.5117511 | 0.0335 |
+| rejection | Closed-source only track record without external validation | Worked entirely on closed-source proprietary systems for over 5 years | career_history.description | aggregate | Roles: Swiggy, Mad Street Den, Uber, Zomato | 0.53191173 | 0.0116 |
+| rejection | Closed-source only track record without external validation | Published technical papers, gave conference talks, or contributed to open-source projects | profile.summary | max | profile.summary embedding | 0.56465364 | 0.2791 |
+| negative | Title-chasers with frequent job hopping | Optimized for Senior, Staff, or Principal title promotions by switching companies every 1.5 years | profile.company_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| negative | Title-chasers with frequent job hopping | Optimized for Senior, Staff, or Principal title promotions by switching companies every 1.5 years | profile.title_progression | aggregate | Unknown strategy | 0.0000 | 0.0000 |
+| negative | Low platform engagement or inactivity | Has not logged in recently and maintains a very low recruiter response rate | redrob_signals.recruiter_response_rate | behavioral | recruiter_response_rate: 0.91 | 0.9100 | 0.0900 |
+| negative | Low platform engagement or inactivity | Frequently appears in recruiter searches and responds to messages | redrob_signals.search_appearance_30d | behavioral | search_appearance_30d: 778 | 778 | 1.0000 |
+
+## 🧮 Overall Section Scores & Final Fit Score
+
+* **Must-Have Score (`s_must`):** `0.7182`
+* **Preferred Score (`s_pref`):** `0.5647`
+* **Rejection Score (`s_rej`):** `0.3717`
+* **Negative Score (`s_neg`):** `0.0202`
+* **Combined Positive Score:** `0.6798` (0.75 * Must + 0.25 * Pref)
+* **Combined Negative Score:** `0.2838` (0.75 * Rej + 0.25 * Neg)
+* **Final Fit Score:** **`0.4869`** (Positive * (1.0 - Negative))
+

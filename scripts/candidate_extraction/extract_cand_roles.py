@@ -41,9 +41,25 @@ def extract_roles(candidate: dict) -> list[dict]:
     ]
     """
 
+    def get_experience_sort_key(exp: dict):
+        is_curr = exp.get("is_current", False)
+        end_date = exp.get("end_date")
+        if is_curr or not end_date:
+            end_val = "9999-12-31"
+        else:
+            end_val = end_date
+        start_val = exp.get("start_date") or "0001-01-01"
+        return (end_val, start_val)
+
+    sorted_history = sorted(
+        candidate.get("career_history", []),
+        key=get_experience_sort_key,
+        reverse=True
+    )
+
     roles = []
 
-    for experience in candidate.get("career_history", []):
+    for experience in sorted_history:
 
         yoe = round(
             experience.get("duration_months", 0) / 12,

@@ -326,5 +326,1070 @@
             "ownership_leadership": 1.0,
             "impact": 0.431
         }
+    },
+    {
+        "candidate_id": "CAND_0000003",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Angular",
+                    "score": 0.625
+                },
+                {
+                    "name": "SEO",
+                    "score": 0.477
+                },
+                {
+                    "name": "Excel",
+                    "score": 0.659
+                },
+                {
+                    "name": "Accounting",
+                    "score": 0.519
+                },
+                {
+                    "name": "Kubernetes",
+                    "score": 0.731
+                },
+                {
+                    "name": "Databricks",
+                    "score": 0.519
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Customer Support",
+                    "yoe": 1.1,
+                    "work_done": [
+                        "Business analyst at a consulting firm, working primarily with retail and CPG clients",
+                        "Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects",
+                        "Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication)",
+                        "Recent project work involved AI-strategy advisory but my own technical depth in AI is limited"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "TCS"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 1.1
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "M.E.",
+                    "field": "Chemical Engineering",
+                    "institution": "Local Engineering College",
+                    "tier": "tier_4",
+                    "grade": "6.82 CGPA"
+                },
+                {
+                    "degree": "M.Sc",
+                    "field": "Information Technology",
+                    "institution": "Chandigarh University",
+                    "tier": "tier_3",
+                    "grade": "87%"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Austin",
+            "preferred_work_mode": "hybrid",
+            "willing_to_relocate": false,
+            "notice_period_days": 150,
+            "salary_expectation": {
+                "min_lpa": 11.2,
+                "max_lpa": 18.1
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.0,
+            "ownership_leadership": 0.0,
+            "impact": 0.0
+        }
+    },
+    {
+        "candidate_id": "CAND_0000004",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Node.js",
+                    "score": 0.684
+                },
+                {
+                    "name": "Content Writing",
+                    "score": 0.376
+                },
+                {
+                    "name": "Redux",
+                    "score": 0.45
+                },
+                {
+                    "name": "Airflow",
+                    "score": 0.71
+                },
+                {
+                    "name": "GraphQL",
+                    "score": 0.35
+                },
+                {
+                    "name": "Object Detection",
+                    "score": 0.67
+                },
+                {
+                    "name": "Webpack",
+                    "score": 0.44
+                },
+                {
+                    "name": "Six Sigma",
+                    "score": 0.484
+                },
+                {
+                    "name": "SAP",
+                    "score": 0.616
+                },
+                {
+                    "name": "JavaScript",
+                    "score": 0.717
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Marketing Manager",
+                    "yoe": 1.2,
+                    "work_done": [
+                        "Mechanical engineering design role at a hardware-product company",
+                        "Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling",
+                        "Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence",
+                        "Worked closely with manufacturing partners on production scale-up"
+                    ]
+                },
+                {
+                    "title": "Operations Manager",
+                    "yoe": 1.7,
+                    "work_done": [
+                        "Content writing and SEO strategy for a tech-focused publication",
+                        "Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords",
+                        "Managed a freelance writer pool and the editorial calendar",
+                        "Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality"
+                    ]
+                },
+                {
+                    "title": "Business Analyst",
+                    "yoe": 0.8,
+                    "work_done": [
+                        "Operations management role at a logistics company",
+                        "Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound",
+                        "Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Dunder Mifflin"
+                },
+                "industry": {
+                    "name": "Paper Products"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 1.2
+                }
+            },
+            {
+                "company": {
+                    "name": "Infosys"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 1.7
+                }
+            },
+            {
+                "company": {
+                    "name": "Globex Inc"
+                },
+                "industry": {
+                    "name": "Manufacturing"
+                },
+                "company_size": {
+                    "size": "501-1000"
+                },
+                "years": {
+                    "number_of_years": 0.8
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.Tech",
+                    "field": "Machine Learning",
+                    "institution": "Local Engineering College",
+                    "tier": "tier_4",
+                    "grade": "7.72 CGPA"
+                },
+                {
+                    "degree": "Ph.D",
+                    "field": "Electronics",
+                    "institution": "Lovely Professional University",
+                    "tier": "tier_3",
+                    "grade": "7.61 CGPA"
+                }
+            ],
+            "certifications": [
+                {
+                    "name": "AWS Certified Cloud Practitioner"
+                },
+                {
+                    "name": "Scrum Master Certified"
+                }
+            ]
+        },
+        "logistics": {
+            "location": "Sydney",
+            "preferred_work_mode": "onsite",
+            "willing_to_relocate": true,
+            "notice_period_days": 120,
+            "salary_expectation": {
+                "min_lpa": 4.6,
+                "max_lpa": 6.7
+            }
+        },
+        "execution_impact": {
+            "production_experience": 1.0,
+            "ownership_leadership": 1.0,
+            "impact": 0.683
+        }
+    },
+    {
+        "candidate_id": "CAND_0000005",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "SQL",
+                    "score": 0.484
+                },
+                {
+                    "name": "PowerPoint",
+                    "score": 0.497
+                },
+                {
+                    "name": "Photoshop",
+                    "score": 0.519
+                },
+                {
+                    "name": "Tailwind",
+                    "score": 0.733
+                },
+                {
+                    "name": "Apache Flink",
+                    "score": 0.72
+                },
+                {
+                    "name": "Image Classification",
+                    "score": 0.928
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Accountant",
+                    "yoe": 4.3,
+                    "work_done": [
+                        "Business analyst at a consulting firm, working primarily with retail and CPG clients",
+                        "Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects",
+                        "Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication)",
+                        "Recent project work involved AI-strategy advisory but my own technical depth in AI is limited"
+                    ]
+                },
+                {
+                    "title": "HR Manager",
+                    "yoe": 3.8,
+                    "work_done": [
+                        "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings",
+                        "Owned the GL, fixed-asset register, and the audit-readiness function",
+                        "Managed a team of 3 staff accountants",
+                        "Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years"
+                    ]
+                },
+                {
+                    "title": "HR Manager",
+                    "yoe": 2.0,
+                    "work_done": [
+                        "Business analyst at a consulting firm, working primarily with retail and CPG clients",
+                        "Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects",
+                        "Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication)",
+                        "Recent project work involved AI-strategy advisory but my own technical depth in AI is limited"
+                    ]
+                },
+                {
+                    "title": "Accountant",
+                    "yoe": 0.8,
+                    "work_done": [
+                        "Customer support team lead at a SaaS product",
+                        "Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product",
+                        "Built out the support knowledge base and the agent training program",
+                        "Strong on the people-management side and the process side; lighter on technical depth beyond product expertise"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Stark Industries"
+                },
+                "industry": {
+                    "name": "Manufacturing"
+                },
+                "company_size": {
+                    "size": "1001-5000"
+                },
+                "years": {
+                    "number_of_years": 4.3
+                }
+            },
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 3.8
+                }
+            },
+            {
+                "company": {
+                    "name": "Initech"
+                },
+                "industry": {
+                    "name": "Software"
+                },
+                "company_size": {
+                    "size": "51-200"
+                },
+                "years": {
+                    "number_of_years": 2.0
+                }
+            },
+            {
+                "company": {
+                    "name": "TCS"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 0.8
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "M.Sc",
+                    "field": "Information Technology",
+                    "institution": "Chandigarh University",
+                    "tier": "tier_3",
+                    "grade": "87%"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Gurgaon, Haryana",
+            "preferred_work_mode": "hybrid",
+            "willing_to_relocate": true,
+            "notice_period_days": 30,
+            "salary_expectation": {
+                "min_lpa": 12.4,
+                "max_lpa": 19.7
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.683,
+            "ownership_leadership": 1.0,
+            "impact": 0.0
+        }
+    },
+    {
+        "candidate_id": "CAND_0000006",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Content Writing",
+                    "score": 0.728
+                },
+                {
+                    "name": "SEO",
+                    "score": 0.722
+                },
+                {
+                    "name": "Redux",
+                    "score": 0.484
+                },
+                {
+                    "name": "SQL",
+                    "score": 0.477
+                },
+                {
+                    "name": "Sales",
+                    "score": 0.71
+                },
+                {
+                    "name": "gRPC",
+                    "score": 0.376
+                },
+                {
+                    "name": "Django",
+                    "score": 0.633
+                },
+                {
+                    "name": "Terraform",
+                    "score": 0.491
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Business Analyst",
+                    "yoe": 2.8,
+                    "work_done": [
+                        "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings",
+                        "Owned the GL, fixed-asset register, and the audit-readiness function",
+                        "Managed a team of 3 staff accountants",
+                        "Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years"
+                    ]
+                },
+                {
+                    "title": "Mechanical Engineer",
+                    "yoe": 3.2,
+                    "work_done": [
+                        "Business analyst at a consulting firm, working primarily with retail and CPG clients",
+                        "Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects",
+                        "Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication)",
+                        "Recent project work involved AI-strategy advisory but my own technical depth in AI is limited"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Wayne Enterprises"
+                },
+                "industry": {
+                    "name": "Conglomerate"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 2.8
+                }
+            },
+            {
+                "company": {
+                    "name": "Pied Piper"
+                },
+                "industry": {
+                    "name": "Software"
+                },
+                "company_size": {
+                    "size": "11-50"
+                },
+                "years": {
+                    "number_of_years": 3.2
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.Sc",
+                    "field": "Artificial Intelligence",
+                    "institution": "Lovely Professional University",
+                    "tier": "tier_3",
+                    "grade": "9.26 CGPA"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Austin",
+            "preferred_work_mode": "remote",
+            "willing_to_relocate": true,
+            "notice_period_days": 150,
+            "salary_expectation": {
+                "min_lpa": 7.7,
+                "max_lpa": 11.7
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.0,
+            "ownership_leadership": 0.683,
+            "impact": 0.0
+        }
+    },
+    {
+        "candidate_id": "CAND_0000007",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Content Writing",
+                    "score": 0.497
+                },
+                {
+                    "name": "MongoDB",
+                    "score": 0.616
+                },
+                {
+                    "name": "Sales",
+                    "score": 0.71
+                },
+                {
+                    "name": "Spark",
+                    "score": 0.497
+                },
+                {
+                    "name": "Scrum",
+                    "score": 0.519
+                },
+                {
+                    "name": "Apache Beam",
+                    "score": 0.376
+                },
+                {
+                    "name": "Illustrator",
+                    "score": 0.35
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Civil Engineer",
+                    "yoe": 3.2,
+                    "work_done": [
+                        "Brand design and creative direction at a consumer-products company",
+                        "Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social",
+                        "Led the recent rebrand and managed a small external agency for production work",
+                        "Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design"
+                    ]
+                },
+                {
+                    "title": "Mechanical Engineer",
+                    "yoe": 2.2,
+                    "work_done": [
+                        "Customer support team lead at a SaaS product",
+                        "Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product",
+                        "Built out the support knowledge base and the agent training program",
+                        "Strong on the people-management side and the process side; lighter on technical depth beyond product expertise"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 3.2
+                }
+            },
+            {
+                "company": {
+                    "name": "Initech"
+                },
+                "industry": {
+                    "name": "Software"
+                },
+                "company_size": {
+                    "size": "51-200"
+                },
+                "years": {
+                    "number_of_years": 2.2
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "M.E.",
+                    "field": "Data Science",
+                    "institution": "SRM University",
+                    "tier": "tier_2",
+                    "grade": "8.28 CGPA"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "Gurgaon, Haryana",
+            "preferred_work_mode": "onsite",
+            "willing_to_relocate": true,
+            "notice_period_days": 30,
+            "salary_expectation": {
+                "min_lpa": 6.7,
+                "max_lpa": 14.6
+            }
+        },
+        "execution_impact": {
+            "production_experience": 1.0,
+            "ownership_leadership": 1.0,
+            "impact": 0.0
+        }
+    },
+    {
+        "candidate_id": "CAND_0000008",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Java",
+                    "score": 0.725
+                },
+                {
+                    "name": "BigQuery",
+                    "score": 0.46
+                },
+                {
+                    "name": "Spark",
+                    "score": 0.428
+                },
+                {
+                    "name": "Accounting",
+                    "score": 0.376
+                },
+                {
+                    "name": "Kubernetes",
+                    "score": 0.616
+                },
+                {
+                    "name": "TypeScript",
+                    "score": 0.633
+                },
+                {
+                    "name": "Rust",
+                    "score": 0.665
+                },
+                {
+                    "name": "HTML",
+                    "score": 0.477
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Operations Manager",
+                    "yoe": 3.6,
+                    "work_done": [
+                        "Marketing leadership role at a B2B SaaS company",
+                        "Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture",
+                        "Built and managed a team of 5 across content, performance marketing, and marketing operations",
+                        "Worked closely with sales on lead-quality definitions and the SDR-handoff process",
+                        "Recent focus has been on account-based marketing for our enterprise segment"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 3.6
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.Tech",
+                    "field": "Data Science",
+                    "institution": "Anna University",
+                    "tier": "tier_2",
+                    "grade": "8.60 CGPA"
+                },
+                {
+                    "degree": "M.Sc",
+                    "field": "Computer Engineering",
+                    "institution": "SRM University",
+                    "tier": "tier_2",
+                    "grade": "67%"
+                }
+            ],
+            "certifications": [
+                {
+                    "name": "Six Sigma Green Belt"
+                }
+            ]
+        },
+        "logistics": {
+            "location": "Noida, Uttar Pradesh",
+            "preferred_work_mode": "onsite",
+            "willing_to_relocate": false,
+            "notice_period_days": 90,
+            "salary_expectation": {
+                "min_lpa": 6.6,
+                "max_lpa": 17.2
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.0,
+            "ownership_leadership": 1.0,
+            "impact": 0.0
+        }
+    },
+    {
+        "candidate_id": "CAND_0000009",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "Snowflake",
+                    "score": 0.607
+                },
+                {
+                    "name": "gRPC",
+                    "score": 0.484
+                },
+                {
+                    "name": "JavaScript",
+                    "score": 0.696
+                },
+                {
+                    "name": "OpenCV",
+                    "score": 0.736
+                },
+                {
+                    "name": "Go",
+                    "score": 0.684
+                },
+                {
+                    "name": "PowerPoint",
+                    "score": 0.625
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Mechanical Engineer",
+                    "yoe": 3.7,
+                    "work_done": [
+                        "Business analyst at a consulting firm, working primarily with retail and CPG clients",
+                        "Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects",
+                        "Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication)",
+                        "Recent project work involved AI-strategy advisory but my own technical depth in AI is limited"
+                    ]
+                },
+                {
+                    "title": "Content Writer",
+                    "yoe": 1.7,
+                    "work_done": [
+                        "Marketing leadership role at a B2B SaaS company",
+                        "Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture",
+                        "Built and managed a team of 5 across content, performance marketing, and marketing operations",
+                        "Worked closely with sales on lead-quality definitions and the SDR-handoff process",
+                        "Recent focus has been on account-based marketing for our enterprise segment"
+                    ]
+                },
+                {
+                    "title": "Customer Support",
+                    "yoe": 4.1,
+                    "work_done": [
+                        "Mechanical engineering design role at a hardware-product company",
+                        "Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling",
+                        "Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence",
+                        "Worked closely with manufacturing partners on production scale-up"
+                    ]
+                },
+                {
+                    "title": "Project Manager",
+                    "yoe": 1.5,
+                    "work_done": [
+                        "Enterprise sales of cloud software solutions into the mid-market segment",
+                        "Carried a $1",
+                        "8M ARR quota and consistently delivered against it across the last three years",
+                        "Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close",
+                        "Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Dunder Mifflin"
+                },
+                "industry": {
+                    "name": "Paper Products"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 3.7
+                }
+            },
+            {
+                "company": {
+                    "name": "Wipro"
+                },
+                "industry": {
+                    "name": "IT Services"
+                },
+                "company_size": {
+                    "size": "10001+"
+                },
+                "years": {
+                    "number_of_years": 1.7
+                }
+            },
+            {
+                "company": {
+                    "name": "Stark Industries"
+                },
+                "industry": {
+                    "name": "Manufacturing"
+                },
+                "company_size": {
+                    "size": "1001-5000"
+                },
+                "years": {
+                    "number_of_years": 4.1
+                }
+            },
+            {
+                "company": {
+                    "name": "Acme Corp"
+                },
+                "industry": {
+                    "name": "Manufacturing"
+                },
+                "company_size": {
+                    "size": "201-500"
+                },
+                "years": {
+                    "number_of_years": 1.5
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.Tech",
+                    "field": "Electronics",
+                    "institution": "KIIT University",
+                    "tier": "tier_3",
+                    "grade": "7.89 CGPA"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "New York",
+            "preferred_work_mode": "remote",
+            "willing_to_relocate": false,
+            "notice_period_days": 150,
+            "salary_expectation": {
+                "min_lpa": 16.0,
+                "max_lpa": 7.3
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.683,
+            "ownership_leadership": 1.0,
+            "impact": 0.861
+        }
+    },
+    {
+        "candidate_id": "CAND_0000010",
+        "technical_capability": {
+            "technical_skills": [
+                {
+                    "name": "GCP",
+                    "score": 0.45
+                },
+                {
+                    "name": "Spring Boot",
+                    "score": 0.35
+                },
+                {
+                    "name": "Kubeflow",
+                    "score": 0.68
+                },
+                {
+                    "name": "Java",
+                    "score": 0.68
+                },
+                {
+                    "name": "GANs",
+                    "score": 0.878
+                },
+                {
+                    "name": "Figma",
+                    "score": 0.376
+                },
+                {
+                    "name": "Elasticsearch",
+                    "score": 0.67
+                },
+                {
+                    "name": "OpenCV",
+                    "score": 0.841
+                },
+                {
+                    "name": "CNN",
+                    "score": 0.607
+                },
+                {
+                    "name": "Azure",
+                    "score": 0.477
+                },
+                {
+                    "name": "Prompt Engineering",
+                    "score": 0.884
+                },
+                {
+                    "name": "Object Detection",
+                    "score": 0.935
+                },
+                {
+                    "name": "MLOps",
+                    "score": 0.625
+                },
+                {
+                    "name": "Python",
+                    "score": 0.653
+                },
+                {
+                    "name": "BM25",
+                    "score": 0.961
+                },
+                {
+                    "name": "Weights & Biases",
+                    "score": 0.876
+                },
+                {
+                    "name": "Sales",
+                    "score": 0.519
+                }
+            ]
+        },
+        "professional_experience": {
+            "roles": [
+                {
+                    "title": "Data Engineer",
+                    "yoe": 4.6,
+                    "work_done": [
+                        "Mixed data science and analytics-engineering role at a marketing-analytics startup",
+                        "Spent maybe 30% of my time on lightweight ML (clustering, classification, churn prediction in sklearn/XGBoost) and 70% on data infrastructure and dashboards",
+                        "Comfortable with the modeling work but I wouldn't call myself an ML specialist",
+                        "Built our experimentation framework that supports the product team's A/B tests"
+                    ]
+                }
+            ]
+        },
+        "organizational_context": [
+            {
+                "company": {
+                    "name": "Ola"
+                },
+                "industry": {
+                    "name": "Transportation"
+                },
+                "company_size": {
+                    "size": "5001-10000"
+                },
+                "years": {
+                    "number_of_years": 4.6
+                }
+            }
+        ],
+        "education_credentials": {
+            "education": [
+                {
+                    "degree": "B.E.",
+                    "field": "Mathematics",
+                    "institution": "Generic State University",
+                    "tier": "tier_4",
+                    "grade": "85%"
+                },
+                {
+                    "degree": "M.S.",
+                    "field": "Computer Engineering",
+                    "institution": "Local Engineering College",
+                    "tier": "tier_4",
+                    "grade": "7.73 CGPA"
+                }
+            ],
+            "certifications": []
+        },
+        "logistics": {
+            "location": "London",
+            "preferred_work_mode": "hybrid",
+            "willing_to_relocate": false,
+            "notice_period_days": 120,
+            "salary_expectation": {
+                "min_lpa": 13.0,
+                "max_lpa": 32.0
+            }
+        },
+        "execution_impact": {
+            "production_experience": 0.0,
+            "ownership_leadership": 0.0,
+            "impact": 0.431
+        }
     }
 ]

@@ -1,2 +1,12 @@
 .env
 venv/
+.cache
+pip_cache/
+**/__pycache__/
+*.pyc
+
+# Large files and data binaries
+resources/candidates.jsonl
+stage2/outputs/test_candidates_embedded.pkl
+*.pkl
+*.jsonl

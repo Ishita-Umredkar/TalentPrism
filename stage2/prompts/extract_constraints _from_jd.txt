@@ -1,0 +1,232 @@
+You are analyzing a job description.
+Your task is to construct a candidate matching specification using the attached JSON schema.
+The output will be used by an automated candidate ranking system.
+The ranking system will NOT read the original job description.
+It will only use the constraints, sub-constraints, candidate categories, weights, matching strategies, and field values that you generate.
+Your objective is to translate hiring intent into observable candidate evidence that can be evaluated using the attached candidate schema.
+Do not summarize the job description.
+Do not evaluate candidates.
+Do not assign candidate scores.
+Do not generate hiring recommendations.
+Return only valid JSON following the attached schema.
+Core Principle
+The purpose of this task is not to restate the job description.
+The purpose is to generate retrieval and evaluation signals that accurately separate strong candidates from weak candidates.
+Every constraint and sub-constraint should represent evidence that can realistically be found in a candidate profile.
+Before creating any constraint ask:
+"Could this be verified using the attached candidate data?"
+If not, reformulate it into the closest observable evidence that could support the hiring requirement.
+Candidate Evidence Rule
+Embedding-based sub-constraints are retrieval queries.
+They should be written as candidate evidence.
+Good retrieval units describe:
+
+work performed
+systems built
+responsibilities owned
+technologies used
+qualifications earned
+expertise demonstrated
+observable career patterns
+Do not write sub-constraints as:
+
+recruiter reasoning
+hiring decisions
+candidate archetypes
+rejection statements
+abstract qualities
+personality traits
+A good test:
+"Would this sentence reasonably appear in a resume, profile summary, project description, work experience section, education section, certification section, or skills section?"
+If not, rewrite it.
+Constraint Categories
+The output contains four categories:
+
+must_have
+preferred
+negative
+rejection
+Must Have and Preferred increase candidate fit.
+Negative and Rejection decrease candidate fit.
+Positive Constraints
+Applies to:
+
+must_have
+preferred
+Extract the strongest observable evidence that supports the hiring requirement.
+Prefer:
+
+capabilities
+experiences
+responsibilities
+technologies
+qualifications
+measurable expertise
+Avoid broad or generic concepts when more specific evidence exists.
+Each sub-constraint should represent a single independently matchable signal.
+Do not combine unrelated concepts into one sub-constraint.
+Negative and Rejection Constraints
+Negative and Rejection constraints require different reasoning.
+Do not automatically convert recruiter wording into retrieval units.
+First determine whether the recruiter is describing:
+
+Undesirable evidence
+Missing desirable evidence
+Undesirable Evidence
+Sometimes the recruiter genuinely does not want a particular background, specialization, behavior, career pattern, or characteristic.
+In this case:
+Extract the undesirable evidence.
+Mark the sub-constraint as:
+"type": "bad"
+Higher match scores should increase risk.
+Missing Desirable Evidence
+Sometimes the recruiter describes a candidate type only because that candidate type often lacks some desired capability.
+In these situations the mentioned candidate type is not the real hiring signal.
+The real hiring signal is the missing capability.
+Extract the desired capability.
+Mark the sub-constraint as:
+"type": "good"
+Higher match scores should reduce risk.
+Ask:
+"What evidence would make this concern disappear?"
+Extract that evidence.
+Do not extract the example candidate type.
+Do not extract the example background.
+Do not extract the example specialization.
+Extract the underlying evidence the recruiter actually wants.
+Good and Bad Signals
+Negative and Rejection constraints may contain both:
+"type": "bad"
+and
+"type": "good"
+sub-constraints.
+Bad signals represent evidence that increases risk.
+Good signals represent evidence that mitigates risk.
+A constraint may contain:
+
+only bad signals
+only good signals
+both good and bad signals
+Use both whenever the hiring concern depends on the relationship between two signals rather than a single signal.
+The ranking system will evaluate them separately.
+Therefore:
+Bad signals should represent evidence the recruiter does not want.
+Good signals should represent evidence that would make the recruiter comfortable despite the bad signal.
+Technologies and Skills
+When a requirement references technologies, tools, frameworks, databases, platforms, programming languages, methodologies, certifications, or domain concepts:
+Determine whether the employer cares about:
+
+the capability
+the technology
+or both
+If the specific technology matters:
+Extract it as its own sub-constraint.
+Examples:
+Python
+Elasticsearch
+Pinecone
+LangChain
+LoRA
+Do not write:
+Experience with Python
+Experience using Elasticsearch
+Knowledge of Pinecone
+The technology itself should be the retrieval signal.
+If the capability matters more than the technology:
+Extract the capability as a separate sub-constraint.
+Capabilities and technologies should be represented independently whenever they provide different evidence.
+Do not combine multiple technologies into a single retrieval unit.
+Candidate Categories
+Available candidate categories are attached separately.
+Use only categories provided in the attachment.
+Never invent category names.
+For every sub-constraint:
+
+select only categories that provide meaningful evidence
+prefer direct evidence over indirect evidence
+assign larger weights to stronger evidence sources
+assign smaller weights to supporting evidence sources
+Do not include categories that contribute little or no additional evidence.
+Matching Strategies
+Each category must use one of the available matching strategies.
+
+max
+Use when a single strong piece of evidence is sufficient.
+Examples:
+
+built a retrieval system
+deployed a machine learning model
+owned a ranking system
+The strongest evidence should dominate.
+aggregate
+Use when evidence should accumulate across multiple experiences, projects, roles, or profile sections.
+Examples:
+
+long-term engineering depth
+repeated ownership of ML systems
+sustained experience in a domain
+No single piece of evidence is sufficient on its own.
+direct
+Use only for structured fields.
+Examples:
+
+years of experience
+location
+notice period
+salary expectations
+language proficiency
+work mode
+boolean fields
+dates
+When using direct:
+
+populate the field property
+do not generate an embedding-oriented retrieval query
+use explicit values, ranges, booleans, or categories
+behavioral
+Use only for behavioral or platform activity signals.
+Examples:
+
+recruiter response rate
+profile activity
+interview completion rate
+github activity
+search appearance
+Weight Rules
+The schema contains three levels of weights.
+Weights are allocation weights.
+They are not confidence scores.
+Constraint Weight
+Represents the importance of the constraint relative to other constraints within the same category.
+Rules:
+
+Constraint weights within a category must sum exactly to 1.0.
+Assign weight based on hiring importance.
+Sub-Constraint Weight
+Represents the importance of the sub-constraint relative to other sub-constraints within the parent constraint.
+Rules:
+
+Sub-constraint weights within a constraint must sum exactly to 1.0.
+More central evidence should receive higher weight.
+Category Weight
+Represents the contribution of a candidate category when evaluating a sub-constraint.
+Rules:
+
+Category weights within a sub-constraint must sum exactly to the parent sub-constraint weight.
+Direct evidence should receive larger allocations.
+Supporting evidence should receive smaller allocations.
+Confidence
+Confidence represents how strongly the job description expresses the constraint.
+Use values between 0 and 1.
+Higher confidence means the requirement is more explicitly stated or strongly implied.
+Confidence is independent from weight.
+Output Requirements
+Follow the attached JSON schema exactly.
+Populate every required field.
+Use only candidate categories provided in the attachment.
+Ensure constraint weights within each category sum exactly to 1.0.
+Ensure sub-constraint weights within a constraint sum exactly to 1.0.
+Ensure category weights within a sub-constraint sum exactly to the parent sub-constraint weight.
+When using direct matching, always populate the required field value.
+Return only valid JSON.
+Do not include explanations outside the JSON structure.

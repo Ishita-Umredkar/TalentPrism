@@ -1,0 +1,177 @@
+[
+    {
+        "candidate_id": "CAND_0000001",
+        "name": "Ira Vora",
+        "credibility_score": 0.75,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "assessment_contradicts_proficiency",
+                "category": "skill_consistency",
+                "strength": "Strong",
+                "penalty": 0.25,
+                "details": "Claimed expertise contradicted by low assessment scores: NLP (claimed: advanced, score: 38.8).",
+                "metrics": {
+                    "offending_skills": [
+                        "NLP (claimed: advanced, score: 38.8)"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000002",
+        "name": "Saanvi Sethi",
+        "credibility_score": 0.7,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.3,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 43 mos, calculated: 36 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000003",
+        "name": "Yash Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000004",
+        "name": "Anil Bose",
+        "credibility_score": 0.6,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "education_order_consistency",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.4,
+                "details": "Higher degree 'Ph.D' ended in 2016 which is before lower degree 'B.Tech' ended in 2019.",
+                "metrics": {
+                    "higher_degree": "Ph.D",
+                    "higher_degree_end": 2016,
+                    "lower_degree": "B.Tech",
+                    "lower_degree_end": 2019
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000005",
+        "name": "Aisha Sethi",
+        "credibility_score": 0.7,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.3,
+                "details": "Reported job durations do not match date calculations for: Stark Industries (reported: 52 mos, calculated: 43 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000006",
+        "name": "Rajesh Desai",
+        "credibility_score": 0.0,
+        "status": "Honeypot/Suspicious",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.3,
+                "details": "Reported job durations do not match date calculations for: Wayne Enterprises (reported: 33 mos, calculated: 30 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            },
+            {
+                "check_id": "future_dates",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.6,
+                "details": "Future dates detected relative to last active timeline: Signup date (2026-04-26) is after last active date (2026-02-28).",
+                "metrics": {
+                    "future_elements": [
+                        "Signup date (2026-04-26) is after last active date (2026-02-28)"
+                    ]
+                }
+            },
+            {
+                "check_id": "last_active_before_signup",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.8,
+                "details": "Last active date (2026-02-28) is before signup date (2026-04-26).",
+                "metrics": {
+                    "signup_date": "2026-04-26",
+                    "last_active_date": "2026-02-28"
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000007",
+        "name": "Vihaan Bose",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000008",
+        "name": "Shaurya Chatterjee",
+        "credibility_score": 0.7,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.3,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 43 mos, calculated: 37 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000009",
+        "name": "Amit Shah",
+        "credibility_score": 0.7,
+        "status": "Needs Review",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.3,
+                "details": "Reported job durations do not match date calculations for: Dunder Mifflin (reported: 44 mos, calculated: 39 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000010",
+        "name": "Aarav Kapoor",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    }
+]

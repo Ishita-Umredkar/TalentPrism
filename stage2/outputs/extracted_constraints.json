@@ -1,0 +1,660 @@
+{
+    "must_have": [
+        {
+            "weight": 0.3,
+            "constraint": "Applied Machine Learning and Ranking Experience",
+            "confidence": 0.95,
+            "reasoning": "Core mandate is owning the intelligence layer including ranking, retrieval, and matching systems.",
+            "sub_constraints": [
+                {
+                    "item": "Embeddings-based Retrieval",
+                    "weight": 0.4,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.3
+                        }
+                    ]
+                },
+                {
+                    "item": "Ranking and Re-ranking Systems",
+                    "weight": 0.3,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.2
+                        },
+                        {
+                            "item": "profile.summary",
+                            "matching_strategy": "direct_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "Production Machine Learning Deployment",
+                    "weight": 0.3,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.2
+                        },
+                        {
+                            "item": "profile.summary",
+                            "matching_strategy": "direct_match",
+                            "weight": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.25,
+            "constraint": "Search Infrastructure and Vector Databases",
+            "confidence": 0.9,
+            "reasoning": "Explicit requirement for operational experience with vector databases or hybrid search infrastructure.",
+            "sub_constraints": [
+                {
+                    "item": "Pinecone",
+                    "weight": 0.125,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.025
+                        }
+                    ]
+                },
+                {
+                    "item": "Elasticsearch",
+                    "weight": 0.125,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.025
+                        }
+                    ]
+                },
+                {
+                    "item": "Weaviate",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "Qdrant",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "Milvus",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "OpenSearch",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "FAISS",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "Vector Databases",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.05
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.05
+                        }
+                    ]
+                },
+                {
+                    "item": "Hybrid Search",
+                    "weight": 0.15,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.05
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.25,
+            "constraint": "Programming and Evaluation Frameworks",
+            "confidence": 0.95,
+            "reasoning": "Requires strong Python and explicit experience in designing offline/online evaluation frameworks for ranking systems.",
+            "sub_constraints": [
+                {
+                    "item": "Python",
+                    "weight": 0.4,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.3
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "NDCG",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "MRR",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "MAP",
+                    "weight": 0.1,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "A/B Testing",
+                    "weight": 0.15,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.05
+                        }
+                    ]
+                },
+                {
+                    "item": "Offline Benchmarks and Evaluation",
+                    "weight": 0.15,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.05
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Candidate Availability and Signals",
+            "confidence": 0.8,
+            "reasoning": "JD values behavioral signals of an active, responsive candidate who ideally has between 5-9 years of total experience.",
+            "sub_constraints": [
+                {
+                    "item": "Active Profile Indicators",
+                    "weight": 0.3,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.search_appearance_30d",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 0.15
+                        },
+                        {
+                            "item": "redrob_signals.open_to_work_flag",
+                            "matching_strategy": "field_match",
+                            "field": "true",
+                            "weight": 0.15
+                        }
+                    ]
+                },
+                {
+                    "item": "High Recruiter Response",
+                    "weight": 0.4,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.recruiter_response_rate",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 0.2
+                        },
+                        {
+                            "item": "redrob_signals.avg_response_time_hours",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 0.2
+                        }
+                    ]
+                },
+                {
+                    "item": "Engineering Experience Range",
+                    "weight": 0.3,
+                    "categories": [
+                        {
+                            "item": "profile.years_of_experience",
+                            "matching_strategy": "field_match",
+                            "field": "5-9",
+                            "weight": 0.3
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "preferred": [
+        {
+            "weight": 0.4,
+            "constraint": "Advanced Machine Learning Modeling",
+            "confidence": 0.85,
+            "reasoning": "Explicitly listed in 'Things we'd like you to have'.",
+            "sub_constraints": [
+                {
+                    "item": "LLM Fine-tuning",
+                    "weight": 0.25,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.15
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        }
+                    ]
+                },
+                {
+                    "item": "LoRA / QLoRA / PEFT",
+                    "weight": 0.25,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.25
+                        }
+                    ]
+                },
+                {
+                    "item": "Learning-to-rank / XGBoost",
+                    "weight": 0.3,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.15
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.15
+                        }
+                    ]
+                },
+                {
+                    "item": "Distributed Systems and Inference Optimization",
+                    "weight": 0.2,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "skill_match",
+                            "weight": 0.1
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max_evidence",
+                            "weight": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Domain Expertise",
+            "confidence": 0.85,
+            "reasoning": "Listed as 'Prior exposure to HR-tech, recruiting tech, or marketplace products'.",
+            "sub_constraints": [
+                {
+                    "item": "HR Tech / Recruiting Tech / Marketplaces",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "career_history.industry",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.6
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Open Source Validation",
+            "confidence": 0.8,
+            "reasoning": "Open-source contributions in the AI/ML space desired.",
+            "sub_constraints": [
+                {
+                    "item": "Open Source AI/ML Contributions",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.github_activity_score",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Location and Quick Availability",
+            "confidence": 0.9,
+            "reasoning": "Pune, Noida, Mumbai, Delhi NCR, Hyderabad preferred. Sub-30 day notice period explicitly loved.",
+            "sub_constraints": [
+                {
+                    "item": "Target Locations",
+                    "weight": 0.6,
+                    "categories": [
+                        {
+                            "item": "profile.location",
+                            "matching_strategy": "field_match",
+                            "field": "Pune, Noida, Mumbai, Delhi NCR, Hyderabad",
+                            "weight": 0.6
+                        }
+                    ]
+                },
+                {
+                    "item": "Sub-30 Day Notice Period",
+                    "weight": 0.4,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.notice_period_days",
+                            "matching_strategy": "field_match",
+                            "field": "30",
+                            "weight": 0.4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "negative": [
+        {
+            "weight": 0.35,
+            "constraint": "Extended Notice Period",
+            "confidence": 0.9,
+            "reasoning": "30+ day notice candidates face a 'higher bar'.",
+            "sub_constraints": [
+                {
+                    "item": "Notice Period Greater Than 30 Days",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.notice_period_days",
+                            "matching_strategy": "field_match",
+                            "field": "30",
+                            "weight": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.35,
+            "constraint": "Exclusive IT Services / Consulting Background",
+            "confidence": 0.85,
+            "reasoning": "People entirely from consulting firms (TCS, Infosys, etc.) reduce fit unless they also have product company experience.",
+            "sub_constraints": [
+                {
+                    "item": "Exclusive Experience at IT Services Firms",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "profile.current_company",
+                            "matching_strategy": "direct_match",
+                            "weight": 0.5
+                        },
+                        {
+                            "item": "career_history.company",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.3,
+            "constraint": "Inactive Profile Signals",
+            "confidence": 0.9,
+            "reasoning": "A perfect-on-paper candidate who hasn't logged in for 6 months with 5% response rate should be down-weighted.",
+            "sub_constraints": [
+                {
+                    "item": "Low Response Rate and Inactivity",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "redrob_signals.recruiter_response_rate",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 0.6
+                        },
+                        {
+                            "item": "redrob_signals.search_appearance_30d",
+                            "matching_strategy": "behavior_signal",
+                            "weight": 0.4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rejection": [
+        {
+            "weight": 0.25,
+            "constraint": "Academic or Pure Research Environment Only",
+            "confidence": 1.0,
+            "reasoning": "Will not move forward if the career is solely in pure research without production deployment.",
+            "sub_constraints": [
+                {
+                    "item": "Pure Research Environment Without Production Deployment",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.7
+                        },
+                        {
+                            "item": "profile.current_title",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.25,
+            "constraint": "Superficial AI Experience",
+            "confidence": 0.95,
+            "reasoning": "Will reject if AI experience consists primarily of recent projects using LangChain to call OpenAI without pre-LLM ML experience.",
+            "sub_constraints": [
+                {
+                    "item": "LangChain/OpenAI Wrappers Lacking Core ML Depth",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.4
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Hands-Off Roles",
+            "confidence": 0.95,
+            "reasoning": "Will reject senior engineers who haven't written production code in 18 months due to 'architecture' roles.",
+            "sub_constraints": [
+                {
+                    "item": "Architecture or Management Roles Without Recent Production Code",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "profile.current_title",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.5
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Title Chasing and Excessive Job Hopping",
+            "confidence": 0.9,
+            "reasoning": "Not a fit if candidate shows a pattern of switching companies every 1.5 years purely for title optimization.",
+            "sub_constraints": [
+                {
+                    "item": "Short Tenures Targeting Title Progression",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "career_history.title",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Irrelevant Technology Sub-Domains",
+            "confidence": 0.9,
+            "reasoning": "Explicitly do not want candidates whose primary expertise is only Computer Vision, Speech, or Robotics without NLP/IR.",
+            "sub_constraints": [
+                {
+                    "item": "Pure Computer Vision, Speech, or Robotics Backgrounds",
+                    "weight": 1.0,
+                    "categories": [
+                        {
+                            "item": "skills.name",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.5
+                        },
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate_evidence",
+                            "weight": 0.5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1001 @@
+rank,candidate_id,anonymized_name,headline,must_have_raw,preferred_raw,rejection_raw,negative_raw,final_score_raw
+1,CAND_0000031,Ela Singh,"Recommendation Systems Engineer | Search, Ranking & Retrieval",0.7736,0.5647,0.2284,0.0202,0.5941
+2,CAND_0000273,Vikram Kumar,ML Engineer | 5.8 yrs in analytics & ML,0.6251,0.5673,0.2341,0.1273,0.4840
+3,CAND_0000422,Anil Shah,AI Research Engineer | Data Science & ML enthusiast,0.5909,0.4739,0.2335,0.0519,0.4560
+4,CAND_0000184,Dev Singh,"Software Engineer | SQL, Spark, Cloud",0.5866,0.5041,0.2276,0.1611,0.4465
+5,CAND_0000354,Dev Vora,Analytics Engineer | Data pipelines & analytics,0.5502,0.4683,0.2094,0.1569,0.4258
+6,CAND_0000666,Nisha Vora,Data Scientist | Building ML-powered solutions,0.5095,0.5425,0.2284,0.1598,0.4084
+7,CAND_0000820,Manish Bose,Backend Engineer | Data pipelines & analytics,0.5826,0.2911,0.2143,0.2044,0.4018
+8,CAND_0000395,Anika Nair,"Analytics Engineer | SQL, Spark, Cloud",0.5332,0.4350,0.2478,0.1020,0.4012
+9,CAND_0000578,Deepak Iyengar,Data Engineer | 6.9+ yrs in data engineering,0.5545,0.3522,0.2325,0.1237,0.4004
+10,CAND_0000790,Divya Nair,Data Analyst | Data pipelines & analytics,0.6111,0.3131,0.2438,0.3012,0.3981
+11,CAND_0000981,Priya Iyengar,ML Engineer | Data Science & ML enthusiast,0.5085,0.4554,0.2280,0.1251,0.3951
+12,CAND_0000633,Yash Chowdary,Software Engineer | 6.4+ yrs in data engineering,0.5271,0.4052,0.2376,0.1271,0.3924
+13,CAND_0000859,Priya Krishnan,"Senior Software Engineer | SQL, Spark, Cloud",0.5266,0.3235,0.2204,0.0589,0.3902
+14,CAND_0000704,Sunil Naidu,Data Analyst | Data pipelines & analytics,0.5097,0.3775,0.2245,0.0658,0.3885
+15,CAND_0000452,Mira Chatterjee,Senior Data Engineer | 2.9+ yrs in data engineering,0.5380,0.3212,0.1990,0.2010,0.3873
+16,CAND_0000705,Ira Gupta,AI Research Engineer | Building ML-powered solutions,0.4354,0.5756,0.2035,0.1485,0.3812
+17,CAND_0000665,Pari Bhatia,Senior Software Engineer | 6.2+ yrs in data engineering,0.5498,0.3302,0.2021,0.3291,0.3792
+18,CAND_0000973,Siya Bose,Software Engineer | Data pipelines & analytics,0.5172,0.3394,0.2160,0.2653,0.3648
+19,CAND_0000712,Shaurya Shetty,Data Analyst | Data pipelines & analytics,0.4773,0.3834,0.2222,0.1358,0.3628
+20,CAND_0000969,Dhruv Pillai,AI Specialist | 5.5 yrs in analytics & ML,0.4201,0.4460,0.2189,0.0450,0.3518
+21,CAND_0000628,Kavya Pandey,Analytics Engineer | Data pipelines & analytics,0.4976,0.2749,0.2140,0.1918,0.3498
+22,CAND_0000411,Vihaan Tiwari,"Analytics Engineer | SQL, Spark, Cloud",0.5074,0.2594,0.2627,0.0966,0.3469
+23,CAND_0000775,Arjun Bansal,Software Engineer | Data pipelines & analytics,0.4788,0.3467,0.2243,0.2188,0.3464
+24,CAND_0000878,Ved Bhatia,Backend Engineer | Data pipelines & analytics,0.4466,0.3604,0.2111,0.1108,0.3460
+25,CAND_0000797,Rohan Mehta,Backend Engineer | Data pipelines & analytics,0.5010,0.2295,0.2553,0.1016,0.3392
+26,CAND_0000390,Sanjay Khanna,Backend Engineer | 6.6+ yrs in data engineering,0.4627,0.2815,0.2310,0.1346,0.3310
+27,CAND_0000200,Anjali Bansal,ML Engineer | Data Science & ML enthusiast,0.4140,0.3982,0.2317,0.0900,0.3296
+28,CAND_0000539,Aarohi Chatterjee,Backend Engineer | 2.9+ yrs in data engineering,0.4540,0.3041,0.2373,0.1337,0.3285
+29,CAND_0000600,Shreya Singh,Software Engineer | Cloud & DevOps,0.5189,0.1576,0.2566,0.1961,0.3251
+30,CAND_0000652,Mira Sharma,"Backend Engineer | SQL, Spark, Cloud",0.4348,0.3463,0.2202,0.2066,0.3232
+31,CAND_0000852,Pari Bose,Senior Software Engineer | 4.8+ yrs in data engineering,0.3940,0.3807,0.2078,0.0923,0.3208
+32,CAND_0000343,Anika Kumar,Analytics Engineer | Data pipelines & analytics,0.3896,0.4032,0.2187,0.1056,0.3182
+33,CAND_0000032,Pranav Agarwal,.NET Developer | Full-stack development,0.4588,0.2592,0.2318,0.1989,0.3174
+34,CAND_0000345,Pari Subramanian,"Data Engineer | SQL, Spark, Cloud",0.4280,0.2816,0.1942,0.1944,0.3154
+35,CAND_0000454,Pranav Mishra,"Data Analyst | SQL, Spark, Cloud",0.4209,0.3042,0.2208,0.1170,0.3154
+36,CAND_0000873,Yash Desai,"Senior Software Engineer | SQL, Spark, Cloud",0.4404,0.2666,0.2201,0.1727,0.3143
+37,CAND_0000112,Kavya Arora,AI Specialist | Building ML-powered solutions,0.3725,0.5539,0.2301,0.3016,0.3142
+38,CAND_0000682,Advaith Pillai,Data Engineer | 2.6+ yrs in data engineering,0.4660,0.1979,0.2259,0.2440,0.3070
+39,CAND_0000834,Sanjay Saxena,Software Engineer | Cloud & DevOps,0.3967,0.3929,0.1997,0.3134,0.3055
+40,CAND_0000082,Avni Malhotra,Data Analyst | 7.4+ yrs in data engineering,0.3930,0.3182,0.2259,0.0722,0.3042
+41,CAND_0000227,Jay Chatterjee,Data Analyst | 7.6+ yrs in data engineering,0.3744,0.4235,0.2367,0.1494,0.3036
+42,CAND_0000833,Riya Menon,Content Writer | Helping teams scale,0.4190,0.1681,0.1496,0.1930,0.2991
+43,CAND_0000851,Ritu Menon,Customer Support | 5.2+ yrs experience,0.4205,0.1934,0.1482,0.2694,0.2988
+44,CAND_0000970,Aisha Subramanian,Data Engineer | Data pipelines & analytics,0.3549,0.3755,0.2090,0.0998,0.2946
+45,CAND_0000877,Diya Shetty,Java Developer | Backend systems & APIs,0.4498,0.1384,0.2294,0.1628,0.2928
+46,CAND_0000190,Pari Kapoor,"Backend Engineer | SQL, Spark, Cloud",0.4073,0.2594,0.2248,0.1660,0.2925
+47,CAND_0000895,Karan Pillai,DevOps Engineer | Full-stack development,0.3946,0.3572,0.2486,0.2237,0.2919
+48,CAND_0000187,Siya Dutta,DevOps Engineer | Full-stack development,0.4222,0.2303,0.2343,0.1825,0.2914
+49,CAND_0000508,Rajesh Malhotra,Backend Engineer | 4.6+ yrs in data engineering,0.3946,0.3166,0.2220,0.2349,0.2906
+50,CAND_0000165,Suresh Reddy,AI Specialist | Building ML-powered solutions,0.3459,0.4426,0.2171,0.2274,0.2888
+51,CAND_0000001,Ira Vora,"Backend Engineer | SQL, Spark, Cloud",0.3547,0.4071,0.2237,0.1956,0.2881
+52,CAND_0000854,Ayaan Agarwal,"Data Analyst | SQL, Spark, Cloud",0.3884,0.3702,0.2446,0.2700,0.2875
+53,CAND_0000510,Dev Bose,Mobile Developer | Full-stack development,0.3744,0.3304,0.2282,0.1909,0.2839
+54,CAND_0000225,Kavya Saxena,"Analytics Engineer | SQL, Spark, Cloud",0.3909,0.3066,0.2248,0.2610,0.2833
+55,CAND_0000235,Siya Saxena,Business Analyst | 10.4+ yrs experience,0.3654,0.3445,0.2067,0.2364,0.2830
+56,CAND_0000499,Myra Mishra,Mechanical Engineer | 11.0+ yrs experience,0.3633,0.3212,0.1959,0.2090,0.2825
+57,CAND_0000874,Sanjay Banerjee,"Senior Software Engineer | SQL, Spark, Cloud",0.3760,0.2852,0.2350,0.1326,0.2793
+58,CAND_0000091,Aisha Desai,Frontend Engineer | Cloud & DevOps,0.3890,0.2848,0.2169,0.2732,0.2791
+59,CAND_0000919,Anil Iyer,DevOps Engineer | Backend systems & APIs,0.4004,0.1976,0.2250,0.1416,0.2783
+60,CAND_0000010,Aarav Kapoor,Data Engineer | Data pipelines & analytics,0.3784,0.2846,0.2283,0.1807,0.2781
+61,CAND_0000944,Shreya Arora,Senior Software Engineer | Data pipelines & analytics,0.3723,0.2701,0.2116,0.1652,0.2774
+62,CAND_0000903,Avni Pillai,DevOps Engineer | Backend systems & APIs,0.4027,0.2282,0.2403,0.1946,0.2769
+63,CAND_0000182,Shaurya Banerjee,QA Engineer | Backend systems & APIs,0.3957,0.2728,0.2292,0.2848,0.2762
+64,CAND_0000742,Aarav Iyengar,Mobile Developer | Backend systems & APIs,0.3752,0.3254,0.2334,0.2571,0.2759
+65,CAND_0000624,Karan Kumar,Business Analyst | 5.7+ yrs experience,0.4126,0.1139,0.1745,0.2609,0.2716
+66,CAND_0000063,Myra Naidu,Java Developer | Cloud & DevOps,0.3756,0.2404,0.2220,0.1556,0.2716
+67,CAND_0000739,Pranav Agarwal,Civil Engineer | AI enthusiast | Building with LLMs,0.3461,0.3375,0.1980,0.2486,0.2715
+68,CAND_0000605,Vihaan Rao,Marketing Manager | Driving business outcomes,0.3642,0.2885,0.1992,0.2601,0.2712
+69,CAND_0000292,Aarohi Trivedi,Data Analyst | Data pipelines & analytics,0.3719,0.3040,0.2393,0.2269,0.2711
+70,CAND_0000319,Krishna Goyal,Project Manager | Helping teams scale,0.3451,0.2595,0.1817,0.1242,0.2695
+71,CAND_0000884,Vivaan Bhatia,Software Engineer | Backend systems & APIs,0.4090,0.1922,0.2497,0.2258,0.2683
+72,CAND_0000614,Aarohi Iyengar,Full Stack Developer | Cloud & DevOps,0.3660,0.2162,0.2065,0.1320,0.2668
+73,CAND_0000033,Shreya Nair,Graphic Designer | Helping teams scale,0.3648,0.2917,0.2043,0.3149,0.2661
+74,CAND_0000440,Ira Trivedi,Software Engineer | Data pipelines & analytics,0.3663,0.2734,0.2355,0.2106,0.2644
+75,CAND_0000210,Pooja Chopra,Senior Data Engineer | Data pipelines & analytics,0.3411,0.3550,0.2329,0.2323,0.2644
+76,CAND_0000288,Deepak Arora,Cloud Engineer | Backend systems & APIs,0.3666,0.3015,0.2442,0.2558,0.2638
+77,CAND_0000106,Suresh Dalal,Marketing Manager | Helping teams scale,0.4088,0.0960,0.1721,0.2935,0.2637
+78,CAND_0000649,Tanya Chopra,Data Engineer | Data pipelines & analytics,0.3439,0.3038,0.2302,0.1537,0.2634
+79,CAND_0000254,Zara Iyer,Java Developer | Full-stack development,0.3937,0.1721,0.2319,0.1918,0.2632
+80,CAND_0000255,Advaith Sharma,Cloud Engineer | Cloud & DevOps,0.4011,0.1620,0.2407,0.1943,0.2631
+81,CAND_0000726,Karan Krishnan,Customer Support | Driving business outcomes,0.3662,0.2396,0.2045,0.2451,0.2627
+82,CAND_0000664,Kabir Mishra,Accountant | Generative AI explorer,0.3174,0.3164,0.1895,0.1265,0.2620
+83,CAND_0000913,Sai Chatterjee,Cloud Engineer | Cloud & DevOps,0.3886,0.1834,0.2409,0.1709,0.2619
+84,CAND_0000802,Reyansh Shetty,Full Stack Developer | Full-stack development,0.3474,0.2929,0.2285,0.1837,0.2612
+85,CAND_0000861,Deepak Nair,Business Analyst | Helping teams scale,0.3410,0.3067,0.2184,0.2025,0.2612
+86,CAND_0000553,Avni Kumar,Software Engineer | Cloud & DevOps,0.4031,0.1745,0.2395,0.2681,0.2606
+87,CAND_0000066,Aanya Krishnan,Content Writer | 2.4+ yrs experience,0.3914,0.1142,0.1867,0.2212,0.2592
+88,CAND_0000955,Yash Arora,Mobile Developer | Backend systems & APIs,0.3231,0.3336,0.2303,0.1393,0.2581
+89,CAND_0000304,Shaurya Mittal,Civil Engineer | 3.7+ yrs experience,0.3554,0.2236,0.1847,0.2458,0.2580
+90,CAND_0000275,Advaith Subramanian,Java Developer | Backend systems & APIs,0.3929,0.1707,0.2299,0.2578,0.2574
+91,CAND_0000976,Siya Shah,Business Analyst | Helping teams scale,0.3635,0.2159,0.1915,0.2777,0.2570
+92,CAND_0000594,Suresh Dalal,Marketing Manager | Helping teams scale,0.3602,0.1770,0.1898,0.1632,0.2568
+93,CAND_0000897,Sanjay Mittal,Marketing Manager | Driving business outcomes,0.3667,0.1139,0.1575,0.1507,0.2562
+94,CAND_0000075,Kavya Nair,Full Stack Developer | Full-stack development,0.3250,0.3459,0.2335,0.1986,0.2560
+95,CAND_0000590,Saanvi Chopra,.NET Developer | Backend systems & APIs,0.3508,0.2826,0.2379,0.2344,0.2547
+96,CAND_0000786,Aryan Subramanian,Cloud Engineer | Full-stack development,0.3714,0.1429,0.2131,0.1281,0.2540
+97,CAND_0000691,Ishaan Bansal,Software Engineer | Backend systems & APIs,0.2884,0.4229,0.2063,0.2271,0.2539
+98,CAND_0000217,Arjun Arora,Mechanical Engineer | Driving business outcomes,0.3621,0.1758,0.1845,0.2303,0.2537
+99,CAND_0000085,Rajesh Joshi,Mechanical Engineer | Driving business outcomes,0.3496,0.1596,0.1813,0.1202,0.2520
+100,CAND_0000364,Avni Iyengar,QA Engineer | Cloud & DevOps,0.3729,0.1776,0.2280,0.2089,0.2518
+101,CAND_0000715,Advik Hegde,QA Engineer | Cloud & DevOps,0.3592,0.2323,0.2206,0.2634,0.2517
+102,CAND_0000998,Ira Mishra,Mechanical Engineer | 8.4+ yrs experience,0.3815,0.1965,0.2279,0.3222,0.2510
+103,CAND_0000522,Deepak Kumar,Software Engineer | Cloud & DevOps,0.3726,0.1488,0.2093,0.2142,0.2500
+104,CAND_0000947,Sunil Mishra,Analytics Engineer | 3.8+ yrs in data engineering,0.3516,0.2330,0.2418,0.1710,0.2498
+105,CAND_0000417,Rahul Iyengar,Full Stack Developer | Cloud & DevOps,0.3739,0.1420,0.2188,0.1847,0.2495
+106,CAND_0000611,Anjali Rao,Software Engineer | Cloud & DevOps,0.3028,0.3195,0.2184,0.0979,0.2492
+107,CAND_0000285,Yash Pillai,Frontend Engineer | Full-stack development,0.3368,0.2256,0.2095,0.1506,0.2488
+108,CAND_0000990,Nikhil Mukherjee,Java Developer | Cloud & DevOps,0.3814,0.1027,0.2238,0.1367,0.2488
+109,CAND_0000935,Siya Bansal,Civil Engineer | Driving business outcomes,0.3666,0.1485,0.2109,0.1923,0.2477
+110,CAND_0000155,Neha Khanna,Software Engineer | 3.2+ yrs in data engineering,0.3152,0.3166,0.2012,0.2573,0.2476
+111,CAND_0000201,Anil Mehta,Marketing Manager | AI enthusiast | Building with LLMs,0.3093,0.2954,0.1831,0.2154,0.2473
+112,CAND_0000561,Deepak Arora,HR Manager | Helping teams scale,0.3386,0.1467,0.1338,0.2072,0.2464
+113,CAND_0000860,Rajesh Saxena,Marketing Manager | Helping teams scale,0.3635,0.1196,0.1643,0.2508,0.2463
+114,CAND_0000571,Nikhil Naidu,HR Manager | Driving business outcomes,0.3658,0.1169,0.1374,0.3430,0.2462
+115,CAND_0000220,Pranav Singh,Marketing Manager | AI enthusiast | Building with LLMs,0.3568,0.1894,0.1873,0.3169,0.2457
+116,CAND_0000249,Advaith Desai,QA Engineer | Full-stack development,0.3356,0.2431,0.2231,0.1938,0.2451
+117,CAND_0000996,Dev Tiwari,"Senior Data Engineer | SQL, Spark, Cloud",0.3201,0.2678,0.2338,0.1061,0.2451
+118,CAND_0000241,Riya Menon,Content Writer | Driving business outcomes,0.3602,0.0924,0.1504,0.2350,0.2430
+119,CAND_0000547,Tanvi Tiwari,Java Developer | Backend systems & APIs,0.3237,0.2701,0.2394,0.1513,0.2428
+120,CAND_0000782,Tanvi Patel,Software Engineer | Full-stack development,0.3880,0.1237,0.2381,0.2740,0.2424
+121,CAND_0000303,Myra Arora,Mechanical Engineer | Driving business outcomes,0.3529,0.0892,0.1339,0.2204,0.2424
+122,CAND_0000983,Dev Iyengar,Civil Engineer | Helping teams scale,0.3616,0.1505,0.1928,0.2908,0.2417
+123,CAND_0000840,Ira Kumar,Graphic Designer | Driving business outcomes,0.3504,0.1797,0.1945,0.2809,0.2412
+124,CAND_0000492,Meera Sharma,Civil Engineer | Driving business outcomes,0.3226,0.2457,0.2070,0.2022,0.2409
+125,CAND_0000387,Sneha Hegde,Project Manager | Helping teams scale,0.3640,0.0949,0.1628,0.2734,0.2402
+126,CAND_0000953,Priya Chopra,Graphic Designer | 12.1+ yrs experience,0.3157,0.3031,0.2046,0.3143,0.2400
+127,CAND_0000584,Kabir Vora,Analytics Engineer | 7.3+ yrs in data engineering,0.3241,0.2285,0.2393,0.0870,0.2398
+128,CAND_0000142,Yash Naidu,Mobile Developer | Full-stack development,0.3525,0.1993,0.2443,0.2198,0.2394
+129,CAND_0000839,Aisha Patel,Mechanical Engineer | Exploring AI & GenAI applications,0.3456,0.2128,0.2061,0.3201,0.2391
+130,CAND_0000984,Dhruv Mukherjee,DevOps Engineer | Backend systems & APIs,0.3042,0.3175,0.2289,0.2042,0.2390
+131,CAND_0000777,Priya Reddy,Mechanical Engineer | Driving business outcomes,0.3221,0.2338,0.2097,0.1892,0.2386
+132,CAND_0000904,Aryan Sen,Graphic Designer | Driving business outcomes,0.3463,0.1848,0.2119,0.2479,0.2383
+133,CAND_0000068,Priya Hegde,Java Developer | Full-stack development,0.3110,0.2730,0.2230,0.1747,0.2379
+134,CAND_0000284,Deepak Hegde,Graphic Designer | 2.4+ yrs experience,0.3625,0.1090,0.2139,0.1844,0.2374
+135,CAND_0000574,Vihaan Iyengar,Marketing Manager | Helping teams scale,0.3418,0.1712,0.2014,0.2277,0.2369
+136,CAND_0000625,Rajesh Pandey,Accountant | 2.8+ yrs experience,0.2915,0.2322,0.1340,0.1733,0.2369
+137,CAND_0000459,Suresh Banerjee,HR Manager | 7.9+ yrs experience,0.3207,0.2519,0.2090,0.2605,0.2361
+138,CAND_0000671,Krishna Joshi,Project Manager | AI enthusiast | Building with LLMs,0.3153,0.1950,0.1640,0.2085,0.2353
+139,CAND_0000602,Deepak Banerjee,Marketing Manager | Helping teams scale,0.3359,0.2057,0.2117,0.2793,0.2340
+140,CAND_0000886,Pari Agarwal,Business Analyst | Helping teams scale,0.3393,0.1705,0.2215,0.1919,0.2335
+141,CAND_0000488,Aisha Malhotra,Marketing Manager | 9.2+ yrs experience,0.3471,0.1124,0.1973,0.1790,0.2329
+142,CAND_0000199,Ritu Chowdary,Mechanical Engineer | Helping teams scale,0.3455,0.1298,0.1956,0.2192,0.2328
+143,CAND_0000494,Anjali Banerjee,Software Engineer | Backend systems & APIs,0.3191,0.2152,0.2352,0.1190,0.2327
+144,CAND_0000489,Pari Sen,DevOps Engineer | Backend systems & APIs,0.3328,0.1693,0.2201,0.1608,0.2320
+145,CAND_0000635,Siya Gupta,Software Engineer | Cloud & DevOps,0.3594,0.1228,0.2304,0.2200,0.2318
+146,CAND_0000374,Mira Trivedi,Content Writer | Helping teams scale,0.3164,0.1702,0.1270,0.3060,0.2318
+147,CAND_0000479,Aarohi Nair,Content Writer | 13.1+ yrs experience,0.3276,0.1818,0.1850,0.2740,0.2308
+148,CAND_0000048,Vihaan Saxena,Mobile Developer | Full-stack development,0.3362,0.1593,0.2244,0.1699,0.2304
+149,CAND_0000588,Kiara Gupta,DevOps Engineer | Cloud & DevOps,0.3203,0.1887,0.2253,0.1198,0.2302
+150,CAND_0000441,Vivaan Bhatia,Sales Executive | Driving business outcomes,0.3547,0.0982,0.1633,0.3501,0.2295
+151,CAND_0000592,Kavya Pillai,.NET Developer | Cloud & DevOps,0.3091,0.2395,0.2280,0.1777,0.2288
+152,CAND_0000346,Anil Banerjee,Business Analyst | Helping teams scale,0.3480,0.1070,0.1823,0.2777,0.2284
+153,CAND_0000733,Aryan Trivedi,Cloud Engineer | Full-stack development,0.2945,0.2729,0.2424,0.1131,0.2284
+154,CAND_0000692,Ira Subramanian,Marketing Manager | Helping teams scale,0.3201,0.1732,0.1877,0.2148,0.2283
+155,CAND_0000154,Anika Chatterjee,HR Manager | Driving business outcomes,0.3335,0.1155,0.1861,0.1765,0.2277
+156,CAND_0000131,Atharv Mishra,Data Analyst | 4.8+ yrs in data engineering,0.2927,0.2911,0.2568,0.1262,0.2268
+157,CAND_0000232,Suresh Mishra,Operations Manager | Driving business outcomes,0.2619,0.2612,0.1053,0.2208,0.2266
+158,CAND_0000493,Dhruv Desai,Operations Manager | Helping teams scale,0.2943,0.1756,0.1307,0.1829,0.2266
+159,CAND_0000127,Nikhil Reddy,Mobile Developer | Full-stack development,0.3092,0.2694,0.2453,0.2358,0.2265
+160,CAND_0000930,Rahul Malhotra,Software Engineer | Backend systems & APIs,0.2922,0.2971,0.2271,0.2395,0.2259
+161,CAND_0000936,Nisha Saxena,DevOps Engineer | Full-stack development,0.3644,0.0910,0.2389,0.2381,0.2254
+162,CAND_0000580,Divya Mehta,Customer Support | 7.9+ yrs experience,0.2783,0.2545,0.1768,0.1638,0.2251
+163,CAND_0000718,Avni Ghosh,QA Engineer | Cloud & DevOps,0.3253,0.1760,0.2115,0.2391,0.2251
+164,CAND_0000307,Ananya Arora,QA Engineer | Cloud & DevOps,0.3461,0.1268,0.2477,0.1847,0.2237
+165,CAND_0000121,Aarohi Bansal,Customer Support | Generative AI explorer,0.2840,0.2770,0.2209,0.1724,0.2233
+166,CAND_0000205,Rajesh Iyer,Content Writer | 4.8+ yrs experience,0.2689,0.2835,0.1735,0.2028,0.2232
+167,CAND_0000846,Kabir Bose,HR Manager | Helping teams scale,0.3249,0.1310,0.1868,0.2270,0.2220
+168,CAND_0000653,Anil Mishra,Marketing Manager | Helping teams scale,0.2765,0.2615,0.1942,0.1636,0.2218
+169,CAND_0000672,Reyansh Khanna,Business Analyst | Helping teams scale,0.2637,0.2867,0.1394,0.2887,0.2218
+170,CAND_0000714,Ayaan Iyer,Graphic Designer | Helping teams scale,0.2844,0.3080,0.2038,0.3431,0.2210
+171,CAND_0000351,Atharv Banerjee,Content Writer | Driving business outcomes,0.2533,0.3076,0.1541,0.2415,0.2199
+172,CAND_0000276,Meera Shah,Marketing Manager | Helping teams scale,0.3167,0.0980,0.1326,0.2618,0.2188
+173,CAND_0000534,Anil Bose,DevOps Engineer | Full-stack development,0.3202,0.1325,0.2126,0.1621,0.2186
+174,CAND_0000921,Dhruv Pandey,Sales Executive | Generative AI explorer,0.3086,0.2041,0.2103,0.2749,0.2185
+175,CAND_0000711,Manish Saxena,Sales Executive | 12.9+ yrs experience,0.3170,0.1213,0.1891,0.1838,0.2178
+176,CAND_0000757,Aanya Kumar,Customer Support | Helping teams scale,0.3271,0.0996,0.1726,0.2589,0.2177
+177,CAND_0000358,Saanvi Dutta,Civil Engineer | 2.8+ yrs experience,0.3100,0.2030,0.2202,0.2679,0.2175
+178,CAND_0000248,Sanjay Mishra,Operations Manager | Driving business outcomes,0.3336,0.1078,0.2152,0.2377,0.2159
+179,CAND_0000310,Amit Banerjee,Sales Executive | 5.6+ yrs experience,0.2829,0.2355,0.2136,0.1756,0.2157
+180,CAND_0000764,Saanvi Sharma,Java Developer | Backend systems & APIs,0.2942,0.2236,0.2331,0.1815,0.2156
+181,CAND_0000917,Deepak Mishra,QA Engineer | Cloud & DevOps,0.3026,0.2233,0.2378,0.2362,0.2156
+182,CAND_0000896,Dev Mehta,Accountant | 13.6+ yrs experience,0.3070,0.1716,0.2137,0.2240,0.2141
+183,CAND_0000532,Pooja Sen,Accountant | Helping teams scale,0.3114,0.1573,0.2117,0.2373,0.2133
+184,CAND_0000035,Vikram Verma,Full Stack Developer | Backend systems & APIs,0.2980,0.2193,0.2423,0.2184,0.2126
+185,CAND_0000428,Dhruv Krishnan,Civil Engineer | Driving business outcomes,0.2905,0.1995,0.1993,0.2275,0.2125
+186,CAND_0000070,Siya Ghosh,Business Analyst | Driving business outcomes,0.3480,0.0968,0.2379,0.3204,0.2114
+187,CAND_0000530,Aanya Bhatia,.NET Developer | Full-stack development,0.3253,0.1141,0.2200,0.2415,0.2111
+188,CAND_0000517,Aryan Mukherjee,Frontend Engineer | Backend systems & APIs,0.2494,0.2831,0.2089,0.1138,0.2101
+189,CAND_0000693,Om Nair,Java Developer | Backend systems & APIs,0.2891,0.1673,0.2040,0.1438,0.2098
+190,CAND_0000172,Atharv Patel,Marketing Manager | Helping teams scale,0.3020,0.1510,0.2046,0.2173,0.2094
+191,CAND_0000391,Vihaan Chatterjee,Java Developer | Cloud & DevOps,0.3185,0.1046,0.2360,0.1339,0.2092
+192,CAND_0000177,Saanvi Shetty,Customer Support | Driving business outcomes,0.3002,0.1806,0.1963,0.3172,0.2091
+193,CAND_0000079,Aarohi Agarwal,Customer Support | Driving business outcomes,0.3368,0.1067,0.2175,0.3530,0.2091
+194,CAND_0000208,Rohan Gupta,Customer Support | 4.2+ yrs experience,0.2877,0.2207,0.2215,0.2498,0.2090
+195,CAND_0000353,Anika Desai,Marketing Manager | 3.7+ yrs experience,0.2812,0.1911,0.2015,0.1641,0.2090
+196,CAND_0000604,Saanvi Pillai,Java Developer | Backend systems & APIs,0.2679,0.2439,0.2209,0.1472,0.2089
+197,CAND_0000599,Ira Chatterjee,QA Engineer | Cloud & DevOps,0.2580,0.2641,0.2073,0.1585,0.2089
+198,CAND_0000647,Suresh Bhatia,Mechanical Engineer | 7.7+ yrs experience,0.3259,0.1104,0.1922,0.3547,0.2087
+199,CAND_0000529,Naina Pandey,Frontend Engineer | Backend systems & APIs,0.2626,0.2441,0.2286,0.0857,0.2082
+200,CAND_0000609,Nikhil Sen,Customer Support | Driving business outcomes,0.3092,0.0768,0.1687,0.1819,0.2079
+201,CAND_0000092,Siya Pandey,Business Analyst | Driving business outcomes,0.3393,0.0658,0.1957,0.3444,0.2078
+202,CAND_0000029,Priya Sethi,Business Analyst | Driving business outcomes,0.2937,0.1974,0.2152,0.2796,0.2073
+203,CAND_0000263,Dhruv Kapoor,Software Engineer | Cloud & DevOps,0.2527,0.3032,0.2311,0.1900,0.2068
+204,CAND_0000370,Aadhya Hegde,Java Developer | Cloud & DevOps,0.2875,0.2144,0.2487,0.1892,0.2063
+205,CAND_0000792,Ritu Dutta,Marketing Manager | 11.0+ yrs experience,0.2878,0.1636,0.1962,0.1975,0.2063
+206,CAND_0000271,Sneha Arora,Sales Executive | 7.7+ yrs experience,0.3022,0.1424,0.1819,0.3088,0.2062
+207,CAND_0000695,Advik Trivedi,Graphic Designer | 4.9+ yrs experience,0.2629,0.2770,0.1998,0.3203,0.2051
+208,CAND_0000844,Yash Chatterjee,QA Engineer | Backend systems & APIs,0.3115,0.1776,0.2426,0.3214,0.2051
+209,CAND_0000909,Dhruv Krishnan,Cloud Engineer | Full-stack development,0.3096,0.1753,0.2460,0.2924,0.2049
+210,CAND_0000975,Ishaan Saxena,Java Developer | Cloud & DevOps,0.2928,0.1299,0.2049,0.1350,0.2049
+211,CAND_0000042,Riya Mukherjee,HR Manager | 5.0+ yrs experience,0.2413,0.2798,0.1671,0.2348,0.2047
+212,CAND_0000445,Nikhil Sharma,Cloud Engineer | Full-stack development,0.2521,0.2784,0.2321,0.1410,0.2045
+213,CAND_0000959,Aryan Arora,Marketing Manager | Helping teams scale,0.3059,0.0734,0.1357,0.2944,0.2043
+214,CAND_0000011,Deepak Desai,QA Engineer | Cloud & DevOps,0.3043,0.1392,0.2465,0.1552,0.2042
+215,CAND_0000766,Deepak Menon,QA Engineer | Backend systems & APIs,0.2839,0.1841,0.2230,0.1767,0.2042
+216,CAND_0000088,Riya Naidu,Java Developer | Cloud & DevOps,0.2495,0.2878,0.2309,0.1558,0.2041
+217,CAND_0000077,Ved Bhatia,Frontend Engineer | Backend systems & APIs,0.3355,0.0890,0.2458,0.2915,0.2034
+218,CAND_0000238,Anil Menon,Cloud Engineer | Backend systems & APIs,0.3180,0.0914,0.2263,0.2160,0.2029
+219,CAND_0000434,Aadhya Sethi,Accountant | Driving business outcomes,0.3276,0.1024,0.2402,0.2982,0.2022
+220,CAND_0000570,Deepak Mehta,DevOps Engineer | Backend systems & APIs,0.3112,0.0914,0.2322,0.1547,0.2017
+221,CAND_0000937,Kavya Pandey,Cloud Engineer | Backend systems & APIs,0.2626,0.2542,0.2484,0.1583,0.2017
+222,CAND_0000375,Aisha Chopra,QA Engineer | Full-stack development,0.2921,0.2091,0.2664,0.2279,0.2017
+223,CAND_0000110,Sai Naidu,Software Engineer | Backend systems & APIs,0.2579,0.2484,0.2165,0.1938,0.2016
+224,CAND_0000629,Ira Vora,Accountant | Helping teams scale,0.2938,0.1571,0.1993,0.3038,0.2011
+225,CAND_0000312,Aarohi Sen,Content Writer | Exploring AI & GenAI applications,0.2862,0.1586,0.2007,0.2359,0.2010
+226,CAND_0000457,Krishna Khanna,QA Engineer | Full-stack development,0.2715,0.1930,0.2164,0.1584,0.2010
+227,CAND_0000289,Anika Chopra,Content Writer | 13.3+ yrs experience,0.3052,0.1133,0.1827,0.3275,0.2009
+228,CAND_0000805,Pari Chowdary,Cloud Engineer | Cloud & DevOps,0.2817,0.1826,0.2135,0.2329,0.2008
+229,CAND_0000229,Pooja Malhotra,"Senior Software Engineer | SQL, Spark, Cloud",0.2282,0.3527,0.2401,0.1825,0.2008
+230,CAND_0000562,Ritu Verma,Accountant | 9.3+ yrs experience,0.3100,0.0875,0.2078,0.2227,0.2006
+231,CAND_0000317,Aanya Subramanian,DevOps Engineer | Full-stack development,0.2310,0.3282,0.2310,0.1675,0.2004
+232,CAND_0000115,Naina Shetty,Operations Manager | Driving business outcomes,0.3067,0.0963,0.2022,0.2420,0.2002
+233,CAND_0000474,Atharv Chopra,Marketing Manager | Helping teams scale,0.2972,0.0872,0.1929,0.1529,0.2000
+234,CAND_0000223,Anil Dutta,Java Developer | Cloud & DevOps,0.2384,0.3047,0.2237,0.1927,0.1999
+235,CAND_0000557,Pari Shah,Content Writer | Driving business outcomes,0.2493,0.2162,0.1757,0.1597,0.1996
+236,CAND_0000418,Siya Shetty,Frontend Engineer | Full-stack development,0.2554,0.2847,0.2353,0.2551,0.1996
+237,CAND_0000663,Sanjay Subramanian,Project Manager | Driving business outcomes,0.2661,0.2028,0.2003,0.2105,0.1995
+238,CAND_0000260,Sunil Naidu,Mobile Developer | Full-stack development,0.3140,0.1012,0.2371,0.2310,0.1993
+239,CAND_0000386,Siya Khanna,Mobile Developer | Backend systems & APIs,0.2730,0.2060,0.2304,0.2036,0.1989
+240,CAND_0000796,Zara Tiwari,Operations Manager | Driving business outcomes,0.2988,0.1051,0.2170,0.1754,0.1986
+241,CAND_0000931,Manish Khanna,Sales Executive | Helping teams scale,0.2853,0.1983,0.2195,0.3396,0.1978
+242,CAND_0000987,Aarohi Menon,Sales Executive | AI enthusiast | Building with LLMs,0.2865,0.1653,0.2284,0.2336,0.1974
+243,CAND_0000404,Pari Pillai,Java Developer | Backend systems & APIs,0.2841,0.1769,0.2388,0.2242,0.1968
+244,CAND_0000572,Diya Dutta,Civil Engineer | Helping teams scale,0.2651,0.2322,0.2089,0.3152,0.1964
+245,CAND_0000668,Suresh Dutta,Graphic Designer | Driving business outcomes,0.2938,0.1057,0.2141,0.1777,0.1962
+246,CAND_0000723,Anika Chowdary,Project Manager | Helping teams scale,0.2927,0.1395,0.2190,0.2582,0.1962
+247,CAND_0000206,Amit Bose,Mobile Developer | Cloud & DevOps,0.2680,0.2236,0.2241,0.2757,0.1960
+248,CAND_0000415,Pranav Iyengar,Accountant | Driving business outcomes,0.2728,0.1708,0.2050,0.2156,0.1959
+249,CAND_0000971,Avni Agarwal,Mobile Developer | Cloud & DevOps,0.2682,0.2018,0.2448,0.1639,0.1951
+250,CAND_0000016,Aanya Malhotra,Accountant | Helping teams scale,0.2613,0.2032,0.2232,0.1747,0.1947
+251,CAND_0000841,Aryan Chatterjee,Graphic Designer | Helping teams scale,0.2714,0.1661,0.2141,0.1832,0.1945
+252,CAND_0000700,Vihaan Sen,Content Writer | Driving business outcomes,0.2819,0.1457,0.2054,0.2479,0.1943
+253,CAND_0000072,Diya Sharma,Frontend Engineer | Backend systems & APIs,0.2315,0.3138,0.2056,0.3009,0.1943
+254,CAND_0000014,Atharv Joshi,Frontend Engineer | Full-stack development,0.2962,0.0869,0.2080,0.1964,0.1939
+255,CAND_0000807,Manish Pandey,Marketing Manager | 6.2+ yrs experience,0.2764,0.1428,0.1984,0.2235,0.1933
+256,CAND_0000472,Myra Iyer,Mobile Developer | Backend systems & APIs,0.2539,0.2544,0.2596,0.1817,0.1930
+257,CAND_0000410,Riya Arora,Graphic Designer | Exploring AI & GenAI applications,0.2296,0.2632,0.1705,0.2452,0.1930
+258,CAND_0000313,Nisha Subramanian,Software Engineer | Backend systems & APIs,0.2862,0.1506,0.2397,0.2220,0.1929
+259,CAND_0000426,Vikram Reddy,QA Engineer | Backend systems & APIs,0.2392,0.2784,0.2354,0.1945,0.1929
+260,CAND_0000606,Anika Ghosh,Marketing Manager | 7.8+ yrs experience,0.2398,0.2418,0.2080,0.1702,0.1926
+261,CAND_0000735,Anjali Mittal,Business Analyst | Helping teams scale,0.2754,0.1276,0.1607,0.2885,0.1925
+262,CAND_0000809,Atharv Menon,Marketing Manager | Helping teams scale,0.2938,0.0797,0.2258,0.1225,0.1922
+263,CAND_0000641,Avni Menon,Customer Support | Helping teams scale,0.2601,0.2431,0.2170,0.3500,0.1918
+264,CAND_0000659,Aryan Arora,HR Manager | 12.1+ yrs experience,0.2911,0.1222,0.2082,0.2951,0.1916
+265,CAND_0000043,Aarav Sen,Cloud Engineer | Full-stack development,0.2702,0.2015,0.2276,0.2890,0.1915
+266,CAND_0000684,Kabir Chatterjee,Java Developer | Full-stack development,0.2372,0.2916,0.2334,0.2471,0.1914
+267,CAND_0000055,Pari Tiwari,Full Stack Developer | Backend systems & APIs,0.2528,0.2388,0.2383,0.2165,0.1913
+268,CAND_0000059,Suresh Mishra,Frontend Engineer | Full-stack development,0.3122,0.0955,0.2597,0.2569,0.1912
+269,CAND_0000461,Ira Naidu,Java Developer | Full-stack development,0.2521,0.1891,0.2153,0.1215,0.1910
+270,CAND_0000675,Reyansh Krishnan,Frontend Engineer | Backend systems & APIs,0.2551,0.2767,0.2710,0.2546,0.1910
+271,CAND_0000870,Diya Menon,Cloud Engineer | Backend systems & APIs,0.2642,0.1826,0.2425,0.1447,0.1906
+272,CAND_0000211,Riya Singh,Operations Manager | AI enthusiast | Building with LLMs,0.2291,0.2361,0.1640,0.2078,0.1905
+273,CAND_0000487,Ritu Gupta,Software Engineer | Full-stack development,0.2312,0.2878,0.2234,0.2269,0.1903
+274,CAND_0000761,Zara Mishra,Java Developer | Full-stack development,0.2770,0.1119,0.2069,0.1524,0.1901
+275,CAND_0000774,Tanvi Chatterjee,Marketing Manager | Helping teams scale,0.2648,0.1679,0.2229,0.1784,0.1896
+276,CAND_0000414,Deepak Shah,Business Analyst | Driving business outcomes,0.2844,0.1175,0.2157,0.2298,0.1895
+277,CAND_0000932,Kavya Nair,Operations Manager | Exploring AI & GenAI applications,0.2802,0.1067,0.2049,0.2084,0.1881
+278,CAND_0000957,Pari Singh,Accountant | Helping teams scale,0.2169,0.2631,0.1843,0.1547,0.1881
+279,CAND_0000466,Aadhya Kapoor,.NET Developer | Cloud & DevOps,0.2591,0.2005,0.2372,0.2203,0.1875
+280,CAND_0000007,Vihaan Bose,Civil Engineer | 5.5+ yrs experience,0.2374,0.2309,0.2102,0.1903,0.1874
+281,CAND_0000703,Myra Sen,Mobile Developer | Full-stack development,0.2622,0.2478,0.2562,0.3436,0.1867
+282,CAND_0000482,Shreya Rao,.NET Developer | Backend systems & APIs,0.2647,0.1216,0.2109,0.1069,0.1866
+283,CAND_0000160,Myra Chowdary,Software Engineer | Cloud & DevOps,0.3102,0.0877,0.2535,0.3112,0.1864
+284,CAND_0000298,Mira Menon,Frontend Engineer | Backend systems & APIs,0.2466,0.2290,0.2325,0.2286,0.1861
+285,CAND_0000727,Aarohi Verma,Full Stack Developer | Cloud & DevOps,0.3114,0.0914,0.2636,0.3196,0.1852
+286,CAND_0000686,Priya Vora,Marketing Manager | Helping teams scale,0.2509,0.2165,0.2031,0.3434,0.1846
+287,CAND_0000213,Yash Arora,Cloud Engineer | Backend systems & APIs,0.2529,0.2321,0.2301,0.3305,0.1845
+288,CAND_0000280,Shreya Chowdary,Mobile Developer | Full-stack development,0.2891,0.1104,0.2584,0.2125,0.1840
+289,CAND_0000509,Amit Iyengar,Customer Support | Helping teams scale,0.2584,0.1460,0.1803,0.2635,0.1840
+290,CAND_0000540,Mira Rao,DevOps Engineer | Backend systems & APIs,0.2823,0.0926,0.2241,0.1954,0.1839
+291,CAND_0000593,Anil Trivedi,Customer Support | 6.2+ yrs experience,0.2690,0.1620,0.2207,0.3032,0.1838
+292,CAND_0000498,Anil Chatterjee,Content Writer | Generative AI explorer,0.2132,0.2807,0.1787,0.2831,0.1830
+293,CAND_0000348,Kavya Nair,QA Engineer | Cloud & DevOps,0.2399,0.2282,0.2257,0.2379,0.1828
+294,CAND_0000716,Sanjay Pandey,Mechanical Engineer | Driving business outcomes,0.2423,0.2125,0.2312,0.1941,0.1827
+295,CAND_0000813,Ayaan Dutta,Cloud Engineer | Backend systems & APIs,0.2385,0.2185,0.2502,0.1206,0.1827
+296,CAND_0000927,Amit Dalal,Civil Engineer | AI enthusiast | Building with LLMs,0.2569,0.1629,0.2006,0.2726,0.1824
+297,CAND_0000551,Naina Nair,Content Writer | 2.7+ yrs experience,0.2169,0.2274,0.1563,0.2091,0.1823
+298,CAND_0000928,Krishna Goyal,Frontend Engineer | Cloud & DevOps,0.2539,0.1820,0.2388,0.1927,0.1823
+299,CAND_0000912,Manish Iyer,Accountant | Helping teams scale,0.2113,0.2775,0.1879,0.2368,0.1822
+300,CAND_0000591,Yash Saxena,Sales Executive | Helping teams scale,0.2569,0.1622,0.1995,0.2824,0.1819
+301,CAND_0000755,Pooja Mishra,Software Engineer | Full-stack development,0.2348,0.2061,0.2155,0.1648,0.1814
+302,CAND_0000982,Pari Iyengar,Marketing Manager | 7.1+ yrs experience,0.1976,0.2966,0.1753,0.2131,0.1813
+303,CAND_0000881,Anika Bose,Civil Engineer | 3.1+ yrs experience,0.2700,0.1122,0.1944,0.2776,0.1810
+304,CAND_0000857,Shaurya Singh,Content Writer | Helping teams scale,0.2715,0.1054,0.1908,0.2819,0.1809
+305,CAND_0000044,Vihaan Naidu,Frontend Engineer | Backend systems & APIs,0.2576,0.1344,0.2320,0.1162,0.1808
+306,CAND_0000803,Sunil Desai,Marketing Manager | Exploring AI & GenAI applications,0.2647,0.1174,0.2060,0.2110,0.1807
+307,CAND_0000737,Shaurya Subramanian,Frontend Engineer | Full-stack development,0.2434,0.2059,0.2465,0.1776,0.1804
+308,CAND_0000934,Saanvi Bose,Business Analyst | 7.8+ yrs experience,0.2691,0.1339,0.2148,0.2913,0.1802
+309,CAND_0000270,Vikram Hegde,Operations Manager | 14.4+ yrs experience,0.2238,0.2249,0.1889,0.2190,0.1801
+310,CAND_0000251,Zara Naidu,Customer Support | 11.4+ yrs experience,0.2795,0.0860,0.2097,0.2553,0.1800
+311,CAND_0000865,Kabir Mehta,HR Manager | Helping teams scale,0.2176,0.2017,0.1703,0.1209,0.1799
+312,CAND_0000108,Jay Sethi,Full Stack Developer | Full-stack development,0.2105,0.2661,0.2351,0.0887,0.1799
+313,CAND_0000005,Aisha Sethi,Accountant | Helping teams scale,0.2091,0.3042,0.2152,0.2653,0.1798
+314,CAND_0000159,Manish Joshi,Java Developer | Full-stack development,0.2247,0.2498,0.2321,0.1995,0.1792
+315,CAND_0000396,Kiara Kapoor,Mechanical Engineer | 5.6+ yrs experience,0.2328,0.2340,0.2214,0.2647,0.1789
+316,CAND_0000123,Advik Kapoor,Marketing Manager | Helping teams scale,0.2783,0.0777,0.2131,0.2297,0.1786
+317,CAND_0000409,Aadhya Vora,Business Analyst | Helping teams scale,0.2408,0.1253,0.1316,0.2369,0.1785
+318,CAND_0000651,Reyansh Chowdary,Sales Executive | Driving business outcomes,0.2307,0.1922,0.1351,0.3665,0.1784
+319,CAND_0000168,Amit Hegde,Sales Executive | 10.7+ yrs experience,0.1932,0.3333,0.1904,0.3021,0.1784
+320,CAND_0000401,Aditya Bhatia,Customer Support | 7.7+ yrs experience,0.2502,0.1367,0.2008,0.1915,0.1778
+321,CAND_0000098,Rajesh Mehta,Business Analyst | Helping teams scale,0.2187,0.2261,0.2089,0.1492,0.1778
+322,CAND_0000575,Kabir Naidu,Frontend Engineer | Backend systems & APIs,0.2306,0.2057,0.2514,0.0778,0.1777
+323,CAND_0000867,Tanya Krishnan,Content Writer | 12.7+ yrs experience,0.2716,0.0833,0.2054,0.2182,0.1777
+324,CAND_0000845,Krishna Verma,Project Manager | AI enthusiast | Building with LLMs,0.2533,0.1140,0.2061,0.1470,0.1766
+325,CAND_0000134,Vihaan Subramanian,Full Stack Developer | Backend systems & APIs,0.2552,0.1400,0.2451,0.1445,0.1766
+326,CAND_0000621,Sneha Saxena,Content Writer | Driving business outcomes,0.2451,0.1522,0.2122,0.1882,0.1761
+327,CAND_0000111,Sneha Agarwal,Graphic Designer | Helping teams scale,0.2669,0.0838,0.1998,0.2166,0.1760
+328,CAND_0000646,Krishna Malhotra,Software Engineer | Full-stack development,0.2758,0.0991,0.2207,0.2991,0.1760
+329,CAND_0000393,Atharv Mehta,.NET Developer | Full-stack development,0.2196,0.2796,0.2195,0.3437,0.1758
+330,CAND_0000425,Myra Patel,Project Manager | 9.5+ yrs experience,0.2266,0.1980,0.1731,0.2783,0.1757
+331,CAND_0000678,Shreya Mishra,Mechanical Engineer | 9.6+ yrs experience,0.2520,0.1479,0.1959,0.3029,0.1757
+332,CAND_0000060,Kavya Iyer,Cloud Engineer | Cloud & DevOps,0.2486,0.1548,0.2196,0.2213,0.1756
+333,CAND_0000821,Aarav Krishnan,Mechanical Engineer | AI enthusiast | Building with LLMs,0.2461,0.1373,0.2057,0.1788,0.1754
+334,CAND_0000366,Sneha Chopra,Content Writer | Driving business outcomes,0.1995,0.2814,0.1639,0.3212,0.1753
+335,CAND_0000627,Suresh Desai,Frontend Engineer | Full-stack development,0.2456,0.1908,0.2333,0.2772,0.1753
+336,CAND_0000053,Ela Mishra,Graphic Designer | 3.9+ yrs experience,0.2663,0.0916,0.2101,0.2273,0.1749
+337,CAND_0000989,Krishna Sharma,Accountant | Generative AI explorer,0.2333,0.1724,0.2083,0.1713,0.1747
+338,CAND_0000920,Myra Naidu,QA Engineer | Cloud & DevOps,0.2338,0.1843,0.2201,0.1851,0.1746
+339,CAND_0000267,Aditya Subramanian,Sales Executive | 3.3+ yrs experience,0.2403,0.1847,0.2141,0.2777,0.1743
+340,CAND_0000236,Vihaan Naidu,Civil Engineer | 10.3+ yrs experience,0.2507,0.1557,0.2100,0.2984,0.1743
+341,CAND_0000958,Pooja Verma,Customer Support | 4.2+ yrs experience,0.2532,0.1396,0.2116,0.2642,0.1743
+342,CAND_0000305,Pari Arora,HR Manager | 4.7+ yrs experience,0.2663,0.0728,0.1979,0.2138,0.1740
+343,CAND_0000511,Tanvi Bhatia,Accountant | 5.6+ yrs experience,0.2279,0.2359,0.2190,0.3192,0.1738
+344,CAND_0000344,Ayaan Mittal,Business Analyst | AI enthusiast | Building with LLMs,0.2408,0.1820,0.2449,0.1913,0.1738
+345,CAND_0000116,Divya Gupta,Full Stack Developer | Cloud & DevOps,0.2219,0.1869,0.2136,0.1106,0.1731
+346,CAND_0000022,Shaurya Chatterjee,Mechanical Engineer | Driving business outcomes,0.2424,0.1081,0.1455,0.2529,0.1729
+347,CAND_0000911,Kiara Trivedi,Cloud Engineer | Full-stack development,0.2280,0.1982,0.2320,0.1710,0.1727
+348,CAND_0000041,Anjali Khanna,Operations Manager | Helping teams scale,0.2755,0.0655,0.2036,0.2908,0.1727
+349,CAND_0000052,Vivaan Khanna,Mechanical Engineer | Helping teams scale,0.2687,0.0851,0.2330,0.2001,0.1727
+350,CAND_0000124,Riya Sen,Operations Manager | 7.6+ yrs experience,0.2703,0.0776,0.2053,0.2814,0.1723
+351,CAND_0000331,Aarohi Dalal,DevOps Engineer | Backend systems & APIs,0.1666,0.3558,0.2144,0.1412,0.1720
+352,CAND_0000291,Siya Sharma,Content Writer | 12.9+ yrs experience,0.2320,0.1543,0.1980,0.1734,0.1718
+353,CAND_0000701,Neha Menon,Sales Executive | 11.0+ yrs experience,0.2208,0.2063,0.2054,0.2190,0.1718
+354,CAND_0000506,Dev Reddy,Operations Manager | 7.9+ yrs experience,0.2685,0.0725,0.2122,0.2325,0.1718
+355,CAND_0000180,Pari Vora,Customer Support | 8.5+ yrs experience,0.2811,0.0757,0.2320,0.3243,0.1712
+356,CAND_0000333,Priya Agarwal,Software Engineer | Full-stack development,0.2283,0.1734,0.2116,0.1770,0.1710
+357,CAND_0000384,Advik Dalal,Project Manager | Driving business outcomes,0.2382,0.0959,0.1482,0.1790,0.1710
+358,CAND_0000480,Arjun Dalal,Software Engineer | Backend systems & APIs,0.2730,0.0768,0.2202,0.2885,0.1708
+359,CAND_0000237,Aarav Reddy,Mechanical Engineer | 14.9+ yrs experience,0.2560,0.0989,0.1952,0.2752,0.1701
+360,CAND_0000020,Aditya Iyengar,Mechanical Engineer | 6.3+ yrs experience,0.2027,0.2581,0.2060,0.2431,0.1699
+361,CAND_0000883,Ananya Khanna,Content Writer | Exploring AI & GenAI applications,0.2213,0.1982,0.1853,0.2904,0.1699
+362,CAND_0000724,Saanvi Mishra,Frontend Engineer | Backend systems & APIs,0.2350,0.1641,0.2380,0.1585,0.1699
+363,CAND_0000360,Krishna Agarwal,Mobile Developer | Full-stack development,0.2318,0.1812,0.2470,0.1607,0.1697
+364,CAND_0000545,Sanjay Mishra,Software Engineer | Cloud & DevOps,0.2431,0.1766,0.2299,0.3126,0.1697
+365,CAND_0000784,Zara Gupta,Java Developer | Full-stack development,0.2238,0.2376,0.2263,0.3377,0.1695
+366,CAND_0000468,Divya Tiwari,Frontend Engineer | Backend systems & APIs,0.2122,0.2028,0.2008,0.1674,0.1695
+367,CAND_0000963,Dhruv Mehta,Customer Support | 3.2+ yrs experience,0.2275,0.1957,0.2169,0.2663,0.1692
+368,CAND_0000419,Aarav Trivedi,Marketing Manager | 7.4+ yrs experience,0.2083,0.2418,0.1933,0.2972,0.1692
+369,CAND_0000771,Nikhil Iyer,Mobile Developer | Backend systems & APIs,0.2136,0.2251,0.2181,0.2229,0.1690
+370,CAND_0000951,Myra Malhotra,Cloud Engineer | Cloud & DevOps,0.2491,0.1243,0.2265,0.2225,0.1688
+371,CAND_0000198,Karan Reddy,Software Engineer | Backend systems & APIs,0.2564,0.1413,0.2422,0.3183,0.1682
+372,CAND_0000104,Om Dalal,Mobile Developer | Full-stack development,0.2392,0.1499,0.2488,0.1532,0.1681
+373,CAND_0000008,Shaurya Chatterjee,Operations Manager | 3.6+ yrs experience,0.2712,0.0420,0.2062,0.2419,0.1679
+374,CAND_0000620,Arjun Joshi,Mobile Developer | Full-stack development,0.2359,0.1493,0.2447,0.1383,0.1676
+375,CAND_0000209,Rohan Hegde,Customer Support | Driving business outcomes,0.2245,0.1585,0.1907,0.2059,0.1675
+376,CAND_0000736,Priya Bansal,Customer Support | Helping teams scale,0.2111,0.2162,0.2067,0.2351,0.1670
+377,CAND_0000655,Vikram Chowdary,.NET Developer | Cloud & DevOps,0.2164,0.1935,0.2067,0.2179,0.1665
+378,CAND_0000443,Aisha Chowdary,Graphic Designer | Helping teams scale,0.2445,0.1306,0.2139,0.2747,0.1665
+379,CAND_0000618,Avni Mittal,Full Stack Developer | Backend systems & APIs,0.2456,0.1298,0.2151,0.2906,0.1660
+380,CAND_0000994,Dev Shah,Operations Manager | 11.9+ yrs experience,0.2422,0.1338,0.2220,0.2480,0.1660
+381,CAND_0000871,Manish Desai,Mechanical Engineer | 5.1+ yrs experience,0.2344,0.1157,0.1917,0.1877,0.1657
+382,CAND_0000197,Tanya Menon,Customer Support | 7.2+ yrs experience,0.2311,0.1154,0.1643,0.2306,0.1656
+383,CAND_0000603,Neha Khanna,Sales Executive | Helping teams scale,0.2191,0.1770,0.2009,0.2240,0.1655
+384,CAND_0000330,Riya Joshi,Civil Engineer | Exploring AI & GenAI applications,0.2129,0.1829,0.2041,0.1695,0.1652
+385,CAND_0000309,Karan Reddy,HR Manager | 9.4+ yrs experience,0.1895,0.2833,0.1926,0.3211,0.1651
+386,CAND_0000083,Pooja Malhotra,Graphic Designer | Generative AI explorer,0.2053,0.2212,0.2193,0.1897,0.1649
+387,CAND_0000262,Naina Shah,Full Stack Developer | Full-stack development,0.2216,0.1753,0.2292,0.1762,0.1647
+388,CAND_0000215,Manish Mukherjee,Project Manager | 7.9+ yrs experience,0.2346,0.1047,0.1523,0.2872,0.1645
+389,CAND_0000769,Ayaan Shah,.NET Developer | Backend systems & APIs,0.2349,0.1181,0.1940,0.2188,0.1645
+390,CAND_0000433,Saanvi Gupta,Mechanical Engineer | Driving business outcomes,0.1994,0.2379,0.2011,0.2544,0.1642
+391,CAND_0000598,Aditya Naidu,Mobile Developer | Cloud & DevOps,0.2071,0.2319,0.2464,0.1831,0.1641
+392,CAND_0000674,Atharv Krishnan,Civil Engineer | Driving business outcomes,0.2152,0.1934,0.1952,0.2846,0.1641
+393,CAND_0000914,Amit Mittal,Marketing Manager | 10.4+ yrs experience,0.2584,0.0724,0.2076,0.2793,0.1641
+394,CAND_0000512,Shaurya Mukherjee,Project Manager | 11.7+ yrs experience,0.2372,0.1350,0.2022,0.2923,0.1641
+395,CAND_0000980,Tanvi Krishnan,Software Engineer | Backend systems & APIs,0.2308,0.1497,0.2367,0.1771,0.1638
+396,CAND_0000257,Om Banerjee,Full Stack Developer | Backend systems & APIs,0.2297,0.1368,0.2378,0.1129,0.1638
+397,CAND_0000680,Tanvi Subramanian,Project Manager | Helping teams scale,0.2228,0.1432,0.1762,0.2441,0.1637
+398,CAND_0000888,Siya Naidu,Content Writer | Driving business outcomes,0.2262,0.1278,0.1574,0.2860,0.1634
+399,CAND_0000015,Rahul Agarwal,Software Engineer | Cloud & DevOps,0.2342,0.1671,0.2560,0.2275,0.1633
+400,CAND_0000836,Vivaan Mishra,Mechanical Engineer | Driving business outcomes,0.2174,0.1886,0.1965,0.3032,0.1633
+401,CAND_0000568,Dev Subramanian,Business Analyst | 11.5+ yrs experience,0.2048,0.2087,0.1841,0.2732,0.1633
+402,CAND_0000486,Suresh Chatterjee,Sales Executive | 7.8+ yrs experience,0.1820,0.2887,0.1810,0.3286,0.1632
+403,CAND_0000078,Shreya Reddy,Business Analyst | Helping teams scale,0.2599,0.0755,0.2043,0.3357,0.1631
+404,CAND_0000869,Priya Vora,Frontend Engineer | Backend systems & APIs,0.2576,0.0888,0.2600,0.1927,0.1630
+405,CAND_0000099,Aarohi Kapoor,Full Stack Developer | Backend systems & APIs,0.2312,0.1448,0.2516,0.1476,0.1623
+406,CAND_0000853,Reyansh Reddy,Marketing Manager | 10.8+ yrs experience,0.1864,0.2510,0.1982,0.2049,0.1620
+407,CAND_0000438,Pranav Menon,Business Analyst | Helping teams scale,0.2153,0.2314,0.2612,0.2640,0.1619
+408,CAND_0000030,Ritu Pillai,Marketing Manager | Driving business outcomes,0.2042,0.1933,0.1935,0.2067,0.1618
+409,CAND_0000430,Om Sethi,Marketing Manager | Driving business outcomes,0.2232,0.1457,0.1916,0.2541,0.1616
+410,CAND_0000400,Manish Sen,Operations Manager | Helping teams scale,0.1717,0.2836,0.1904,0.1946,0.1614
+411,CAND_0000038,Myra Trivedi,Java Developer | Cloud & DevOps,0.2046,0.2082,0.2148,0.2175,0.1612
+412,CAND_0000527,Nikhil Goyal,Graphic Designer | 12.0+ yrs experience,0.2451,0.1008,0.2032,0.3067,0.1611
+413,CAND_0000938,Ved Desai,Full Stack Developer | Full-stack development,0.2063,0.1987,0.2294,0.1592,0.1611
+414,CAND_0000144,Aryan Arora,Graphic Designer | 14.7+ yrs experience,0.2246,0.1692,0.2053,0.3274,0.1611
+415,CAND_0000174,Aanya Dalal,Marketing Manager | Driving business outcomes,0.2248,0.1410,0.2036,0.2297,0.1610
+416,CAND_0000856,Deepak Pillai,Mechanical Engineer | Driving business outcomes,0.2508,0.1013,0.2095,0.3572,0.1608
+417,CAND_0000093,Meera Singh,Civil Engineer | 8.2+ yrs experience,0.2242,0.1240,0.2022,0.1658,0.1607
+418,CAND_0000992,Nikhil Ghosh,Mobile Developer | Cloud & DevOps,0.2226,0.1032,0.1837,0.1150,0.1607
+419,CAND_0000552,Kiara Malhotra,Accountant | AI enthusiast | Building with LLMs,0.2270,0.1466,0.2028,0.2903,0.1604
+420,CAND_0000993,Ela Mishra,Full Stack Developer | Full-stack development,0.2086,0.2010,0.2383,0.1832,0.1603
+421,CAND_0000612,Neha Agarwal,Java Developer | Full-stack development,0.2019,0.1895,0.2264,0.1028,0.1599
+422,CAND_0000706,Rajesh Krishnan,QA Engineer | Backend systems & APIs,0.1787,0.3131,0.2724,0.1753,0.1596
+423,CAND_0000394,Pari Sethi,QA Engineer | Full-stack development,0.2229,0.1534,0.2369,0.1886,0.1593
+424,CAND_0000496,Pari Tiwari,Marketing Manager | Driving business outcomes,0.2300,0.1193,0.2027,0.2471,0.1591
+425,CAND_0000397,Rahul Tiwari,Cloud Engineer | Cloud & DevOps,0.2218,0.1687,0.2433,0.2193,0.1590
+426,CAND_0000338,Rohan Bhatia,Operations Manager | Driving business outcomes,0.2205,0.1154,0.1810,0.1848,0.1589
+427,CAND_0000747,Sanjay Mukherjee,Civil Engineer | Driving business outcomes,0.2386,0.1083,0.2037,0.3085,0.1586
+428,CAND_0000130,Ritu Naidu,Cloud Engineer | Cloud & DevOps,0.2333,0.1175,0.2376,0.1821,0.1586
+429,CAND_0000407,Myra Dutta,Mechanical Engineer | Driving business outcomes,0.2503,0.0986,0.2441,0.2812,0.1586
+430,CAND_0000458,Dev Gupta,Software Engineer | Full-stack development,0.2129,0.1453,0.2269,0.0855,0.1585
+431,CAND_0000710,Om Sen,HR Manager | Helping teams scale,0.2364,0.0854,0.1797,0.2726,0.1584
+432,CAND_0000478,Kavya Chowdary,Mechanical Engineer | Driving business outcomes,0.2521,0.1592,0.2907,0.3645,0.1581
+433,CAND_0000577,Sunil Saxena,Mobile Developer | Cloud & DevOps,0.1857,0.2588,0.2273,0.2188,0.1581
+434,CAND_0000855,Rahul Pandey,QA Engineer | Cloud & DevOps,0.2255,0.1425,0.2309,0.2195,0.1580
+435,CAND_0000564,Pooja Patel,Frontend Engineer | Backend systems & APIs,0.2198,0.1818,0.2286,0.3085,0.1580
+436,CAND_0000745,Jay Agarwal,Mobile Developer | Backend systems & APIs,0.2083,0.1807,0.2146,0.2187,0.1580
+437,CAND_0000349,Aarav Trivedi,Customer Support | 11.0+ yrs experience,0.1961,0.1911,0.2006,0.1549,0.1580
+438,CAND_0000518,Sneha Pandey,Operations Manager | 1.7+ yrs experience,0.1889,0.2513,0.1979,0.3262,0.1575
+439,CAND_0000940,Diya Bhatia,Project Manager | Driving business outcomes,0.1779,0.2844,0.2051,0.3090,0.1573
+440,CAND_0000392,Kavya Mukherjee,HR Manager | Driving business outcomes,0.2353,0.0995,0.2046,0.2720,0.1568
+441,CAND_0000244,Diya Iyer,HR Manager | 1.3+ yrs experience,0.1816,0.2033,0.1125,0.3144,0.1565
+442,CAND_0000533,Ved Mukherjee,Civil Engineer | 2.4+ yrs experience,0.1969,0.1456,0.1253,0.2239,0.1565
+443,CAND_0000760,Anika Patel,Software Engineer | Full-stack development,0.1909,0.2116,0.2200,0.1500,0.1564
+444,CAND_0000952,Pari Bose,Full Stack Developer | Backend systems & APIs,0.2365,0.0891,0.2247,0.1965,0.1562
+445,CAND_0000697,Sai Agarwal,Business Analyst | 3.0+ yrs experience,0.1993,0.2137,0.2220,0.2547,0.1562
+446,CAND_0000974,Divya Dalal,Mechanical Engineer | 11.2+ yrs experience,0.2379,0.0663,0.2042,0.1844,0.1561
+447,CAND_0000900,Manish Arora,.NET Developer | Cloud & DevOps,0.2097,0.1762,0.2134,0.2607,0.1560
+448,CAND_0000204,Anil Kumar,Sales Executive | 3.5+ yrs experience,0.2225,0.1171,0.2101,0.1894,0.1560
+449,CAND_0000399,Sai Naidu,Business Analyst | AI enthusiast | Building with LLMs,0.2038,0.1851,0.2023,0.2607,0.1559
+450,CAND_0000744,Diya Dalal,Project Manager | 10.1+ yrs experience,0.2003,0.2084,0.1952,0.3369,0.1557
+451,CAND_0000316,Rohan Trivedi,Sales Executive | Helping teams scale,0.2281,0.0909,0.2018,0.1873,0.1554
+452,CAND_0000191,Neha Malhotra,Java Developer | Cloud & DevOps,0.2172,0.1327,0.2261,0.1547,0.1552
+453,CAND_0000567,Ela Saxena,Operations Manager | Driving business outcomes,0.2307,0.0967,0.2000,0.2565,0.1549
+454,CAND_0000607,Saanvi Bose,Mechanical Engineer | Driving business outcomes,0.1844,0.2450,0.2093,0.2710,0.1547
+455,CAND_0000027,Avni Pandey,DevOps Engineer | Cloud & DevOps,0.2085,0.1586,0.2202,0.1831,0.1547
+456,CAND_0000858,Suresh Bose,Frontend Engineer | Cloud & DevOps,0.2090,0.1643,0.2363,0.1663,0.1546
+457,CAND_0000776,Siya Patel,Graphic Designer | Driving business outcomes,0.1810,0.2458,0.2120,0.2294,0.1546
+458,CAND_0000543,Dhruv Singh,Civil Engineer | 6.7+ yrs experience,0.1880,0.2295,0.1986,0.2911,0.1544
+459,CAND_0000949,Anil Chopra,HR Manager | Driving business outcomes,0.2145,0.1249,0.2069,0.1662,0.1543
+460,CAND_0000071,Vikram Shetty,DevOps Engineer | Full-stack development,0.2078,0.1664,0.2127,0.2376,0.1542
+461,CAND_0000287,Sneha Iyer,Sales Executive | Driving business outcomes,0.2123,0.1460,0.1939,0.2685,0.1541
+462,CAND_0000942,Dhruv Trivedi,Project Manager | 6.0+ yrs experience,0.2251,0.0696,0.1595,0.2140,0.1540
+463,CAND_0000150,Tanvi Vora,Content Writer | Driving business outcomes,0.1825,0.2393,0.1970,0.2782,0.1540
+464,CAND_0000926,Shreya Mukherjee,.NET Developer | Backend systems & APIs,0.1966,0.2154,0.2283,0.2610,0.1537
+465,CAND_0000332,Naina Mukherjee,Accountant | 5.4+ yrs experience,0.2463,0.0554,0.1989,0.3092,0.1536
+466,CAND_0000699,Amit Pandey,Business Analyst | Exploring AI & GenAI applications,0.2087,0.1679,0.2308,0.2236,0.1531
+467,CAND_0000876,Dhruv Malhotra,Mobile Developer | Backend systems & APIs,0.2245,0.1314,0.2319,0.2616,0.1530
+468,CAND_0000436,Divya Dalal,Accountant | Driving business outcomes,0.1931,0.1725,0.1831,0.1966,0.1529
+469,CAND_0000587,Sunil Tiwari,Marketing Manager | 7.5+ yrs experience,0.2033,0.1477,0.1771,0.2417,0.1528
+470,CAND_0000026,Neha Rao,Graphic Designer | 6.8+ yrs experience,0.1725,0.2286,0.1850,0.1718,0.1527
+471,CAND_0000586,Kavya Reddy,Business Analyst | Driving business outcomes,0.2122,0.1269,0.1834,0.2576,0.1523
+472,CAND_0000491,Zara Hegde,Marketing Manager | 14.1+ yrs experience,0.2206,0.0945,0.2026,0.1748,0.1521
+473,CAND_0000412,Ayaan Subramanian,Marketing Manager | Driving business outcomes,0.2070,0.0939,0.1128,0.2722,0.1515
+474,CAND_0000158,Shreya Sen,Frontend Engineer | Cloud & DevOps,0.2049,0.1743,0.2296,0.2485,0.1511
+475,CAND_0000645,Rohan Vora,Sales Executive | Driving business outcomes,0.2096,0.1354,0.1955,0.2523,0.1510
+476,CAND_0000608,Arjun Malhotra,Operations Manager | Helping teams scale,0.1642,0.2414,0.1703,0.2018,0.1508
+477,CAND_0000524,Ira Mishra,Graphic Designer | Driving business outcomes,0.2214,0.0835,0.2034,0.1662,0.1507
+478,CAND_0000151,Meera Chopra,Civil Engineer | 6.3+ yrs experience,0.2316,0.0778,0.2124,0.2435,0.1506
+479,CAND_0000708,Aadhya Joshi,Marketing Manager | Driving business outcomes,0.1767,0.2452,0.2066,0.2738,0.1506
+480,CAND_0000242,Shaurya Desai,Project Manager | 9.1+ yrs experience,0.1770,0.2392,0.1931,0.2935,0.1505
+481,CAND_0000212,Pooja Mehta,Customer Support | AI enthusiast | Building with LLMs,0.1592,0.2981,0.2064,0.2779,0.1504
+482,CAND_0000086,Mira Dutta,Mechanical Engineer | Helping teams scale,0.2443,0.0522,0.2179,0.2816,0.1503
+483,CAND_0000767,Ishaan Singh,Mobile Developer | Backend systems & APIs,0.2281,0.0991,0.2541,0.1676,0.1503
+484,CAND_0000286,Sneha Joshi,Accountant | Helping teams scale,0.1970,0.1791,0.1870,0.3205,0.1501
+485,CAND_0000484,Suresh Mukherjee,Marketing Manager | Driving business outcomes,0.2115,0.1043,0.1818,0.2103,0.1498
+486,CAND_0000423,Myra Rao,Sales Executive | Driving business outcomes,0.1924,0.1607,0.1855,0.1959,0.1498
+487,CAND_0000507,Rajesh Iyer,Software Engineer | Backend systems & APIs,0.2148,0.1379,0.2418,0.2118,0.1498
+488,CAND_0000945,Aadhya Chowdary,.NET Developer | Cloud & DevOps,0.1947,0.1613,0.2259,0.1103,0.1496
+489,CAND_0000024,Rajesh Arora,HR Manager | 7.5+ yrs experience,0.1639,0.2223,0.1612,0.1645,0.1496
+490,CAND_0000195,Shaurya Verma,Business Analyst | Helping teams scale,0.2413,0.0559,0.2014,0.3296,0.1495
+491,CAND_0000136,Aditya Ghosh,QA Engineer | Backend systems & APIs,0.2207,0.1191,0.2466,0.1992,0.1494
+492,CAND_0000943,Aadhya Mehta,Cloud Engineer | Full-stack development,0.1997,0.1596,0.2173,0.2027,0.1491
+493,CAND_0000504,Aarohi Chopra,Graphic Designer | Helping teams scale,0.2237,0.0945,0.2031,0.2777,0.1489
+494,CAND_0000828,Myra Sharma,Project Manager | Generative AI explorer,0.1562,0.2997,0.2066,0.2831,0.1487
+495,CAND_0000789,Vihaan Singh,Accountant | Driving business outcomes,0.1607,0.2774,0.1983,0.2906,0.1478
+496,CAND_0000132,Rohan Patel,Sales Executive | Driving business outcomes,0.2290,0.0632,0.2000,0.2497,0.1477
+497,CAND_0000751,Avni Verma,Sales Executive | Driving business outcomes,0.2159,0.1085,0.1879,0.3227,0.1472
+498,CAND_0000439,Dhruv Pillai,Accountant | 13.5+ yrs experience,0.2083,0.1175,0.2045,0.2146,0.1472
+499,CAND_0000965,Aarohi Goyal,Software Engineer | Full-stack development,0.2110,0.1093,0.2138,0.1963,0.1467
+500,CAND_0000985,Ayaan Bansal,Software Engineer | Full-stack development,0.2084,0.1338,0.2394,0.1919,0.1466
+501,CAND_0000087,Ritu Subramanian,Full Stack Developer | Cloud & DevOps,0.2186,0.1040,0.2384,0.2022,0.1464
+502,CAND_0000907,Mira Sen,Mechanical Engineer | Helping teams scale,0.1930,0.1615,0.1692,0.3336,0.1462
+503,CAND_0000537,Ayaan Dutta,Operations Manager | Helping teams scale,0.2150,0.0959,0.1811,0.3012,0.1461
+504,CAND_0000630,Aarav Pillai,Civil Engineer | Driving business outcomes,0.2164,0.0853,0.1975,0.2296,0.1459
+505,CAND_0000535,Ela Chatterjee,Content Writer | Driving business outcomes,0.2035,0.1022,0.1476,0.2875,0.1457
+506,CAND_0000350,Amit Reddy,Business Analyst | 4.8+ yrs experience,0.2254,0.0816,0.2054,0.3151,0.1453
+507,CAND_0000667,Sneha Iyer,Customer Support | Driving business outcomes,0.1686,0.2469,0.2120,0.2773,0.1452
+508,CAND_0000520,Kiara Tiwari,Sales Executive | Helping teams scale,0.1803,0.2047,0.1934,0.3039,0.1452
+509,CAND_0000824,Reyansh Tiwari,Customer Support | 12.8+ yrs experience,0.2107,0.0793,0.2060,0.1302,0.1446
+510,CAND_0000830,Om Banerjee,Operations Manager | 8.7+ yrs experience,0.1613,0.2573,0.2056,0.2684,0.1443
+511,CAND_0000057,Shreya Rao,Customer Support | 3.3+ yrs experience,0.1871,0.1547,0.1901,0.2063,0.1442
+512,CAND_0000596,Myra Dalal,Cloud Engineer | Full-stack development,0.2206,0.1030,0.2609,0.2033,0.1441
+513,CAND_0000321,Ela Naidu,Business Analyst | Helping teams scale,0.1630,0.2305,0.2053,0.1814,0.1440
+514,CAND_0000623,Sunil Chopra,Java Developer | Full-stack development,0.2246,0.1001,0.2481,0.2853,0.1436
+515,CAND_0000056,Anjali Sen,Frontend Engineer | Cloud & DevOps,0.1784,0.2175,0.2702,0.1461,0.1432
+516,CAND_0000097,Sai Pillai,Mechanical Engineer | AI enthusiast | Building with LLMs,0.1655,0.2538,0.2382,0.2431,0.1427
+517,CAND_0000239,Ira Saxena,Project Manager | 4.4+ yrs experience,0.1966,0.1669,0.2115,0.3545,0.1424
+518,CAND_0000702,Atharv Chowdary,Civil Engineer | Driving business outcomes,0.1684,0.2168,0.1920,0.2686,0.1424
+519,CAND_0000847,Rahul Chatterjee,HR Manager | Exploring AI & GenAI applications,0.1894,0.1492,0.2123,0.1941,0.1421
+520,CAND_0000832,Anika Pandey,Content Writer | 3.0+ yrs experience,0.2159,0.0532,0.1681,0.2886,0.1405
+521,CAND_0000367,Diya Goyal,Business Analyst | 8.5+ yrs experience,0.2001,0.1208,0.1937,0.3049,0.1403
+522,CAND_0000118,Nisha Shetty,Graphic Designer | 7.2+ yrs experience,0.2316,0.0311,0.2000,0.3085,0.1402
+523,CAND_0000825,Ved Trivedi,Graphic Designer | 9.5+ yrs experience,0.1880,0.1533,0.1973,0.2868,0.1399
+524,CAND_0000915,Advik Kumar,Mechanical Engineer | Exploring AI & GenAI applications,0.1398,0.2997,0.2244,0.2172,0.1397
+525,CAND_0000894,Neha Bose,Content Writer | 8.7+ yrs experience,0.1946,0.1029,0.1911,0.1725,0.1397
+526,CAND_0000061,Advaith Dalal,DevOps Engineer | Backend systems & APIs,0.1703,0.2231,0.2200,0.2967,0.1396
+527,CAND_0000791,Anjali Singh,QA Engineer | Full-stack development,0.1885,0.1491,0.2109,0.2458,0.1394
+528,CAND_0000230,Sai Reddy,Project Manager | Helping teams scale,0.1812,0.1063,0.1021,0.2620,0.1394
+529,CAND_0000277,Avni Singh,QA Engineer | Backend systems & APIs,0.1778,0.1866,0.2620,0.1185,0.1393
+530,CAND_0000352,Krishna Pillai,QA Engineer | Full-stack development,0.2054,0.1244,0.2548,0.2271,0.1393
+531,CAND_0000189,Rajesh Sen,Customer Support | 3.7+ yrs experience,0.1541,0.2350,0.2175,0.1521,0.1392
+532,CAND_0000579,Aadhya Subramanian,Sales Executive | Driving business outcomes,0.1816,0.1412,0.1756,0.2432,0.1385
+533,CAND_0000380,Saanvi Reddy,Sales Executive | Helping teams scale,0.2000,0.1297,0.2225,0.2999,0.1383
+534,CAND_0000432,Aadhya Iyer,HR Manager | 4.8+ yrs experience,0.1606,0.2392,0.2075,0.3116,0.1382
+535,CAND_0000501,Aarav Trivedi,DevOps Engineer | Full-stack development,0.2053,0.1088,0.2268,0.2757,0.1379
+536,CAND_0000617,Shreya Bose,Frontend Engineer | Cloud & DevOps,0.2227,0.0391,0.2024,0.2796,0.1376
+537,CAND_0000152,Shaurya Pandey,QA Engineer | Backend systems & APIs,0.2051,0.1107,0.2494,0.2202,0.1375
+538,CAND_0000788,Rajesh Patel,Cloud Engineer | Full-stack development,0.1975,0.1207,0.2507,0.1648,0.1374
+539,CAND_0000183,Sunil Hegde,Sales Executive | Driving business outcomes,0.2079,0.0794,0.2113,0.2442,0.1372
+540,CAND_0000133,Rahul Sethi,Graphic Designer | Generative AI explorer,0.1866,0.1330,0.2004,0.2318,0.1371
+541,CAND_0000119,Jay Bansal,Graphic Designer | Driving business outcomes,0.2127,0.0516,0.2025,0.2141,0.1370
+542,CAND_0000642,Shreya Tiwari,Accountant | 4.8+ yrs experience,0.1939,0.1127,0.1819,0.2980,0.1370
+543,CAND_0000192,Sai Dalal,Business Analyst | 5.1+ yrs experience,0.1645,0.2176,0.2207,0.2584,0.1369
+544,CAND_0000403,Tanya Rao,Customer Support | Helping teams scale,0.1928,0.1072,0.1796,0.2706,0.1367
+545,CAND_0000128,Advaith Iyer,Mobile Developer | Cloud & DevOps,0.1997,0.1350,0.2524,0.2697,0.1364
+546,CAND_0000615,Saanvi Dalal,Frontend Engineer | Cloud & DevOps,0.1854,0.1306,0.2053,0.2069,0.1364
+547,CAND_0000069,Diya Mittal,Business Analyst | 13.0+ yrs experience,0.1903,0.1254,0.2052,0.2594,0.1360
+548,CAND_0000868,Kavya Chatterjee,Civil Engineer | 2.9+ yrs experience,0.1964,0.0620,0.1273,0.2815,0.1358
+549,CAND_0000268,Dhruv Sen,Graphic Designer | Helping teams scale,0.1929,0.1102,0.1849,0.2945,0.1356
+550,CAND_0000464,Aadhya Mishra,Operations Manager | Helping teams scale,0.1843,0.1279,0.1830,0.2657,0.1355
+551,CAND_0000622,Ved Rao,Accountant | Helping teams scale,0.2021,0.1015,0.2262,0.2624,0.1353
+552,CAND_0000004,Anil Bose,Marketing Manager | Driving business outcomes,0.2017,0.0790,0.1727,0.3215,0.1351
+553,CAND_0000081,Avni Verma,Accountant | 10.1+ yrs experience,0.1929,0.1077,0.2014,0.2469,0.1351
+554,CAND_0000090,Tanya Banerjee,QA Engineer | Full-stack development,0.2036,0.0719,0.2196,0.1791,0.1349
+555,CAND_0000341,Meera Shah,Sales Executive | Driving business outcomes,0.1748,0.1437,0.2000,0.1702,0.1348
+556,CAND_0000781,Shreya Trivedi,Graphic Designer | Driving business outcomes,0.1914,0.1267,0.2098,0.2929,0.1348
+557,CAND_0000565,Vivaan Iyer,Full Stack Developer | Cloud & DevOps,0.1202,0.3264,0.2439,0.1303,0.1348
+558,CAND_0000721,Anjali Bose,Sales Executive | 12.2+ yrs experience,0.1332,0.3007,0.2100,0.2924,0.1347
+559,CAND_0000558,Ved Sharma,Project Manager | Driving business outcomes,0.1887,0.1109,0.2000,0.2178,0.1346
+560,CAND_0000892,Amit Singh,Graphic Designer | 6.0+ yrs experience,0.1839,0.1170,0.1881,0.2215,0.1343
+561,CAND_0000050,Naina Bose,Business Analyst | Helping teams scale,0.1781,0.1465,0.2001,0.2440,0.1343
+562,CAND_0000084,Priya Banerjee,Marketing Manager | 10.6+ yrs experience,0.1834,0.1103,0.1955,0.1636,0.1342
+563,CAND_0000347,Avni Agarwal,Civil Engineer | Driving business outcomes,0.1635,0.1929,0.2129,0.2197,0.1342
+564,CAND_0000899,Atharv Chowdary,Full Stack Developer | Backend systems & APIs,0.1430,0.2569,0.2554,0.1112,0.1339
+565,CAND_0000326,Advaith Verma,Full Stack Developer | Cloud & DevOps,0.1760,0.1586,0.2302,0.1976,0.1336
+566,CAND_0000908,Aryan Bansal,HR Manager | 2.9+ yrs experience,0.2091,0.0584,0.2000,0.3004,0.1328
+567,CAND_0000732,Avni Pillai,Project Manager | Helping teams scale,0.1851,0.1115,0.1716,0.2995,0.1328
+568,CAND_0000181,Sai Goyal,Project Manager | Driving business outcomes,0.1891,0.0956,0.1957,0.2151,0.1325
+569,CAND_0000371,Arnav Chatterjee,Business Analyst | Driving business outcomes,0.1757,0.1436,0.1982,0.2474,0.1324
+570,CAND_0000266,Aarohi Chopra,Customer Support | Helping teams scale,0.1484,0.2457,0.2161,0.2896,0.1323
+571,CAND_0000413,Mira Malhotra,HR Manager | 14.0+ yrs experience,0.1424,0.2261,0.1660,0.2731,0.1319
+572,CAND_0000023,Kavya Nair,Software Engineer | Cloud & DevOps,0.1288,0.2902,0.2463,0.1457,0.1317
+573,CAND_0000465,Rajesh Tiwari,Accountant | Driving business outcomes,0.1800,0.1091,0.1755,0.2289,0.1317
+574,CAND_0000065,Ayaan Joshi,Project Manager | Driving business outcomes,0.1805,0.1211,0.1801,0.2812,0.1316
+575,CAND_0000324,Kabir Kumar,Graphic Designer | Helping teams scale,0.1958,0.0690,0.2000,0.1952,0.1315
+576,CAND_0000117,Kabir Chopra,QA Engineer | Backend systems & APIs,0.1711,0.1510,0.2140,0.1907,0.1315
+577,CAND_0000296,Neha Vora,Civil Engineer | Helping teams scale,0.1676,0.1659,0.2116,0.2211,0.1314
+578,CAND_0000261,Krishna Bansal,Content Writer | Driving business outcomes,0.1394,0.2307,0.1899,0.1903,0.1314
+579,CAND_0000148,Ved Kumar,Content Writer | Driving business outcomes,0.1216,0.2806,0.1830,0.1953,0.1314
+580,CAND_0000447,Rajesh Mishra,Graphic Designer | 7.2+ yrs experience,0.1625,0.1747,0.2045,0.2138,0.1313
+581,CAND_0000473,Myra Mittal,Marketing Manager | 6.5+ yrs experience,0.1825,0.1085,0.1984,0.2090,0.1310
+582,CAND_0000661,Manish Kapoor,Content Writer | Driving business outcomes,0.1468,0.2242,0.1666,0.3481,0.1309
+583,CAND_0000368,Naina Iyer,Accountant | Helping teams scale,0.1709,0.1682,0.2027,0.3183,0.1308
+584,CAND_0000986,Aarohi Tiwari,Project Manager | 12.4+ yrs experience,0.1585,0.1811,0.1700,0.3094,0.1305
+585,CAND_0000139,Saanvi Mishra,Customer Support | 5.6+ yrs experience,0.1573,0.2160,0.2462,0.2260,0.1305
+586,CAND_0000516,Siya Chowdary,Mechanical Engineer | Helping teams scale,0.1815,0.1059,0.1901,0.2213,0.1304
+587,CAND_0000770,Sai Reddy,Mechanical Engineer | Exploring AI & GenAI applications,0.1806,0.1341,0.2186,0.2615,0.1302
+588,CAND_0000149,Yash Dalal,Graphic Designer | Helping teams scale,0.1382,0.2498,0.1915,0.2913,0.1301
+589,CAND_0000282,Tanya Mittal,Sales Executive | Driving business outcomes,0.2008,0.0681,0.2000,0.2945,0.1301
+590,CAND_0000679,Ayaan Bansal,Frontend Engineer | Cloud & DevOps,0.1672,0.1876,0.2362,0.2727,0.1300
+591,CAND_0000542,Aadhya Dutta,HR Manager | Driving business outcomes,0.1352,0.2577,0.2079,0.2477,0.1297
+592,CAND_0000972,Rahul Khanna,Sales Executive | Helping teams scale,0.1971,0.0824,0.2080,0.2955,0.1297
+593,CAND_0000589,Siya Saxena,Content Writer | Driving business outcomes,0.1325,0.2474,0.1687,0.2802,0.1296
+594,CAND_0000948,Neha Kapoor,.NET Developer | Cloud & DevOps,0.1719,0.1439,0.2177,0.2096,0.1294
+595,CAND_0000382,Tanya Naidu,Civil Engineer | 8.2+ yrs experience,0.1794,0.1224,0.2063,0.2490,0.1293
+596,CAND_0000179,Riya Goyal,.NET Developer | Cloud & DevOps,0.1730,0.1319,0.2130,0.1833,0.1293
+597,CAND_0000741,Tanvi Verma,Full Stack Developer | Cloud & DevOps,0.1669,0.1711,0.2274,0.2393,0.1293
+598,CAND_0000388,Tanvi Chatterjee,HR Manager | Generative AI explorer,0.1782,0.1334,0.2025,0.2990,0.1291
+599,CAND_0000850,Anika Bose,Business Analyst | Driving business outcomes,0.1623,0.1718,0.2240,0.1930,0.1290
+600,CAND_0000631,Ritu Pillai,Cloud Engineer | Full-stack development,0.1870,0.1125,0.2340,0.2460,0.1284
+601,CAND_0000521,Anika Naidu,Content Writer | Driving business outcomes,0.1466,0.1890,0.1811,0.2017,0.1279
+602,CAND_0000318,Om Naidu,Marketing Manager | 12.1+ yrs experience,0.1768,0.0941,0.1962,0.1470,0.1274
+603,CAND_0000455,Advik Bhatia,Graphic Designer | Helping teams scale,0.1688,0.1359,0.2061,0.2114,0.1273
+604,CAND_0000188,Jay Nair,Operations Manager | Helping teams scale,0.1617,0.1730,0.2151,0.2725,0.1268
+605,CAND_0000290,Ritu Krishnan,Civil Engineer | 2.3+ yrs experience,0.1423,0.2383,0.2289,0.2750,0.1263
+606,CAND_0000067,Shreya Bose,Frontend Engineer | Cloud & DevOps,0.1826,0.1023,0.2399,0.1718,0.1263
+607,CAND_0000829,Shreya Rao,HR Manager | Driving business outcomes,0.1828,0.1077,0.2000,0.3318,0.1258
+608,CAND_0000862,Ela Sethi,Content Writer | Exploring AI & GenAI applications,0.1682,0.1201,0.1929,0.2025,0.1257
+609,CAND_0000738,Ishaan Banerjee,Graphic Designer | Generative AI explorer,0.1213,0.2645,0.1965,0.2131,0.1256
+610,CAND_0000306,Amit Bansal,Graphic Designer | Driving business outcomes,0.1921,0.0776,0.2021,0.3254,0.1254
+611,CAND_0000546,Ritu Mehta,Marketing Manager | 1.1+ yrs experience,0.1878,0.0797,0.2156,0.2523,0.1246
+612,CAND_0000526,Aanya Menon,Full Stack Developer | Backend systems & APIs,0.1798,0.1060,0.2334,0.2124,0.1245
+613,CAND_0000698,Saanvi Gupta,Customer Support | 14.1+ yrs experience,0.1691,0.1423,0.2027,0.3266,0.1245
+614,CAND_0000837,Anjali Saxena,QA Engineer | Backend systems & APIs,0.1822,0.0800,0.2244,0.1500,0.1244
+615,CAND_0000389,Mira Rao,Operations Manager | AI enthusiast | Building with LLMs,0.1704,0.1329,0.2043,0.2991,0.1243
+616,CAND_0000581,Advik Pillai,Graphic Designer | Exploring AI & GenAI applications,0.1545,0.1498,0.1877,0.1937,0.1243
+617,CAND_0000640,Jay Mittal,Sales Executive | Helping teams scale,0.1244,0.2612,0.2050,0.2527,0.1242
+618,CAND_0000763,Meera Tiwari,Customer Support | Helping teams scale,0.1892,0.0709,0.2000,0.2943,0.1239
+619,CAND_0000734,Aanya Sen,HR Manager | Helping teams scale,0.1707,0.1089,0.2032,0.1985,0.1239
+620,CAND_0000323,Amit Patel,Civil Engineer | Helping teams scale,0.1400,0.1888,0.1925,0.1701,0.1238
+621,CAND_0000583,Ayaan Chopra,Graphic Designer | Driving business outcomes,0.1452,0.1900,0.1761,0.3067,0.1238
+622,CAND_0000694,Neha Banerjee,Accountant | Driving business outcomes,0.1369,0.1454,0.0907,0.1794,0.1233
+623,CAND_0000555,Aanya Verma,Sales Executive | Driving business outcomes,0.1691,0.1061,0.1641,0.2919,0.1233
+624,CAND_0000437,Ayaan Sen,HR Manager | Helping teams scale,0.1571,0.1666,0.1929,0.3312,0.1232
+625,CAND_0000339,Siya Trivedi,HR Manager | Driving business outcomes,0.1776,0.1084,0.2155,0.2901,0.1228
+626,CAND_0000446,Aanya Shah,HR Manager | Helping teams scale,0.1799,0.0983,0.2096,0.2925,0.1227
+627,CAND_0000046,Dev Nair,Mechanical Engineer | 7.8+ yrs experience,0.1252,0.2527,0.2230,0.2062,0.1227
+628,CAND_0000156,Reyansh Agarwal,Civil Engineer | Driving business outcomes,0.1363,0.2348,0.2077,0.3362,0.1223
+629,CAND_0000864,Siya Chatterjee,Civil Engineer | Driving business outcomes,0.1394,0.1839,0.1936,0.1816,0.1218
+630,CAND_0000176,Shaurya Chopra,Project Manager | Helping teams scale,0.1710,0.1397,0.2326,0.3191,0.1217
+631,CAND_0000505,Avni Shetty,Accountant | AI enthusiast | Building with LLMs,0.1302,0.2307,0.2070,0.2517,0.1214
+632,CAND_0000638,Krishna Mukherjee,Customer Support | Driving business outcomes,0.1798,0.0917,0.2051,0.3099,0.1213
+633,CAND_0000034,Yash Chatterjee,Business Analyst | Driving business outcomes,0.1620,0.1391,0.2065,0.2764,0.1213
+634,CAND_0000966,Anil Bose,Customer Support | 13.4+ yrs experience,0.1340,0.2037,0.2078,0.1827,0.1209
+635,CAND_0000138,Rahul Arora,Business Analyst | 8.3+ yrs experience,0.1692,0.0896,0.2071,0.1469,0.1206
+636,CAND_0000849,Manish Iyengar,Cloud Engineer | Backend systems & APIs,0.1317,0.2169,0.2519,0.0928,0.1205
+637,CAND_0000311,Arnav Mishra,Project Manager | 6.2+ yrs experience,0.1672,0.1179,0.2125,0.2560,0.1203
+638,CAND_0000941,Sunil Patel,Mechanical Engineer | Driving business outcomes,0.1936,0.0577,0.2419,0.2598,0.1203
+639,CAND_0000814,Dev Bhatia,QA Engineer | Cloud & DevOps,0.1696,0.1041,0.2236,0.1928,0.1202
+640,CAND_0000314,Avni Trivedi,Business Analyst | Helping teams scale,0.1630,0.0938,0.1813,0.1657,0.1199
+641,CAND_0000872,Sanjay Chowdary,Mobile Developer | Backend systems & APIs,0.1614,0.1393,0.2403,0.2056,0.1198
+642,CAND_0000756,Manish Shah,Graphic Designer | Driving business outcomes,0.1473,0.1477,0.1961,0.1632,0.1197
+643,CAND_0000964,Shaurya Tiwari,Sales Executive | Helping teams scale,0.1641,0.1247,0.1974,0.3149,0.1193
+644,CAND_0000247,Om Shetty,Civil Engineer | Driving business outcomes,0.1683,0.0916,0.2171,0.1531,0.1191
+645,CAND_0000793,Kabir Reddy,Operations Manager | Helping teams scale,0.1711,0.0937,0.2006,0.2598,0.1191
+646,CAND_0000406,Deepak Pandey,DevOps Engineer | Backend systems & APIs,0.1633,0.1313,0.2280,0.2543,0.1189
+647,CAND_0000045,Vikram Mittal,Project Manager | 12.2+ yrs experience,0.1430,0.1698,0.1999,0.2314,0.1186
+648,CAND_0000429,Pooja Mishra,Java Developer | Full-stack development,0.1539,0.1321,0.2300,0.1179,0.1185
+649,CAND_0000444,Vikram Mukherjee,Content Writer | 14.3+ yrs experience,0.1570,0.1027,0.1594,0.2170,0.1185
+650,CAND_0000163,Kavya Pillai,Marketing Manager | Driving business outcomes,0.1397,0.1880,0.2049,0.2721,0.1181
+651,CAND_0000922,Meera Krishnan,Accountant | Helping teams scale,0.1649,0.0911,0.1621,0.2903,0.1180
+652,CAND_0000295,Saanvi Ghosh,Frontend Engineer | Full-stack development,0.1537,0.1422,0.2212,0.2055,0.1180
+653,CAND_0000402,Om Mehta,Marketing Manager | 12.6+ yrs experience,0.1360,0.1874,0.2031,0.2214,0.1179
+654,CAND_0000381,Sanjay Iyer,Mechanical Engineer | Helping teams scale,0.1581,0.0943,0.1690,0.1779,0.1178
+655,CAND_0000819,Kiara Gupta,Content Writer | 3.6+ yrs experience,0.1680,0.0736,0.1863,0.1834,0.1176
+656,CAND_0000662,Karan Menon,Business Analyst | Driving business outcomes,0.1439,0.1813,0.2404,0.2276,0.1169
+657,CAND_0000765,Kabir Verma,Civil Engineer | 1.7+ yrs experience,0.1444,0.1645,0.2303,0.1910,0.1165
+658,CAND_0000956,Aadhya Banerjee,Civil Engineer | 13.0+ yrs experience,0.1502,0.1428,0.1947,0.2747,0.1165
+659,CAND_0000294,Aditya Kapoor,Mechanical Engineer | Helping teams scale,0.1393,0.1776,0.2227,0.2042,0.1164
+660,CAND_0000795,Anil Subramanian,HR Manager | 3.2+ yrs experience,0.1399,0.1983,0.2262,0.3266,0.1157
+661,CAND_0000002,Saanvi Sethi,Operations Manager | 12.5+ yrs experience,0.1397,0.1621,0.1855,0.2631,0.1155
+662,CAND_0000372,Kavya Kapoor,Frontend Engineer | Cloud & DevOps,0.1583,0.1487,0.2877,0.1772,0.1153
+663,CAND_0000495,Aryan Patel,Mechanical Engineer | Driving business outcomes,0.1778,0.0667,0.2107,0.3023,0.1150
+664,CAND_0000799,Ananya Kumar,Cloud Engineer | Cloud & DevOps,0.1586,0.1251,0.2291,0.2551,0.1148
+665,CAND_0000514,Rohan Rao,Operations Manager | 12.2+ yrs experience,0.1642,0.0896,0.2032,0.2356,0.1148
+666,CAND_0000683,Myra Mehta,Graphic Designer | AI enthusiast | Building with LLMs,0.1411,0.1737,0.2289,0.2383,0.1147
+667,CAND_0000226,Priya Patel,Mechanical Engineer | Helping teams scale,0.1500,0.1242,0.1960,0.2168,0.1147
+668,CAND_0000337,Kavya Mehta,HR Manager | Driving business outcomes,0.1658,0.0931,0.2148,0.2500,0.1146
+669,CAND_0000905,Aanya Singh,Frontend Engineer | Cloud & DevOps,0.1382,0.2191,0.2602,0.3308,0.1144
+670,CAND_0000243,Arjun Gupta,Java Developer | Cloud & DevOps,0.1630,0.0934,0.2199,0.2039,0.1142
+671,CAND_0000196,Rohan Agarwal,QA Engineer | Full-stack development,0.1559,0.1227,0.2251,0.2351,0.1140
+672,CAND_0000051,Meera Arora,Cloud Engineer | Cloud & DevOps,0.1638,0.0843,0.2220,0.1823,0.1134
+673,CAND_0000722,Ira Chopra,HR Manager | AI enthusiast | Building with LLMs,0.1300,0.1866,0.2057,0.2362,0.1134
+674,CAND_0000962,Ayaan Khanna,Graphic Designer | Driving business outcomes,0.1403,0.1471,0.2062,0.1905,0.1133
+675,CAND_0000185,Rahul Mehta,Cloud Engineer | Cloud & DevOps,0.1562,0.1369,0.2342,0.3045,0.1132
+676,CAND_0000810,Kiara Bose,.NET Developer | Full-stack development,0.1495,0.1222,0.2128,0.1876,0.1132
+677,CAND_0000749,Tanya Kapoor,Mechanical Engineer | 12.1+ yrs experience,0.1598,0.0865,0.1969,0.2208,0.1128
+678,CAND_0000929,Anika Sen,Civil Engineer | Helping teams scale,0.1296,0.2254,0.2863,0.2064,0.1126
+679,CAND_0000385,Diya Singh,Project Manager | Helping teams scale,0.1344,0.1611,0.1995,0.2078,0.1126
+680,CAND_0000762,Riya Ghosh,Business Analyst | Helping teams scale,0.1510,0.1064,0.2072,0.1605,0.1125
+681,CAND_0000167,Kabir Chopra,Business Analyst | Helping teams scale,0.1081,0.2333,0.2113,0.1437,0.1123
+682,CAND_0000357,Arnav Mittal,Civil Engineer | Driving business outcomes,0.1528,0.1166,0.2078,0.2560,0.1122
+683,CAND_0000246,Riya Mehta,Content Writer | 4.6+ yrs experience,0.1522,0.0791,0.1636,0.1733,0.1117
+684,CAND_0000218,Nisha Mehta,Operations Manager | Driving business outcomes,0.1311,0.1751,0.2279,0.1754,0.1116
+685,CAND_0000719,Divya Mishra,Software Engineer | Backend systems & APIs,0.1630,0.0950,0.2390,0.2357,0.1112
+686,CAND_0000889,Sneha Arora,Mechanical Engineer | Driving business outcomes,0.1795,0.0389,0.2109,0.2869,0.1112
+687,CAND_0000076,Sanjay Agarwal,Project Manager | Helping teams scale,0.1198,0.1928,0.1942,0.2096,0.1107
+688,CAND_0000361,Divya Saxena,HR Manager | Generative AI explorer,0.1019,0.2613,0.2121,0.2517,0.1103
+689,CAND_0000231,Aarav Arora,Accountant | Helping teams scale,0.1251,0.1818,0.2171,0.1816,0.1103
+690,CAND_0000096,Pari Kumar,QA Engineer | Full-stack development,0.1467,0.1195,0.2317,0.1520,0.1102
+691,CAND_0000541,Mira Bose,Business Analyst | AI enthusiast | Building with LLMs,0.1279,0.1650,0.1928,0.2120,0.1101
+692,CAND_0000576,Om Reddy,Content Writer | AI enthusiast | Building with LLMs,0.1569,0.0767,0.1780,0.2612,0.1097
+693,CAND_0000178,Diya Pandey,Sales Executive | 8.3+ yrs experience,0.1570,0.0865,0.2110,0.2320,0.1093
+694,CAND_0000979,Ritu Verma,Business Analyst | Helping teams scale,0.1422,0.1252,0.2151,0.1875,0.1092
+695,CAND_0000365,Sneha Iyengar,Project Manager | 7.4+ yrs experience,0.1343,0.1496,0.2059,0.2192,0.1092
+696,CAND_0000224,Tanvi Malhotra,HR Manager | 4.1+ yrs experience,0.1379,0.1573,0.2044,0.3344,0.1089
+697,CAND_0000137,Pari Verma,Mechanical Engineer | Helping teams scale,0.1105,0.2215,0.2062,0.2298,0.1089
+698,CAND_0000740,Pranav Joshi,Software Engineer | Cloud & DevOps,0.1332,0.1620,0.2500,0.1716,0.1081
+699,CAND_0000448,Rajesh Pillai,Operations Manager | Driving business outcomes,0.1434,0.0907,0.1739,0.1699,0.1077
+700,CAND_0000681,Tanvi Pillai,Java Developer | Cloud & DevOps,0.1365,0.1581,0.2568,0.1943,0.1077
+701,CAND_0000780,Aarohi Bansal,Business Analyst | 5.2+ yrs experience,0.1350,0.1393,0.2194,0.1843,0.1074
+702,CAND_0000515,Advaith Sharma,Sales Executive | Helping teams scale,0.1406,0.1162,0.2002,0.2200,0.1069
+703,CAND_0000658,Pooja Iyengar,Project Manager | Helping teams scale,0.1421,0.0983,0.1882,0.1968,0.1062
+704,CAND_0000398,Aditya Hegde,Operations Manager | Helping teams scale,0.1575,0.0726,0.1983,0.2896,0.1062
+705,CAND_0000634,Aisha Sethi,Mechanical Engineer | Driving business outcomes,0.1044,0.2174,0.2048,0.1867,0.1061
+706,CAND_0000910,Advaith Iyer,Operations Manager | Helping teams scale,0.1304,0.1597,0.2567,0.1614,0.1057
+707,CAND_0000656,Divya Chowdary,Sales Executive | 11.0+ yrs experience,0.1414,0.0895,0.1796,0.1729,0.1056
+708,CAND_0000450,Anil Sethi,Marketing Manager | 3.5+ yrs experience,0.1482,0.1085,0.2229,0.2812,0.1054
+709,CAND_0000925,Riya Krishnan,Customer Support | Driving business outcomes,0.1487,0.0881,0.1949,0.2677,0.1051
+710,CAND_0000253,Aarav Reddy,Content Writer | Helping teams scale,0.1506,0.0908,0.2181,0.2527,0.1049
+711,CAND_0000359,Aditya Bhatia,Civil Engineer | Helping teams scale,0.1601,0.0627,0.2044,0.3002,0.1048
+712,CAND_0000169,Sneha Naidu,Civil Engineer | Helping teams scale,0.1250,0.1717,0.2073,0.3223,0.1044
+713,CAND_0000688,Advaith Bansal,QA Engineer | Cloud & DevOps,0.0817,0.2834,0.2054,0.2259,0.1043
+714,CAND_0000101,Pari Iyer,Customer Support | Driving business outcomes,0.1475,0.0964,0.2354,0.2010,0.1042
+715,CAND_0000058,Pranav Naidu,HR Manager | Helping teams scale,0.1353,0.1102,0.1934,0.1906,0.1042
+716,CAND_0000707,Riya Krishnan,Civil Engineer | Helping teams scale,0.0822,0.2815,0.2045,0.2344,0.1040
+717,CAND_0000924,Rajesh Trivedi,Project Manager | Driving business outcomes,0.1509,0.0770,0.1975,0.2901,0.1032
+718,CAND_0000125,Shaurya Kapoor,Sales Executive | Helping teams scale,0.1493,0.0773,0.1903,0.2952,0.1029
+719,CAND_0000787,Aarohi Joshi,Content Writer | 13.1+ yrs experience,0.0802,0.2797,0.1727,0.3269,0.1026
+720,CAND_0000460,Om Malhotra,Sales Executive | Driving business outcomes,0.1126,0.1884,0.2057,0.2728,0.1023
+721,CAND_0000616,Ira Malhotra,Graphic Designer | Driving business outcomes,0.1543,0.0736,0.2275,0.2690,0.1022
+722,CAND_0000018,Vivaan Reddy,Frontend Engineer | Full-stack development,0.1544,0.0852,0.2343,0.3257,0.1019
+723,CAND_0000272,Shaurya Reddy,HR Manager | 14.8+ yrs experience,0.1305,0.1251,0.2137,0.2165,0.1015
+724,CAND_0000140,Ela Goyal,Civil Engineer | Driving business outcomes,0.1475,0.0857,0.2089,0.3157,0.1009
+725,CAND_0000431,Tanvi Singh,Sales Executive | Helping teams scale,0.1123,0.1633,0.2127,0.1354,0.1009
+726,CAND_0000503,Om Khanna,Mechanical Engineer | 10.8+ yrs experience,0.1294,0.1387,0.2024,0.3373,0.1006
+727,CAND_0000456,Suresh Chowdary,Marketing Manager | Driving business outcomes,0.1310,0.1077,0.2070,0.1649,0.1006
+728,CAND_0000669,Avni Pandey,HR Manager | Driving business outcomes,0.1379,0.0914,0.1884,0.2510,0.1005
+729,CAND_0000779,Ira Agarwal,HR Manager | Helping teams scale,0.1059,0.1993,0.2094,0.2642,0.1004
+730,CAND_0000143,Aryan Patel,Graphic Designer | 7.7+ yrs experience,0.1340,0.1003,0.2068,0.1997,0.0998
+731,CAND_0000556,Rahul Patel,Operations Manager | Driving business outcomes,0.1407,0.0880,0.2135,0.2465,0.0992
+732,CAND_0001000,Advik Kumar,Business Analyst | 14.2+ yrs experience,0.1176,0.1586,0.2035,0.2886,0.0991
+733,CAND_0000650,Sai Mittal,Customer Support | 14.8+ yrs experience,0.1206,0.1288,0.1943,0.1882,0.0990
+734,CAND_0000013,Pari Nair,Civil Engineer | Driving business outcomes,0.0865,0.2574,0.2158,0.2993,0.0986
+735,CAND_0000435,Pooja Mishra,Customer Support | Helping teams scale,0.1263,0.1049,0.1967,0.1484,0.0986
+736,CAND_0000025,Anika Kumar,Frontend Engineer | Cloud & DevOps,0.1397,0.1004,0.2616,0.1785,0.0986
+737,CAND_0000544,Ved Bose,Accountant | Helping teams scale,0.1424,0.0741,0.1945,0.2726,0.0985
+738,CAND_0000228,Sneha Mehta,Frontend Engineer | Cloud & DevOps,0.1401,0.1020,0.2423,0.2590,0.0984
+739,CAND_0000848,Anika Mittal,.NET Developer | Cloud & DevOps,0.1398,0.0943,0.2309,0.2464,0.0983
+740,CAND_0000094,Meera Pillai,Graphic Designer | Driving business outcomes,0.1117,0.1555,0.1921,0.2269,0.0980
+741,CAND_0000259,Deepak Menon,Customer Support | Helping teams scale,0.1118,0.1525,0.2223,0.1254,0.0978
+742,CAND_0000720,Dev Khanna,Mechanical Engineer | Helping teams scale,0.0927,0.2270,0.2105,0.2746,0.0977
+743,CAND_0000281,Aditya Bhatia,Content Writer | Driving business outcomes,0.1336,0.0780,0.1676,0.2349,0.0977
+744,CAND_0000100,Myra Agarwal,Graphic Designer | Helping teams scale,0.1361,0.0931,0.1868,0.3255,0.0976
+745,CAND_0000566,Mira Kumar,HR Manager | Helping teams scale,0.1021,0.1883,0.2067,0.2279,0.0975
+746,CAND_0000340,Advik Goyal,HR Manager | 11.7+ yrs experience,0.0843,0.2450,0.1969,0.2948,0.0969
+747,CAND_0000818,Nisha Singh,Customer Support | Driving business outcomes,0.1222,0.1037,0.1921,0.1311,0.0968
+748,CAND_0000021,Rahul Joshi,Project Manager | AI enthusiast | Building with LLMs,0.0898,0.2267,0.2049,0.2682,0.0966
+749,CAND_0000585,Tanya Mukherjee,Sales Executive | Driving business outcomes,0.1036,0.1921,0.2032,0.3311,0.0961
+750,CAND_0000222,Siya Subramanian,Mechanical Engineer | Driving business outcomes,0.0641,0.2918,0.2183,0.1696,0.0961
+751,CAND_0000203,Aarohi Chowdary,Operations Manager | AI enthusiast | Building with LLMs,0.0864,0.2152,0.2000,0.1643,0.0959
+752,CAND_0000879,Ela Bose,Operations Manager | Helping teams scale,0.0787,0.2530,0.2104,0.2361,0.0958
+753,CAND_0000256,Siya Banerjee,Java Developer | Full-stack development,0.1219,0.1311,0.2291,0.2368,0.0955
+754,CAND_0000122,Pranav Rao,Civil Engineer | Driving business outcomes,0.1276,0.1000,0.2085,0.2168,0.0953
+755,CAND_0000773,Sneha Mishra,Project Manager | 13.0+ yrs experience,0.1246,0.1055,0.1971,0.2388,0.0950
+756,CAND_0000105,Anjali Trivedi,Mechanical Engineer | Driving business outcomes,0.1269,0.1037,0.1998,0.2769,0.0946
+757,CAND_0000120,Neha Dutta,Graphic Designer | Exploring AI & GenAI applications,0.1018,0.1663,0.2033,0.1862,0.0944
+758,CAND_0000442,Yash Hegde,Frontend Engineer | Backend systems & APIs,0.1263,0.1474,0.2816,0.2875,0.0943
+759,CAND_0000804,Reyansh Goyal,Mechanical Engineer | Driving business outcomes,0.1169,0.1354,0.1831,0.3473,0.0943
+760,CAND_0000595,Sneha Naidu,Civil Engineer | Helping teams scale,0.0984,0.1944,0.2218,0.2577,0.0942
+761,CAND_0000302,Shreya Shah,Frontend Engineer | Backend systems & APIs,0.1044,0.1679,0.2383,0.1678,0.0938
+762,CAND_0000582,Aditya Dalal,Mechanical Engineer | Helping teams scale,0.0838,0.2170,0.2077,0.1814,0.0936
+763,CAND_0000523,Ela Mehta,Mechanical Engineer | Helping teams scale,0.1268,0.0855,0.1850,0.2392,0.0933
+764,CAND_0000753,Atharv Saxena,Content Writer | Driving business outcomes,0.1258,0.0973,0.1756,0.3278,0.0933
+765,CAND_0000216,Arjun Singh,Customer Support | Helping teams scale,0.1232,0.1017,0.2077,0.2108,0.0932
+766,CAND_0000449,Diya Verma,Civil Engineer | Helping teams scale,0.0894,0.2071,0.2000,0.2720,0.0929
+767,CAND_0000838,Ritu Sen,Operations Manager | 14.4+ yrs experience,0.1013,0.1559,0.1890,0.2076,0.0927
+768,CAND_0000037,Ved Sen,Business Analyst | 14.3+ yrs experience,0.0709,0.2437,0.2110,0.1169,0.0927
+769,CAND_0000525,Kiara Nair,Business Analyst | Driving business outcomes,0.1217,0.1010,0.2119,0.1848,0.0926
+770,CAND_0000161,Vihaan Bansal,Accountant | Driving business outcomes,0.1065,0.1455,0.2031,0.2175,0.0922
+771,CAND_0000842,Ved Malhotra,Accountant | 3.2+ yrs experience,0.0861,0.2231,0.2028,0.3279,0.0922
+772,CAND_0000062,Nikhil Arora,DevOps Engineer | Cloud & DevOps,0.1081,0.1431,0.2215,0.1868,0.0920
+773,CAND_0000822,Arjun Kumar,Marketing Manager | Driving business outcomes,0.1022,0.1719,0.2079,0.3027,0.0919
+774,CAND_0000560,Myra Menon,Frontend Engineer | Backend systems & APIs,0.1312,0.0722,0.2403,0.1234,0.0919
+775,CAND_0000036,Ananya Bose,Project Manager | 11.3+ yrs experience,0.0952,0.1705,0.1950,0.2039,0.0915
+776,CAND_0000826,Divya Subramanian,Mechanical Engineer | Driving business outcomes,0.1177,0.1165,0.2281,0.1989,0.0915
+777,CAND_0000502,Rahul Gupta,HR Manager | Helping teams scale,0.1098,0.1308,0.2076,0.2024,0.0913
+778,CAND_0000328,Tanya Kumar,Civil Engineer | Driving business outcomes,0.0938,0.1721,0.2102,0.1513,0.0913
+779,CAND_0000863,Divya Arora,Operations Manager | Driving business outcomes,0.1088,0.1456,0.2106,0.2766,0.0912
+780,CAND_0000017,Anil Pandey,Accountant | 12.3+ yrs experience,0.1238,0.0983,0.2103,0.2661,0.0911
+781,CAND_0000918,Anjali Bansal,Marketing Manager | Helping teams scale,0.1015,0.1543,0.2071,0.2027,0.0911
+782,CAND_0000968,Siya Saxena,HR Manager | Helping teams scale,0.1038,0.1495,0.1997,0.2428,0.0910
+783,CAND_0000891,Aarav Naidu,Civil Engineer | Driving business outcomes,0.1305,0.0816,0.2056,0.3094,0.0909
+784,CAND_0000961,Rohan Tiwari,Customer Support | Driving business outcomes,0.1207,0.0975,0.1948,0.2624,0.0906
+785,CAND_0000322,Ayaan Mehta,HR Manager | Exploring AI & GenAI applications,0.0683,0.2644,0.2157,0.2854,0.0900
+786,CAND_0000785,Vihaan Trivedi,Mechanical Engineer | 5.3+ yrs experience,0.0758,0.2491,0.2066,0.3630,0.0899
+787,CAND_0000610,Kabir Joshi,Customer Support | 4.0+ yrs experience,0.1224,0.0831,0.2121,0.1811,0.0896
+788,CAND_0000960,Shreya Vora,Mechanical Engineer | 14.9+ yrs experience,0.0930,0.1649,0.2096,0.1429,0.0895
+789,CAND_0000563,Meera Trivedi,Civil Engineer | Driving business outcomes,0.1276,0.0822,0.2243,0.2468,0.0895
+790,CAND_0000559,Shaurya Arora,Project Manager | 4.7+ yrs experience,0.0963,0.1782,0.2029,0.3253,0.0895
+791,CAND_0000554,Zara Rao,Operations Manager | Driving business outcomes,0.0927,0.1655,0.1960,0.2056,0.0889
+792,CAND_0000102,Naina Banerjee,Operations Manager | Driving business outcomes,0.0739,0.2304,0.2064,0.2359,0.0889
+793,CAND_0000933,Mira Joshi,DevOps Engineer | Full-stack development,0.1253,0.0929,0.2515,0.2181,0.0887
+794,CAND_0000040,Dev Vora,Customer Support | Helping teams scale,0.1196,0.0955,0.2177,0.2309,0.0885
+795,CAND_0000009,Amit Shah,Mechanical Engineer | Driving business outcomes,0.1245,0.0755,0.2083,0.2258,0.0884
+796,CAND_0000376,Advik Patel,Marketing Manager | Driving business outcomes,0.0713,0.2359,0.2065,0.2382,0.0884
+797,CAND_0000336,Aryan Goyal,Accountant | 4.9+ yrs experience,0.0956,0.1458,0.2035,0.1340,0.0880
+798,CAND_0000355,Shaurya Ghosh,Graphic Designer | Driving business outcomes,0.1210,0.0880,0.2068,0.2635,0.0879
+799,CAND_0000207,Pari Chopra,Operations Manager | Helping teams scale,0.1293,0.0631,0.2030,0.2767,0.0878
+800,CAND_0000531,Mira Goyal,Customer Support | Driving business outcomes,0.1332,0.0707,0.2273,0.3350,0.0877
+801,CAND_0000978,Siya Saxena,Software Engineer | Backend systems & APIs,0.1103,0.1170,0.2267,0.1907,0.0876
+802,CAND_0000866,Nisha Mishra,DevOps Engineer | Backend systems & APIs,0.1250,0.0802,0.2263,0.2503,0.0874
+803,CAND_0000135,Om Hegde,Civil Engineer | Driving business outcomes,0.1269,0.0704,0.2220,0.2500,0.0870
+804,CAND_0000175,Rohan Khanna,Project Manager | Driving business outcomes,0.0871,0.1954,0.2282,0.2728,0.0869
+805,CAND_0000550,Advaith Subramanian,Business Analyst | Helping teams scale,0.1144,0.0909,0.2089,0.1902,0.0863
+806,CAND_0000670,Aarav Verma,Sales Executive | Helping teams scale,0.1137,0.1062,0.2025,0.3121,0.0861
+807,CAND_0000234,Shaurya Singh,Frontend Engineer | Full-stack development,0.1215,0.0767,0.2640,0.0967,0.0858
+808,CAND_0000573,Tanya Menon,HR Manager | Driving business outcomes,0.0609,0.2464,0.2015,0.1975,0.0858
+809,CAND_0000549,Diya Krishnan,HR Manager | Driving business outcomes,0.1203,0.0774,0.1927,0.3138,0.0851
+810,CAND_0000421,Anika Nair,Graphic Designer | Exploring AI & GenAI applications,0.0888,0.1663,0.2078,0.2308,0.0851
+811,CAND_0000528,Aryan Agarwal,Accountant | 11.6+ yrs experience,0.0989,0.1264,0.2079,0.1599,0.0850
+812,CAND_0000991,Priya Joshi,Mechanical Engineer | Driving business outcomes,0.1168,0.0862,0.2128,0.2518,0.0848
+813,CAND_0000752,Shreya Kumar,Graphic Designer | Driving business outcomes,0.1049,0.1160,0.2050,0.2363,0.0847
+814,CAND_0000730,Shaurya Mittal,Content Writer | Driving business outcomes,0.1203,0.0653,0.1723,0.3115,0.0845
+815,CAND_0000689,Kiara Rao,Accountant | Helping teams scale,0.0749,0.2000,0.2075,0.2139,0.0840
+816,CAND_0000162,Dev Dalal,Business Analyst | 13.8+ yrs experience,0.1105,0.0950,0.2092,0.2232,0.0839
+817,CAND_0000696,Riya Saxena,.NET Developer | Full-stack development,0.1072,0.1199,0.2355,0.2539,0.0839
+818,CAND_0000221,Vihaan Chowdary,Customer Support | Driving business outcomes,0.0765,0.2014,0.2053,0.2838,0.0835
+819,CAND_0000170,Meera Pandey,HR Manager | Helping teams scale,0.1009,0.1315,0.2015,0.3283,0.0832
+820,CAND_0000073,Pari Rao,Project Manager | 12.1+ yrs experience,0.1136,0.0815,0.2194,0.1891,0.0832
+821,CAND_0000420,Arnav Iyengar,Mechanical Engineer | Helping teams scale,0.1092,0.0917,0.1912,0.2803,0.0825
+822,CAND_0000954,Tanya Rao,Marketing Manager | 3.7+ yrs experience,0.0899,0.1441,0.2000,0.2179,0.0823
+823,CAND_0000626,Anika Dalal,Marketing Manager | 8.0+ yrs experience,0.1180,0.0701,0.2082,0.2707,0.0823
+824,CAND_0000064,Meera Pandey,Accountant | Helping teams scale,0.0948,0.1407,0.2188,0.2607,0.0819
+825,CAND_0000074,Pari Banerjee,Operations Manager | Generative AI explorer,0.0834,0.1605,0.2058,0.1945,0.0818
+826,CAND_0000327,Riya Goyal,Graphic Designer | Driving business outcomes,0.1003,0.1098,0.2053,0.2001,0.0817
+827,CAND_0000898,Sneha Reddy,DevOps Engineer | Backend systems & APIs,0.1178,0.0794,0.2454,0.2460,0.0816
+828,CAND_0000536,Aadhya Gupta,DevOps Engineer | Backend systems & APIs,0.0781,0.1698,0.1985,0.1937,0.0811
+829,CAND_0000427,Aarohi Hegde,DevOps Engineer | Backend systems & APIs,0.0790,0.1668,0.2169,0.1396,0.0810
+830,CAND_0000916,Myra Singh,Content Writer | Driving business outcomes,0.1077,0.0688,0.1856,0.1383,0.0809
+831,CAND_0000748,Ira Mishra,Mechanical Engineer | Driving business outcomes,0.0899,0.1583,0.2138,0.3386,0.0808
+832,CAND_0000639,Tanvi Menon,Business Analyst | Helping teams scale,0.0977,0.1210,0.2027,0.2744,0.0807
+833,CAND_0000648,Saanvi Chowdary,Operations Manager | Helping teams scale,0.1061,0.0893,0.2069,0.2285,0.0802
+834,CAND_0000297,Aanya Trivedi,Civil Engineer | 6.5+ yrs experience,0.1027,0.1056,0.2070,0.2768,0.0802
+835,CAND_0000946,Pooja Chatterjee,Business Analyst | Helping teams scale,0.1113,0.0851,0.2120,0.3015,0.0802
+836,CAND_0000725,Mira Khanna,Accountant | Helping teams scale,0.1091,0.0630,0.1719,0.2075,0.0799
+837,CAND_0000500,Dhruv Mishra,HR Manager | Driving business outcomes,0.1034,0.0921,0.2156,0.1758,0.0799
+838,CAND_0000687,Kavya Rao,Content Writer | 10.7+ yrs experience,0.1050,0.0930,0.1985,0.2781,0.0798
+839,CAND_0000202,Pooja Chowdary,DevOps Engineer | Full-stack development,0.1008,0.1320,0.2622,0.2788,0.0797
+840,CAND_0000967,Kiara Reddy,HR Manager | Exploring AI & GenAI applications,0.1064,0.0775,0.2000,0.1907,0.0796
+841,CAND_0000186,Sai Mishra,Marketing Manager | 12.4+ yrs experience,0.0695,0.1878,0.2025,0.1878,0.0794
+842,CAND_0000250,Aisha Iyengar,Full Stack Developer | Full-stack development,0.1125,0.0743,0.2394,0.2036,0.0792
+843,CAND_0000709,Nikhil Ghosh,Accountant | Helping teams scale,0.1095,0.0691,0.2157,0.1693,0.0791
+844,CAND_0000476,Karan Gupta,Sales Executive | Driving business outcomes,0.0567,0.2443,0.2250,0.2791,0.0789
+845,CAND_0000373,Mira Dalal,Marketing Manager | Helping teams scale,0.0696,0.1931,0.2000,0.2613,0.0788
+846,CAND_0000039,Sai Saxena,Marketing Manager | Helping teams scale,0.0638,0.2037,0.2061,0.1916,0.0788
+847,CAND_0000823,Om Kumar,Marketing Manager | Driving business outcomes,0.1056,0.0918,0.2058,0.3039,0.0786
+848,CAND_0000300,Ira Bhatia,Marketing Manager | 8.5+ yrs experience,0.0920,0.1354,0.2078,0.3182,0.0786
+849,CAND_0000054,Ved Malhotra,QA Engineer | Cloud & DevOps,0.1086,0.0802,0.2094,0.2736,0.0786
+850,CAND_0000613,Reyansh Pandey,Project Manager | Helping teams scale,0.0764,0.1703,0.2029,0.2426,0.0786
+851,CAND_0000772,Priya Tiwari,Mechanical Engineer | Helping teams scale,0.0728,0.1963,0.2513,0.2152,0.0786
+852,CAND_0000049,Tanya Chowdary,Mechanical Engineer | Helping teams scale,0.1001,0.0936,0.2100,0.1991,0.0781
+853,CAND_0000835,Aarav Saxena,Project Manager | Helping teams scale,0.0828,0.1728,0.2322,0.3425,0.0779
+854,CAND_0000334,Mira Trivedi,Business Analyst | Helping teams scale,0.0531,0.2473,0.2256,0.2644,0.0778
+855,CAND_0000320,Vivaan Menon,Customer Support | 8.0+ yrs experience,0.1009,0.0888,0.2028,0.2168,0.0777
+856,CAND_0000676,Tanya Krishnan,Civil Engineer | Helping teams scale,0.0938,0.1104,0.2045,0.2245,0.0774
+857,CAND_0000569,Anil Desai,Marketing Manager | Driving business outcomes,0.0830,0.1483,0.2048,0.2741,0.0773
+858,CAND_0000754,Ananya Dalal,Content Writer | 12.8+ yrs experience,0.1004,0.0720,0.1797,0.1822,0.0765
+859,CAND_0000601,Kavya Agarwal,Mechanical Engineer | Helping teams scale,0.1040,0.0795,0.2088,0.2594,0.0762
+860,CAND_0000768,Priya Sethi,Content Writer | Helping teams scale,0.0929,0.1046,0.2093,0.1911,0.0762
+861,CAND_0000801,Arjun Khanna,Full Stack Developer | Backend systems & APIs,0.0962,0.0759,0.1947,0.0915,0.0757
+862,CAND_0000654,Kabir Agarwal,QA Engineer | Full-stack development,0.1011,0.0654,0.1841,0.1796,0.0753
+863,CAND_0000363,Ela Kumar,Accountant | Driving business outcomes,0.1034,0.0758,0.2065,0.2584,0.0753
+864,CAND_0000477,Meera Iyer,QA Engineer | Full-stack development,0.0955,0.0898,0.1933,0.2203,0.0753
+865,CAND_0000153,Kiara Kapoor,Graphic Designer | Helping teams scale,0.0517,0.2273,0.2000,0.2607,0.0750
+866,CAND_0000193,Sneha Ghosh,Sales Executive | Driving business outcomes,0.0896,0.1155,0.2163,0.2328,0.0749
+867,CAND_0000758,Vikram Pillai,Customer Support | 2.5+ yrs experience,0.0880,0.1124,0.2000,0.2485,0.0742
+868,CAND_0000377,Riya Nair,Operations Manager | Driving business outcomes,0.0883,0.1019,0.2045,0.1607,0.0739
+869,CAND_0000453,Krishna Goyal,HR Manager | Driving business outcomes,0.0858,0.1118,0.2032,0.2068,0.0734
+870,CAND_0000475,Dev Nair,HR Manager | 6.8+ yrs experience,0.0883,0.1137,0.2168,0.2744,0.0728
+871,CAND_0000481,Aisha Reddy,Mechanical Engineer | Driving business outcomes,0.1013,0.0761,0.2162,0.2883,0.0727
+872,CAND_0000685,Zara Vora,HR Manager | Helping teams scale,0.0876,0.1112,0.2095,0.2751,0.0724
+873,CAND_0000147,Reyansh Ghosh,Civil Engineer | 5.2+ yrs experience,0.0819,0.1280,0.2041,0.3070,0.0720
+874,CAND_0000644,Arjun Sharma,Graphic Designer | Driving business outcomes,0.0914,0.0945,0.1998,0.2819,0.0719
+875,CAND_0000875,Manish Kumar,Accountant | Generative AI explorer,0.0902,0.0931,0.2122,0.2037,0.0719
+876,CAND_0000759,Aadhya Krishnan,Marketing Manager | Helping teams scale,0.0855,0.0980,0.1967,0.1863,0.0714
+877,CAND_0000109,Suresh Goyal,Mechanical Engineer | 2.2+ yrs experience,0.0937,0.0801,0.2044,0.2220,0.0714
+878,CAND_0000145,Manish Mukherjee,Business Analyst | 3.4+ yrs experience,0.1008,0.0732,0.2190,0.3171,0.0710
+879,CAND_0000274,Kabir Malhotra,Frontend Engineer | Backend systems & APIs,0.0921,0.0738,0.1935,0.1781,0.0709
+880,CAND_0000258,Dev Mehta,Accountant | Driving business outcomes,0.0954,0.0681,0.2098,0.1893,0.0705
+881,CAND_0000019,Myra Mishra,Project Manager | 6.5+ yrs experience,0.0735,0.1420,0.2206,0.2346,0.0703
+882,CAND_0000113,Anika Singh,.NET Developer | Full-stack development,0.0712,0.1426,0.2033,0.2434,0.0701
+883,CAND_0000660,Om Kapoor,Accountant | Helping teams scale,0.0733,0.1398,0.2089,0.2595,0.0700
+884,CAND_0000778,Aisha Joshi,Marketing Manager | 4.3+ yrs experience,0.0773,0.1171,0.2069,0.1821,0.0697
+885,CAND_0000902,Manish Mittal,DevOps Engineer | Cloud & DevOps,0.0921,0.0824,0.2177,0.2466,0.0695
+886,CAND_0000006,Rajesh Desai,Business Analyst | 6.0+ yrs experience,0.0997,0.0674,0.2270,0.2892,0.0694
+887,CAND_0000728,Ananya Kapoor,Graphic Designer | Driving business outcomes,0.0512,0.1978,0.2169,0.1914,0.0693
+888,CAND_0000470,Om Dutta,HR Manager | 14.2+ yrs experience,0.0603,0.1667,0.2086,0.1981,0.0690
+889,CAND_0000405,Rajesh Bose,Operations Manager | 2.7+ yrs experience,0.0746,0.1198,0.2000,0.1880,0.0690
+890,CAND_0000657,Zara Iyengar,Content Writer | 2.3+ yrs experience,0.0610,0.1539,0.1541,0.2621,0.0690
+891,CAND_0000408,Ved Banerjee,.NET Developer | Cloud & DevOps,0.0854,0.0953,0.1850,0.3093,0.0689
+892,CAND_0000538,Kavya Mehta,Customer Support | Driving business outcomes,0.0914,0.0895,0.2185,0.3371,0.0684
+893,CAND_0000901,Pooja Shetty,Accountant | 2.4+ yrs experience,0.0626,0.1724,0.2091,0.3413,0.0683
+894,CAND_0000619,Meera Mittal,Business Analyst | 9.4+ yrs experience,0.0806,0.1033,0.2052,0.2230,0.0682
+895,CAND_0000252,Anil Iyer,Business Analyst | 3.0+ yrs experience,0.0669,0.1436,0.2269,0.1517,0.0682
+896,CAND_0000729,Krishna Iyer,Content Writer | Driving business outcomes,0.0926,0.0610,0.1659,0.3068,0.0677
+897,CAND_0000746,Atharv Subramanian,Marketing Manager | 9.8+ yrs experience,0.0787,0.1002,0.2075,0.1625,0.0676
+898,CAND_0000483,Kabir Shah,Customer Support | Driving business outcomes,0.0781,0.1146,0.2091,0.2763,0.0675
+899,CAND_0000906,Atharv Kumar,Marketing Manager | Exploring AI & GenAI applications,0.0882,0.0762,0.2082,0.2211,0.0672
+900,CAND_0000293,Suresh Trivedi,Civil Engineer | Driving business outcomes,0.0682,0.1451,0.2147,0.2824,0.0672
+901,CAND_0000827,Kavya Pandey,Civil Engineer | Helping teams scale,0.0821,0.0967,0.2313,0.1758,0.0671
+902,CAND_0000378,Rahul Bose,Business Analyst | Helping teams scale,0.0825,0.0846,0.2036,0.1869,0.0665
+903,CAND_0000451,Priya Saxena,Sales Executive | Driving business outcomes,0.0896,0.0721,0.2046,0.2873,0.0660
+904,CAND_0000997,Ishaan Sen,Marketing Manager | Helping teams scale,0.0929,0.0635,0.2034,0.3196,0.0656
+905,CAND_0000269,Avni Desai,Sales Executive | Helping teams scale,0.0452,0.1999,0.2095,0.2625,0.0652
+906,CAND_0000890,Ayaan Goyal,Sales Executive | Helping teams scale,0.0415,0.2070,0.2074,0.2508,0.0648
+907,CAND_0000490,Riya Mittal,Customer Support | 2.6+ yrs experience,0.0804,0.0879,0.2059,0.2453,0.0645
+908,CAND_0000469,Kabir Iyer,Frontend Engineer | Full-stack development,0.0802,0.0870,0.2457,0.1177,0.0644
+909,CAND_0000146,Riya Bose,Sales Executive | Driving business outcomes,0.0887,0.0519,0.2065,0.1577,0.0640
+910,CAND_0000315,Priya Reddy,DevOps Engineer | Full-stack development,0.0908,0.0620,0.2346,0.2398,0.0639
+911,CAND_0000643,Vikram Menon,Sales Executive | 4.7+ yrs experience,0.0674,0.1223,0.2000,0.2618,0.0637
+912,CAND_0000325,Anjali Desai,Project Manager | Helping teams scale,0.0876,0.0593,0.2117,0.2070,0.0636
+913,CAND_0000893,Pranav Nair,Marketing Manager | Driving business outcomes,0.0709,0.1001,0.2028,0.1520,0.0633
+914,CAND_0000129,Ela Sharma,Graphic Designer | Driving business outcomes,0.0893,0.0561,0.2009,0.2798,0.0631
+915,CAND_0000463,Deepak Sethi,Accountant | 2.2+ yrs experience,0.0579,0.1449,0.2009,0.2534,0.0626
+916,CAND_0000843,Kavya Naidu,Sales Executive | Helping teams scale,0.0638,0.1357,0.2017,0.3416,0.0624
+917,CAND_0000632,Pooja Shah,Customer Support | Helping teams scale,0.0551,0.1552,0.2008,0.3192,0.0617
+918,CAND_0000362,Vivaan Verma,Project Manager | 5.4+ yrs experience,0.0805,0.0742,0.2123,0.2509,0.0614
+919,CAND_0000988,Arnav Khanna,Customer Support | Helping teams scale,0.0847,0.0576,0.2075,0.2360,0.0612
+920,CAND_0000831,Krishna Iyengar,Content Writer | Driving business outcomes,0.0821,0.0553,0.1637,0.2765,0.0609
+921,CAND_0000278,Karan Gupta,Sales Executive | Helping teams scale,0.0443,0.1795,0.2000,0.2880,0.0608
+922,CAND_0000114,Ishaan Pandey,Sales Executive | 14.3+ yrs experience,0.0422,0.1736,0.1991,0.2000,0.0601
+923,CAND_0000513,Deepak Tiwari,HR Manager | Driving business outcomes,0.0322,0.1973,0.2000,0.1625,0.0595
+924,CAND_0000548,Aadhya Desai,Marketing Manager | 6.9+ yrs experience,0.0845,0.0457,0.2015,0.2481,0.0589
+925,CAND_0000164,Diya Mishra,Content Writer | Driving business outcomes,0.0807,0.0551,0.1911,0.2604,0.0588
+926,CAND_0000240,Nikhil Goyal,Project Manager | Driving business outcomes,0.0264,0.2254,0.2058,0.3065,0.0586
+927,CAND_0000800,Aadhya Subramanian,Marketing Manager | Helping teams scale,0.0776,0.0679,0.2051,0.2729,0.0585
+928,CAND_0000811,Myra Malhotra,Project Manager | Driving business outcomes,0.0467,0.1551,0.2185,0.1868,0.0583
+929,CAND_0000743,Amit Mittal,Accountant | Driving business outcomes,0.0676,0.1019,0.2038,0.3306,0.0582
+930,CAND_0000731,Ishaan Singh,Marketing Manager | 13.6+ yrs experience,0.0741,0.0811,0.2073,0.3490,0.0575
+931,CAND_0000166,Aryan Shah,Customer Support | Driving business outcomes,0.0867,0.0354,0.2184,0.2512,0.0571
+932,CAND_0000214,Sneha Tiwari,Sales Executive | Driving business outcomes,0.0743,0.0559,0.2000,0.1573,0.0565
+933,CAND_0000485,Advik Sethi,Sales Executive | 4.5+ yrs experience,0.0768,0.0664,0.2119,0.3375,0.0562
+934,CAND_0000673,Kavya Khanna,Operations Manager | 7.8+ yrs experience,0.0762,0.0521,0.2066,0.1789,0.0562
+935,CAND_0000677,Sai Vora,Sales Executive | Helping teams scale,0.0503,0.1314,0.2060,0.2130,0.0559
+936,CAND_0000471,Reyansh Sen,HR Manager | Helping teams scale,0.0614,0.0987,0.2213,0.2037,0.0554
+937,CAND_0000299,Krishna Menon,HR Manager | Helping teams scale,0.0662,0.0800,0.2044,0.2336,0.0549
+938,CAND_0000003,Yash Agarwal,Customer Support | 1.1+ yrs experience,0.0713,0.0855,0.2699,0.2648,0.0547
+939,CAND_0000356,Myra Pandey,Customer Support | 1.6+ yrs experience,0.0632,0.0962,0.2158,0.3145,0.0543
+940,CAND_0000173,Avni Joshi,Marketing Manager | 7.9+ yrs experience,0.0741,0.0480,0.2020,0.2725,0.0527
+941,CAND_0000265,Pranav Trivedi,HR Manager | Driving business outcomes,0.0611,0.0867,0.2332,0.1993,0.0523
+942,CAND_0000219,Arnav Gupta,Mechanical Engineer | Helping teams scale,0.0627,0.0795,0.2071,0.2765,0.0519
+943,CAND_0000047,Avni Bansal,Project Manager | Helping teams scale,0.0810,0.0219,0.2000,0.2877,0.0515
+944,CAND_0000939,Dhruv Goyal,HR Manager | Driving business outcomes,0.0511,0.1143,0.2153,0.2812,0.0514
+945,CAND_0000882,Anil Rao,Operations Manager | Helping teams scale,0.0536,0.1052,0.2000,0.3121,0.0514
+946,CAND_0000885,Ira Shah,Project Manager | Helping teams scale,0.0652,0.0592,0.2026,0.2344,0.0503
+947,CAND_0000383,Krishna Bansal,Mechanical Engineer | Driving business outcomes,0.0675,0.0472,0.2038,0.1928,0.0499
+948,CAND_0000923,Reyansh Gupta,Mobile Developer | Backend systems & APIs,0.0665,0.0630,0.2280,0.2800,0.0498
+949,CAND_0000342,Karan Nair,Operations Manager | Helping teams scale,0.0267,0.1637,0.2031,0.1403,0.0495
+950,CAND_0000812,Reyansh Chopra,Operations Manager | 11.0+ yrs experience,0.0636,0.0641,0.2036,0.2928,0.0493
+951,CAND_0000095,Sneha Bansal,HR Manager | Driving business outcomes,0.0645,0.0588,0.2042,0.2939,0.0488
+952,CAND_0000462,Amit Subramanian,Graphic Designer | Driving business outcomes,0.0417,0.1233,0.2094,0.2351,0.0487
+953,CAND_0000233,Naina Nair,Civil Engineer | Helping teams scale,0.0514,0.0985,0.2057,0.3162,0.0484
+954,CAND_0000880,Ved Sen,Sales Executive | Helping teams scale,0.0579,0.0676,0.2000,0.2045,0.0482
+955,CAND_0000995,Anjali Joshi,Content Writer | 1.5+ yrs experience,0.0410,0.1083,0.1431,0.3060,0.0472
+956,CAND_0000798,Deepak Sethi,Civil Engineer | Helping teams scale,0.0364,0.1358,0.2091,0.3130,0.0469
+957,CAND_0000279,Ishaan Subramanian,Business Analyst | Driving business outcomes,0.0564,0.0763,0.2279,0.2679,0.0468
+958,CAND_0000806,Aadhya Goyal,Sales Executive | Driving business outcomes,0.0308,0.1482,0.2297,0.2323,0.0463
+959,CAND_0000335,Vikram Bansal,Mechanical Engineer | 4.0+ yrs experience,0.0619,0.0456,0.2000,0.2109,0.0461
+960,CAND_0000103,Neha Ghosh,Mechanical Engineer | Driving business outcomes,0.0578,0.0610,0.1958,0.2662,0.0461
+961,CAND_0000815,Om Gupta,Project Manager | AI enthusiast | Building with LLMs,0.0519,0.0858,0.2262,0.2750,0.0460
+962,CAND_0000977,Jay Vora,Software Engineer | Backend systems & APIs,0.0441,0.1062,0.2088,0.2946,0.0459
+963,CAND_0000467,Shreya Joshi,QA Engineer | Full-stack development,0.0587,0.0558,0.2038,0.2220,0.0459
+964,CAND_0000080,Anjali Pandey,Graphic Designer | Helping teams scale,0.0666,0.0375,0.2000,0.3372,0.0454
+965,CAND_0000817,Arnav Agarwal,Accountant | Helping teams scale,0.0442,0.0963,0.2062,0.2505,0.0448
+966,CAND_0000690,Om Bose,Accountant | 3.9+ yrs experience,0.0584,0.0514,0.2267,0.1621,0.0447
+967,CAND_0000416,Riya Rao,Customer Support | Helping teams scale,0.0558,0.0552,0.2113,0.1819,0.0443
+968,CAND_0000597,Rohan Menon,Operations Manager | Helping teams scale,0.0304,0.1365,0.2111,0.2818,0.0439
+969,CAND_0000637,Aryan Agarwal,Civil Engineer | Driving business outcomes,0.0602,0.0391,0.2109,0.1932,0.0436
+970,CAND_0000816,Myra Mukherjee,Customer Support | Helping teams scale,0.0374,0.1202,0.2288,0.3275,0.0434
+971,CAND_0000783,Reyansh Mukherjee,Operations Manager | Driving business outcomes,0.0386,0.1119,0.2143,0.3340,0.0430
+972,CAND_0000157,Dhruv Menon,Mechanical Engineer | Helping teams scale,0.0553,0.0549,0.2070,0.2641,0.0430
+973,CAND_0000519,Vikram Subramanian,Business Analyst | Helping teams scale,0.0416,0.0980,0.2323,0.2145,0.0430
+974,CAND_0000713,Rahul Iyengar,Marketing Manager | Helping teams scale,0.0563,0.0524,0.2033,0.3049,0.0427
+975,CAND_0000245,Kiara Nair,Project Manager | 1.9+ yrs experience,0.0533,0.0530,0.2000,0.1934,0.0426
+976,CAND_0000107,Dev Verma,Mechanical Engineer | 11.5+ yrs experience,0.0501,0.0701,0.2188,0.2559,0.0425
+977,CAND_0000999,Aarohi Dalal,Project Manager | 2.1+ yrs experience,0.0494,0.0639,0.2108,0.1834,0.0422
+978,CAND_0000171,Kiara Singh,Graphic Designer | 2.9+ yrs experience,0.0639,0.0256,0.2011,0.2973,0.0421
+979,CAND_0000283,Rahul Arora,Project Manager | Driving business outcomes,0.0589,0.0303,0.2013,0.1596,0.0419
+980,CAND_0000089,Myra Bhatia,Mechanical Engineer | Driving business outcomes,0.0454,0.0784,0.2505,0.1366,0.0417
+981,CAND_0000950,Yash Mukherjee,Mechanical Engineer | Driving business outcomes,0.0449,0.0790,0.2153,0.2357,0.0417
+982,CAND_0000717,Myra Sen,Civil Engineer | 2.4+ yrs experience,0.0513,0.0584,0.2006,0.2886,0.0413
+983,CAND_0000308,Tanvi Arora,Mechanical Engineer | 2.0+ yrs experience,0.0453,0.0732,0.2145,0.2394,0.0407
+984,CAND_0000028,Rohan Krishnan,Operations Manager | Driving business outcomes,0.0344,0.1029,0.2000,0.3166,0.0397
+985,CAND_0000379,Rohan Krishnan,Customer Support | 1.9+ yrs experience,0.0327,0.0978,0.2000,0.2204,0.0389
+986,CAND_0000750,Ritu Shah,Accountant | Helping teams scale,0.0444,0.0566,0.2425,0.1892,0.0366
+987,CAND_0000012,Anjali Krishnan,Operations Manager | Driving business outcomes,0.0294,0.0988,0.2000,0.3156,0.0361
+988,CAND_0000424,Naina Kapoor,Project Manager | Driving business outcomes,0.0379,0.0719,0.2150,0.2874,0.0356
+989,CAND_0000497,Aisha Nair,Project Manager | 1.6+ yrs experience,0.0383,0.0700,0.2305,0.2865,0.0349
+990,CAND_0000808,Anil Mishra,Sales Executive | 2.0+ yrs experience,0.0483,0.0233,0.2000,0.1479,0.0342
+991,CAND_0000794,Dhruv Mittal,Accountant | Driving business outcomes,0.0330,0.0736,0.2037,0.2390,0.0340
+992,CAND_0000264,Yash Tiwari,Project Manager | Driving business outcomes,0.0430,0.0384,0.2035,0.3380,0.0319
+993,CAND_0000141,Sai Arora,Accountant | Helping teams scale,0.0354,0.0570,0.2442,0.1987,0.0313
+994,CAND_0000636,Divya Chopra,Project Manager | 1.6+ yrs experience,0.0340,0.0552,0.2237,0.1778,0.0310
+995,CAND_0000126,Sanjay Kapoor,Mechanical Engineer | 2.5+ yrs experience,0.0344,0.0529,0.2134,0.2975,0.0299
+996,CAND_0000369,Priya Tiwari,Business Analyst | Driving business outcomes,0.0393,0.0389,0.2043,0.3493,0.0298
+997,CAND_0000301,Neha Menon,Operations Manager | 1.9+ yrs experience,0.0365,0.0432,0.2228,0.2693,0.0292
+998,CAND_0000887,Siya Dutta,Graphic Designer | Helping teams scale,0.0311,0.0482,0.2077,0.2003,0.0281
+999,CAND_0000194,Saanvi Patel,Business Analyst | Helping teams scale,0.0249,0.0374,0.2000,0.3176,0.0216
+1000,CAND_0000329,Kabir Shetty,Sales Executive | Driving business outcomes,0.0280,0.0188,0.2000,0.2094,0.0205

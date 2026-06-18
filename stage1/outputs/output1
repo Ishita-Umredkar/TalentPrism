@@ -1,0 +1,36 @@
+# Stage 1: Honeypot Detection Analysis Report
+
+Analyzed **100000** candidates from `resources/candidates.jsonl`.
+Execution duration: **26.41 seconds**.
+
+## 1. Candidate Credibility Distribution
+
+| Credibility Classification Category | Count | Percentage |
+|-------------------|-------|------------|
+| Sure Honeypots (0.0 to 0.3) | 7539 | 7.54% |
+| Likely Honeypots (0.3 to 0.6) | 3037 | 3.04% |
+| Needs Review (0.6 to 0.85) | 215 | 0.21% |
+| Credible Candidates (0.85 to 1.0) | 89209 | 89.21% |
+
+## 2. Integrity Defect Analysis
+
+| Defect Check ID | Defect Count | Trigger Rate |
+|-----------------|--------------|--------------|
+| last_active_before_signup | 7496 | 7.50% |
+| experience_since_education | 3322 | 3.32% |
+| senior_title_low_experience | 116 | 0.12% |
+| education_order_consistency | 76 | 0.08% |
+| career_duration_vs_yoe | 49 | 0.05% |
+| job_duration_vs_date_difference | 25 | 0.03% |
+| headline_summary_contradiction | 25 | 0.03% |
+| expert_skill_zero_duration | 21 | 0.02% |
+| unrealistic_promotion_velocity | 12 | 0.01% |
+| overlapping_jobs | 0 | 0.00% |
+| multiple_current_jobs | 0 | 0.00% |
+| current_job_chronology | 0 | 0.00% |
+| future_dates | 0 | 0.00% |
+| skill_duration_greater_than_timeline | 0 | 0.00% |
+| executive_title_no_progression | 0 | 0.00% |
+| title_experience_inconsistency | 0 | 0.00% |
+| salary_inconsistent_with_experience | 0 | 0.00% |
+

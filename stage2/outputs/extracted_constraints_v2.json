@@ -1,0 +1,627 @@
+{
+    "must_have": [
+        {
+            "weight": 0.25,
+            "constraint": "Production experience with embedding-based retrieval and vector databases",
+            "confidence": 0.95,
+            "reasoning": "The JD explicitly requires production deployment of embeddings and vector DBs, handling index drift and retrieval regression.",
+            "sub_constraints": [
+                {
+                    "item": "Deployed embedding-based retrieval systems using sentence-transformers, BGE, E5, or OpenAI embeddings to production users",
+                    "weight": 0.25,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 0.7,
+                            "field": null
+                        },
+                        {
+                            "item": "profile.summary",
+                            "matching_strategy": "max",
+                            "weight": 0.3,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "sentence-transformers/ BGE/ E5/ OpenAI embeddings",
+                    "weight": 0.15,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Handled embedding drift, index refresh, and mitigated retrieval-quality regression in production environments",
+                    "weight": 0.3,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Operated vector databases or hybrid search infrastructure such as Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, or FAISS",
+                    "weight": 0.15,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Pinecone/ Weaviate/ Qdrant/ Milvus/ OpenSearch/ Elasticsearch/ FAISS",
+                    "weight": 0.15,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.25,
+            "constraint": "Hands-on experience designing evaluation frameworks for ranking systems",
+            "confidence": 0.95,
+            "reasoning": "The JD states that if the candidate has never thought about evaluating ranking systems rigorously, the role will be painful.",
+            "sub_constraints": [
+                {
+                    "item": "Designed evaluation frameworks for ranking systems using metrics like NDCG, MRR, or MAP",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Interpreted A/B tests and established offline-to-online correlation for search or ranking algorithms",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Shipped end-to-end machine learning systems at product companies",
+            "confidence": 0.9,
+            "reasoning": "Requires 4-5 years of applied ML in product companies and scaling end-to-end ranking/search/recommendation systems.",
+            "sub_constraints": [
+                {
+                    "item": "Built and shipped end-to-end candidate ranking, search engines, or recommendation systems to real users at scale",
+                    "weight": 0.7,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Years of applied ML or AI experience",
+                    "weight": 0.3,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "profile.years_of_experience",
+                            "matching_strategy": "direct",
+                            "weight": 1,
+                            "field": "5-9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Strong Python programming skills",
+            "confidence": 0.9,
+            "reasoning": "The JD states 'Strong Python. Yes really, we care about code quality.'",
+            "sub_constraints": [
+                {
+                    "item": "Wrote high-quality production code in Python",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Python",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Location in or willing to relocate to targeted Tier 1 Indian cities",
+            "confidence": 0.8,
+            "reasoning": "Noida/Pune preferred, but Delhi NCR, Mumbai, Hyderabad are explicitly welcome.",
+            "sub_constraints": [
+                {
+                    "item": "Located in Pune, Noida, Delhi NCR, Mumbai, or Hyderabad",
+                    "weight": 1.0,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "profile.location",
+                            "matching_strategy": "direct",
+                            "weight": 1.0,
+                            "field": "Pune, Noida, Delhi NCR, Mumbai, Hyderabad"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "preferred": [
+        {
+            "weight": 0.4,
+            "constraint": "Advanced LLM Fine-tuning and Ranking Models",
+            "confidence": 0.7,
+            "reasoning": "Listed under 'Things we'd like you to have but won't reject you for'.",
+            "sub_constraints": [
+                {
+                    "item": "Fine-tuned Large Language Models using LoRA, QLoRA, or PEFT",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 0.6,
+                            "field": null
+                        },
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 0.4,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Built learning-to-rank models using XGBoost or neural networks",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 0.6,
+                            "field": null
+                        },
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 0.4,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.3,
+            "constraint": "Domain Expertise and Distributed Systems Optimization",
+            "confidence": 0.7,
+            "reasoning": "Exposure to HR-tech and large-scale inference are nice-to-haves.",
+            "sub_constraints": [
+                {
+                    "item": "Developed HR-tech, recruiting technology, or marketplace matching products",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 0.6,
+                            "field": null
+                        },
+                        {
+                            "item": "profile.company_progression",
+                            "matching_strategy": "max",
+                            "weight": 0.4,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Optimized large-scale inference and distributed systems",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Open-source AI/ML Contributions",
+            "confidence": 0.6,
+            "reasoning": "Listed as a nice-to-have, proves validation beyond closed proprietary systems.",
+            "sub_constraints": [
+                {
+                    "item": "Contributed to open-source AI or machine learning projects",
+                    "weight": 1.0,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "profile.summary",
+                            "matching_strategy": "max",
+                            "weight": 0.3,
+                            "field": null
+                        },
+                        {
+                            "item": "redrob_signals.github_activity_score",
+                            "matching_strategy": "behavioral",
+                            "weight": 0.7,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Immediate or short notice period",
+            "confidence": 0.8,
+            "reasoning": "Sub-30-day notice is loved. The company can buy out up to 30 days.",
+            "sub_constraints": [
+                {
+                    "item": "Notice period is 30 days or less",
+                    "weight": 1.0,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "redrob_signals.notice_period_days",
+                            "matching_strategy": "direct",
+                            "weight": 1.0,
+                            "field": 30
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "negative": [
+        {
+            "weight": 0.55,
+            "constraint": "Title-chasers with frequent job hopping",
+            "confidence": 0.9,
+            "reasoning": "The JD explicitly avoids candidates optimizing for titles by switching companies every 1.5 years. Needs someone for 3+ years.",
+            "sub_constraints": [
+                {
+                    "item": "Optimized for Senior, Staff, or Principal title promotions by switching companies every 1.5 years",
+                    "weight": 1.0,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "profile.company_progression",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.5,
+                            "field": null
+                        },
+                        {
+                            "item": "profile.title_progression",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.5,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.45,
+            "constraint": "Low platform engagement or inactivity",
+            "confidence": 0.9,
+            "reasoning": "Hackathon notes describe down-weighting candidates who haven't logged in for 6 months and have a 5% recruiter response rate.",
+            "sub_constraints": [
+                {
+                    "item": "Has not logged in recently and maintains a very low recruiter response rate",
+                    "weight": 0.5,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "redrob_signals.recruiter_response_rate",
+                            "matching_strategy": "behavioral",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Frequently appears in recruiter searches and responds to messages",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "redrob_signals.search_appearance_30d",
+                            "matching_strategy": "behavioral",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rejection": [
+        {
+            "weight": 0.2,
+            "constraint": "Pure academic research without production code",
+            "confidence": 1.0,
+            "reasoning": "The JD states 'we will not move forward' if the career has been entirely in academic labs or research-only roles without production deployment.",
+            "type": "conflicting",
+            "sub_constraints": [
+                {
+                    "item": "Worked exclusively in academic labs or research-only roles without deploying to production",
+                    "weight": 0.6,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.6,
+                            "field": null
+                        },
+                        {
+                            "item": "profile.title_progression",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.4,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Deployed machine learning models to production environments serving real users",
+                    "weight": 0.4,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Superficial LLM API experience",
+            "confidence": 1.0,
+            "reasoning": "Rejects candidates whose AI experience is primarily under 12 months using LangChain to call OpenAI, lacking deep ML systems foundation.",
+            "type": "conflicting",
+            "sub_constraints": [
+                {
+                    "item": "Machine learning experience consists primarily of recent projects using LangChain to call OpenAI APIs",
+                    "weight": 0.5,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Demonstrated substantial pre-LLM era machine learning production experience including retrieval and ranking",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.2,
+            "constraint": "Hands-off Architects or Tech Leads",
+            "confidence": 1.0,
+            "reasoning": "Rejects senior engineers who haven't written production code in 18 months because they moved to architecture or pure leadership roles.",
+            "sub_constraints": [
+                {
+                    "item": "Actively writes production code as an individual contributor",
+                    "weight": 1,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Exclusively consulting or services background",
+            "confidence": 0.9,
+            "reasoning": "Will reject candidates who have only worked at consulting firms (TCS, Infosys, etc.) their entire career without product company experience.",
+            "type": "conflicting",
+            "sub_constraints": [
+                {
+                    "item": "Worked entirely at consulting or IT services firms such as TCS, Infosys, Wipro, Accenture, Cognizant, or Capgemini",
+                    "weight": 0.5,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "profile.company_progression",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Built end-to-end features or owned platforms at product companies",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "profile.company_progression",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.15,
+            "constraint": "Mismatched AI specializations (Computer Vision, Speech, Robotics)",
+            "confidence": 0.9,
+            "reasoning": "Candidates specializing in CV/Speech/Robotics without significant NLP/IR exposure would be re-learning fundamentals.",
+            "type": "conflicting",
+            "sub_constraints": [
+                {
+                    "item": "Primary technical expertise is focused on computer vision, speech recognition, or robotics",
+                    "weight": 0.35,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.6,
+                            "field": null
+                        },
+                        {
+                            "item": "skills",
+                            "matching_strategy": "aggregate",
+                            "weight": 0.4,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Has significant exposure to Natural Language Processing or Information Retrieval",
+                    "weight": 0.65,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "max",
+                            "weight": 0.7,
+                            "field": null
+                        },
+                        {
+                            "item": "skills",
+                            "matching_strategy": "max",
+                            "weight": 0.3,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weight": 0.1,
+            "constraint": "Closed-source only track record without external validation",
+            "confidence": 0.9,
+            "reasoning": "Rejects candidates working entirely on closed-source proprietary systems for 5+ years without papers, talks, or open source.",
+            "type": "conflicting",
+            "sub_constraints": [
+                {
+                    "item": "Worked entirely on closed-source proprietary systems for over 5 years",
+                    "weight": 0.5,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "career_history.description",
+                            "matching_strategy": "aggregate",
+                            "weight": 1,
+                            "field": null
+                        }
+                    ]
+                },
+                {
+                    "item": "Published technical papers, gave conference talks, or contributed to open-source projects",
+                    "weight": 0.5,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "profile.summary",
+                            "matching_strategy": "max",
+                            "weight": 0.5,
+                            "field": null
+                        },
+                        {
+                            "item": "redrob_signals.github_activity_score",
+                            "matching_strategy": "behavioral",
+                            "weight": 0.5,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

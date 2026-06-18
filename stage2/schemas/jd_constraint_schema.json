@@ -1,0 +1,94 @@
+{
+    "must_have": [
+        {
+            "weight": 0.0,
+            "constraint": "",
+            "confidence": 0.0,
+            "reasoning": "",
+            "sub_constraints": [
+                {
+                    "item": "",
+                    "weight": 0.0,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "",
+                            "matching_strategy": "",
+                            "weight": 0.0,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "preferred": [
+        {
+            "weight": 0.0,
+            "constraint": "",
+            "confidence": 0.0,
+            "reasoning": "",
+            "sub_constraints": [
+                {
+                    "item": "",
+                    "weight": 0.0,
+                    "type": "good",
+                    "categories": [
+                        {
+                            "item": "",
+                            "matching_strategy": "",
+                            "weight": 0.0,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "negative": [
+        {
+            "weight": 0.0,
+            "constraint": "",
+            "confidence": 0.0,
+            "reasoning": "",
+            "sub_constraints": [
+                {
+                    "item": "",
+                    "weight": 0.0,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "",
+                            "matching_strategy": "",
+                            "weight": 0.0,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rejection": [
+        {
+            "weight": 0.0,
+            "constraint": "",
+            "confidence": 0.0,
+            "reasoning": "",
+            "sub_constraints": [
+                {
+                    "item": "",
+                    "weight": 0.0,
+                    "type": "bad",
+                    "categories": [
+                        {
+                            "item": "",
+                            "matching_strategy": "",
+                            "weight": 0.0,
+                            "field": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

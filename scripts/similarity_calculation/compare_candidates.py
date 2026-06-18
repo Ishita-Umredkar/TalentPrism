@@ -74,18 +74,32 @@ def compare_candidates(
     # 2. Get maximum scores
     max_scores = get_max_scores(jd_json_path)
 
-    # Get a list of all candidate IDs
-    candidate_ids = sorted(list(skills.keys()))
+    # Calculate total scores for each candidate to sort by rank
+    candidate_totals = {}
+    for cand_id in skills.keys():
+        tot_score = (
+            skills.get(cand_id, 0.0) +
+            career.get(cand_id, 0.0) +
+            impact.get(cand_id, 0.0) +
+            org.get(cand_id, 0.0) +
+            edu.get(cand_id, 0.0) +
+            logistics.get(cand_id, 0.0)
+        )
+        candidate_totals[cand_id] = tot_score
+
+    # Sort candidate IDs by total score in descending order (highest score = rank 1)
+    candidate_ids = sorted(skills.keys(), key=lambda x: candidate_totals[x], reverse=True)
 
     # Print table header
-    header_format = "{:<15} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13}"
-    row_format = "{:<15} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f}"
+    header_format = "{:<6} | {:<15} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13} | {:<13}"
+    row_format = "{:<6} | {:<15} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f} | {:<13.4f}"
 
-    print("\n" + "=" * 119)
+    print("\n" + "=" * 129)
     print("CANDIDATE SIMILARITY COMPARISON TABLE")
-    print("=" * 119)
-    print(header_format.format("Candidate ID", "Skills", "Career", "Impact", "Org Context", "Education", "Logistics", "Total Score"))
+    print("=" * 129)
+    print(header_format.format("Rank", "Candidate ID", "Skills", "Career", "Impact", "Org Context", "Education", "Logistics", "Total Score"))
     print(header_format.format(
+        "",
         "",
         f"(Max: {max_scores['skills']:.4f})",
         f"(Max: {max_scores['career']:.4f})",
@@ -95,19 +109,20 @@ def compare_candidates(
         f"(Max: {max_scores['logistics']:.4f})",
         f"(Max: {max_scores['total']:.4f})"
     ))
-    print("-" * 119)
+    print("-" * 129)
 
     # Print candidates rows
-    for cand_id in candidate_ids:
+    for rank, cand_id in enumerate(candidate_ids, 1):
         s_score = skills.get(cand_id, 0.0)
         c_score = career.get(cand_id, 0.0)
         i_score = impact.get(cand_id, 0.0)
         o_score = org.get(cand_id, 0.0)
         e_score = edu.get(cand_id, 0.0)
         l_score = logistics.get(cand_id, 0.0)
-        tot_score = s_score + c_score + i_score + o_score + e_score + l_score
+        tot_score = candidate_totals[cand_id]
 
         print(row_format.format(
+            rank,
             cand_id,
             s_score,
             c_score,
@@ -118,15 +133,21 @@ def compare_candidates(
             tot_score
         ))
 
-    print("=" * 119 + "\n")
+    print("=" * 129 + "\n")
 
 
 if __name__ == "__main__":
+    ROOT = pathlib.Path(__file__).resolve().parents[2]
+    default_jd_json = str(ROOT / "data" / "test" / "job_description.json")
+    default_candidates_json = str(ROOT / "data" / "test" / "extracted_candidates.json")
+    default_jd_pkl = str(ROOT / "data" / "test" / "embedded_jd.pkl")
+    default_candidates_pkl = str(ROOT / "data" / "test" / "embedded_candidates.pkl")
+
     parser = argparse.ArgumentParser(description="Generate candidate similarity comparison table.")
-    parser.add_argument("jd_json", type=str, help="Path to raw JD JSON.")
-    parser.add_argument("candidates_json", type=str, help="Path to raw candidates JSON.")
-    parser.add_argument("jd_pkl", type=str, help="Path to JD embeddings pickle.")
-    parser.add_argument("candidates_pkl", type=str, help="Path to candidates embeddings pickle.")
+    parser.add_argument("jd_json", type=str, nargs="?", default=default_jd_json, help="Path to raw JD JSON (default: %(default)s).")
+    parser.add_argument("candidates_json", type=str, nargs="?", default=default_candidates_json, help="Path to raw candidates JSON (default: %(default)s).")
+    parser.add_argument("jd_pkl", type=str, nargs="?", default=default_jd_pkl, help="Path to JD embeddings pickle (default: %(default)s).")
+    parser.add_argument("candidates_pkl", type=str, nargs="?", default=default_candidates_pkl, help="Path to candidates embeddings pickle (default: %(default)s).")
     args = parser.parse_args()
 
     compare_candidates(args.jd_json, args.candidates_json, args.jd_pkl, args.candidates_pkl)
