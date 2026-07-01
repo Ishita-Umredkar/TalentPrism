@@ -1,0 +1,65 @@
+# Redrob Hackathon — Submission Metadata
+# Repo Root: submission_metadata.yaml
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "TalentPrism-Ranking-Team"
+
+primary_contact:
+  name: "Ishita Umredkar"
+  email: "ishitaumredkar02@gmail.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Ishita Umredkar"
+    email: "ishitaumredkar02@gmail.com"
+    role: "ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/Ishita-Umredkar/TalentPrism"
+sandbox_link: "https://github.com/Ishita-Umredkar/TalentPrism"
+reproduce_command: "python pipelines/ranking_pipeline/rank.py --candidates ./resources/candidates.jsonl --output-csv ./ranking/top100.csv --output-explanation ./ranking/explanation.txt"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Windows CPU PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.4"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Claude"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Claude for code structure refactoring, algorithmic refinement, and data formatting. 
+  No candidate data was fed to any external LLMs.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Structured candidate ranking engine combining a Stage 1 honeypot/credibility detector (using company age comparisons, temporal duration sanity checks, and skill-density flags) and a Stage 2 fit ranker (evaluating 17 extracted must-have, preferred, negative, and rejection constraints grouped into 8 high-level categories). Ties are broken deterministically by candidate_id ascending. The pipeline completes under 2 minutes on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
