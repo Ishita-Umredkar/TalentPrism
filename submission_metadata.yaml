@@ -4,55 +4,62 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "TalentPrism-Ranking-Team"
+team_name: "HerLogic"
 
 primary_contact:
   name: "Ishita Umredkar"
   email: "ishitaumredkar02@gmail.com"
-  phone: "+91-XXXXXXXXXX"
+  phone: "+91-9028930211"
 
 team_members:
   - name: "Ishita Umredkar"
     email: "ishitaumredkar02@gmail.com"
-    role: "ML Engineer"
+    role: "Team Lead"
 
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
 github_repo: "https://github.com/Ishita-Umredkar/TalentPrism"
 sandbox_link: "https://github.com/Ishita-Umredkar/TalentPrism"
-reproduce_command: "python pipelines/ranking_pipeline/rank.py --candidates ./resources/candidates.jsonl --output-csv ./ranking/top100.csv --output-explanation ./ranking/explanation.txt"
+reproduce_command: "python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out ./pipelines/final_pipeline/ranking/top100.csv --output-explanation ./pipelines/final_pipeline/ranking/explanation.txt"
 
 # ============================================================================
 # Compute environment
 # ============================================================================
 compute:
-  platform: "Windows CPU PC"
-  cpu_cores: 8
+  platform: "Windows Intel Core i7PC"
+  cpu_cores: 20
   ram_gb: 16
-  python_version: "3.11.4"
+  python_version: "3.11.3"
   os: "Windows 11"
   uses_gpu_for_inference: false
   has_network_during_ranking: false
-  pre_computation_required: false
-  pre_computation_time_minutes: 0
+  pre_computation_required: true
+  pre_computation_time_minutes: 40
 
 # ============================================================================
 # AI tools declaration
 # ============================================================================
 ai_tools_used:
-  - "Claude"
-  - "Cursor"
+  - "Gemini"
+  - "Antigravity"
+  - "ChatGPT"
 
 ai_usage_summary: |
-  Used Claude for code structure refactoring, algorithmic refinement, and data formatting. 
-  No candidate data was fed to any external LLMs.
+  Used Gemini for extraction of constraints from the job description.
+  Used Antigravity for script writing assistance, pipeline refactoring, and directory layout cleanup.
+  Used ChatGPT for architectural design assistance.
+  No candidate profile data was shared with external LLMs.
 
 # ============================================================================
 # Approach summary
 # ============================================================================
 methodology_summary: |
-  Structured candidate ranking engine combining a Stage 1 honeypot/credibility detector (using company age comparisons, temporal duration sanity checks, and skill-density flags) and a Stage 2 fit ranker (evaluating 17 extracted must-have, preferred, negative, and rejection constraints grouped into 8 high-level categories). Ties are broken deterministically by candidate_id ascending. The pipeline completes under 2 minutes on CPU.
+  Three-stage candidate ranking engine:
+  - Stage 1 (Credibility Check): Evaluates candidate profiles using 10 honeypot detectors (flagging future-dated starts, faked timelines, company age inconsistencies, and profile inflation) to compute credibility multipliers.
+  - Stage 2 (Constraint & Semantic Fit Scoring): Scores candidate profiles against 17 Must-Have, Preferred, Negative, and Rejection requirements grouped into 8 high-level categories (Retrieval, LLMs, Production ML, Stability, etc.) using normalized cosine similarities of BGE-embedded texts.
+  - Stage 3 (Joint Scoring, Tie-Breaking, & Explainability): Combines Stage 1 and Stage 2 scores, breaks ties deterministically (using Logistics score then alphabetical ID), generates natural language justifications by mapping top-4 category extremeness to templates, and exports the final CSV and report.
+  The complete pipeline scores and justifies 100k candidates under 90 seconds on CPU.
 
 # ============================================================================
 # Declarations

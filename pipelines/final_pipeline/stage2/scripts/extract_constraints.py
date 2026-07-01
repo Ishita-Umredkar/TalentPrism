@@ -5,8 +5,9 @@ from google import genai
 
 # Define root and path references
 ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
 
-JD_FILE = ROOT / "resources" / "job_description.txt"
+JD_FILE = PROJECT_ROOT / "resources" / "job_description.txt"
 PROMPT_FILE = ROOT / "stage2" / "prompts" / "extract_constraints _from_jd.txt"
 JD_SCHEMA_FILE = ROOT / "stage2" / "schemas" / "jd_constraint_schema.json"
 CANDIDATE_SCHEMA_FILE = ROOT / "stage2" / "schemas" / "candidate_categories.json"

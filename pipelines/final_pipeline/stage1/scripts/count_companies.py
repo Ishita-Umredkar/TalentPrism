@@ -87,12 +87,13 @@ def load_candidates_generator(file_path: str):
 def main():
     args = parse_args()
     
-    # Resolve absolute paths relative to project root
+    # Resolve absolute paths relative to project root / pipeline root
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+    pipeline_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+    project_root = os.path.abspath(os.path.join(script_dir, "..", "..", "..", ".."))
     
     input_path = args.input if os.path.isabs(args.input) else os.path.join(project_root, args.input)
-    output_path = args.output if os.path.isabs(args.output) else os.path.join(project_root, args.output)
+    output_path = args.output if os.path.isabs(args.output) else os.path.join(pipeline_root, args.output)
     
     print(f"Reading candidates from: {input_path}")
     

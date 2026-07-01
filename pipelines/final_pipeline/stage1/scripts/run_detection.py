@@ -6,9 +6,17 @@ computes overall credibility scores, and outputs reports.
 """
 
 import os
+import sys
 import json
 import argparse
 from typing import List, Dict
+from pathlib import Path
+
+# Add final_pipeline to sys.path to allow standalone execution
+script_dir_path = Path(__file__).resolve().parent
+pipeline_root_path = script_dir_path.parents[1]
+if str(pipeline_root_path) not in sys.path:
+    sys.path.append(str(pipeline_root_path))
 
 # Import all detectors
 from stage1.scripts import ALL_DETECTORS
@@ -156,17 +164,18 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output", 
         type=str, 
-        default="stage1/test/honeypot_results.json", 
+        default="stage1/outputs/honeypot_results.json", 
         help="Path to save output verification results"
     )
     args = parser.parse_args()
 
     # Determine absolute path to the project root directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+    pipeline_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+    project_root = os.path.abspath(os.path.join(script_dir, "..", "..", "..", ".."))
 
-    input_abs_path = os.path.join(project_root, args.input)
-    output_abs_path = os.path.join(project_root, args.output)
+    input_abs_path = args.input if os.path.isabs(args.input) else os.path.join(project_root, args.input)
+    output_abs_path = args.output if os.path.isabs(args.output) else os.path.join(pipeline_root, args.output)
 
     results = run_honeypot_detection(input_abs_path, output_abs_path)
     print_summary_table(results)

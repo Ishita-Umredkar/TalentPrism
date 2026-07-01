@@ -12,8 +12,8 @@ timelines, ensuring that highly suspicious candidates (honeypots) are excluded
 from the top rankings entirely.
 
 Top Ranked Statistics:
-  - Maximum Combined Score: 0.675822
-  - Minimum Combined Score (Rank 100): 0.528884
+  - Maximum Combined Score: 0.675817
+  - Minimum Combined Score (Rank 100): 0.528885
 
 Credibility Score Distribution in Top Rankings:
   - Score 1.000: 100 candidates
@@ -21,12 +21,12 @@ Credibility Score Distribution in Top Rankings:
 Top 10 Ranked Candidates:
 -------------------------------------------------------------------------
 Rank  1: CAND_0052328 (Vikram Banerjee) - Recommendation Systems Engineer
-         Fit Score: 0.675822 | Credibility: 1.000
-         Combined Score: 0.675822
+         Fit Score: 0.675817 | Credibility: 1.000
+         Combined Score: 0.675817
 
 Rank  2: CAND_0027691 (Ayaan Goyal) - NLP Engineer
-         Fit Score: 0.667699 | Credibility: 1.000
-         Combined Score: 0.667699
+         Fit Score: 0.667698 | Credibility: 1.000
+         Combined Score: 0.667698
 
 Rank  3: CAND_0007009 (Anika Pillai) - Recommendation Systems Engineer
          Fit Score: 0.657487 | Credibility: 1.000
@@ -41,23 +41,23 @@ Rank  5: CAND_0054123 (Tanvi Banerjee) - Applied ML Engineer
          Combined Score: 0.653999
 
 Rank  6: CAND_0012957 (Ritu Menon) - Search Engineer
-         Fit Score: 0.652069 | Credibility: 1.000
-         Combined Score: 0.652069
+         Fit Score: 0.652068 | Credibility: 1.000
+         Combined Score: 0.652068
 
 Rank  7: CAND_0046525 (Tanvi Mukherjee) - Senior Machine Learning Engineer
          Fit Score: 0.650407 | Credibility: 1.000
          Combined Score: 0.650407
 
 Rank  8: CAND_0066999 (Riya Dalal) - Recommendation Systems Engineer
-         Fit Score: 0.649291 | Credibility: 1.000
-         Combined Score: 0.649291
+         Fit Score: 0.649288 | Credibility: 1.000
+         Combined Score: 0.649288
 
 Rank  9: CAND_0064326 (Nisha Pillai) - Search Engineer
-         Fit Score: 0.643586 | Credibility: 1.000
-         Combined Score: 0.643586
+         Fit Score: 0.643585 | Credibility: 1.000
+         Combined Score: 0.643585
 
 Rank 10: CAND_0018499 (Aarav Trivedi) - Senior Machine Learning Engineer
-         Fit Score: 0.642453 | Credibility: 1.000
-         Combined Score: 0.642453
+         Fit Score: 0.642452 | Credibility: 1.000
+         Combined Score: 0.642452
 
 -------------------------------------------------------------------------

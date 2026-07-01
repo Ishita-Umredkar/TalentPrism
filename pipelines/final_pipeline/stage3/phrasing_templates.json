@@ -1,0 +1,98 @@
+{
+  "retrieval_search": {
+    "good": [
+      "demonstrate strong expertise in vector databases and search retrieval architectures",
+      "possess a solid background in search indexing and ranking algorithms",
+      "bring hands-on proficiency in vector search and embedding retrieval systems"
+    ],
+    "bad": [
+      "lack hands-on experience in vector search or ranking evaluation",
+      "have limited exposure to database indexing and search retrieval",
+      "show gaps in search indexing or ranking setups"
+    ]
+  },
+  "production_ml": {
+    "good": [
+      "demonstrate excellent ML engineering skills and write high-quality production code",
+      "possess strong software engineering fundamentals and build robust production pipelines",
+      "bring a solid engineering foundation for scaling production ML systems"
+    ],
+    "bad": [
+      "need to strengthen their software engineering and production coding skills",
+      "show gaps in building and scaling production ML pipelines",
+      "possess limited experience in production-grade software development"
+    ]
+  },
+  "llm_ai": {
+    "good": [
+      "bring advanced expertise in LLM fine-tuning and ranking models",
+      "show strong familiarity with PEFT, QLoRA, and modern neural ranking",
+      "possess valuable hands-on experience with modern LLMs and deep learning"
+    ],
+    "bad": [
+      "have limited exposure to modern LLM fine-tuning or ranking models",
+      "lack experience with LLM optimization and learning-to-rank methods",
+      "show gaps in deep learning and modern LLM application development"
+    ]
+  },
+  "product_domain": {
+    "good": [
+      "bring valuable experience working inside product-focused companies",
+      "have solid product-company domain exposure and matching logic experience",
+      "come from a strong product-engineering background"
+    ],
+    "bad": [
+      "lack experience inside product-focused engineering setups",
+      "have limited exposure to product domain matching systems",
+      "possess minimal product company engineering background"
+    ]
+  },
+  "career_quality": {
+    "good": [
+      "maintain a stable employment pattern and keep an active individual contributor profile",
+      "show a history of consistent company tenure and hands-on coding roles",
+      "possess a reliable and stable individual contributor track record"
+    ],
+    "bad": [
+      "indicate potential job-hopping risks or a hands-off technical profile",
+      "present career stability concerns or a hands-off leadership profile",
+      "show patterns of frequent company switches or hands-off technical roles"
+    ]
+  },
+  "tech_breadth": {
+    "good": [
+      "possess a highly aligned specialization in search, ranking, and NLP",
+      "have AI expertise well-aligned with NLP and information retrieval",
+      "show a specialized background in text search and ranking systems"
+    ],
+    "bad": [
+      "possess mismatched AI specializations focused on computer vision or speech",
+      "show specialized experience in CV/speech instead of search or ranking",
+      "have an AI background that is not aligned with search and NLP technologies"
+    ]
+  },
+  "external_validation": {
+    "good": [
+      "have verified public credentials through open-source contributions or talks",
+      "possess a track record validated by active public contributions",
+      "show external validation of their work through open-source AI projects"
+    ],
+    "bad": [
+      "lack public validation of their work on open-source repositories",
+      "possess a closed-source track record without external validation",
+      "show minimal public GitHub activity or external technical validation"
+    ]
+  },
+  "hiring_readiness": {
+    "good": [
+      "are available to join quickly and fit the location preferences",
+      "maintain high responsiveness to outreach and are ready to relocate",
+      "possess an immediate notice period and meet the geographic criteria"
+    ],
+    "bad": [
+      "require a longer hiring notice period or are in non-targeted locations",
+      "do not match the location preferences or immediate hiring readiness",
+      "show low active engagement and require longer transition times"
+    ]
+  }
+}
