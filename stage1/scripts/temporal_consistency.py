@@ -22,7 +22,7 @@ class JobDurationVsDateDiffDetector(BaseDetector):
             check_id="job_duration_vs_date_difference",
             category="temporal_consistency",
             strength="Strong",
-            penalty=0.3
+            penalty=0.15
         )
 
     def detect(self, candidate: dict) -> list[dict]:
@@ -45,15 +45,15 @@ class JobDurationVsDateDiffDetector(BaseDetector):
             actual_months = calculate_months_between(start, end)
             reported_months = job.get("duration_months", 0)
 
-            if abs(actual_months - reported_months) > 18:
+            if abs(actual_months - reported_months) > 6:
                 company = job.get("company", f"Company {idx+1}")
                 offending_jobs.append(
                     f"{company} (reported: {reported_months} mos, calculated: {actual_months} mos)"
                 )
 
         if offending_jobs:
-            # Additive penalty: 0.3 per offending job, capped at 0.8
-            effective_penalty = min(0.3 * len(offending_jobs), 0.8)
+            # Additive penalty: 0.15 per offending job, capped at 0.4
+            effective_penalty = min(0.15 * len(offending_jobs), 0.4)
             details = f"Reported job durations do not match date calculations for: {', '.join(offending_jobs)}."
             evidence = self.create_evidence(details, {"offending_count": len(offending_jobs)})
             evidence["penalty"] = effective_penalty
@@ -85,7 +85,7 @@ class CareerDurationVsYoeDetector(BaseDetector):
         total_reported_months = sum(job.get("duration_months", 0) for job in history)
         total_reported_years = total_reported_months / 12.0
 
-        if abs(total_reported_years - yoe) > 1.5:
+        if abs(total_reported_years - yoe) > 2.0:
             details = (
                 f"Sum of career durations ({total_reported_years:.1f} years) "
                 f"contradicts profile years of experience ({yoe:.1f} years)."
@@ -118,7 +118,6 @@ class ExperienceSinceEducationDetector(BaseDetector):
 
     def detect(self, candidate: dict) -> list[dict]:
         education = candidate.get("education", [])
-        history = candidate.get("career_history", [])
         profile = candidate.get("profile", {})
         yoe = profile.get("years_of_experience")
         last_active = get_last_active_date(candidate)
@@ -134,55 +133,28 @@ class ExperienceSinceEducationDetector(BaseDetector):
                 # Fallback to end_year - 4
                 edu_starts.append(end_yr - 4)
 
-        if not edu_starts:
+        if not edu_starts or yoe is None:
             return []
 
         earliest_edu_start = min(edu_starts)
 
-        # Find earliest job start year
-        job_starts = []
-        for job in history:
-            start_dt = parse_date(job.get("start_date"))
-            if start_dt:
-                job_starts.append(start_dt.year)
-
-        # Check 1: Job starts way before education starts
-        if job_starts:
-            earliest_job_start = min(job_starts)
-            # Allow a buffer of 4 years (e.g. working full time before bachelor's or high-school jobs)
-            if earliest_job_start < earliest_edu_start - 4:
-                details = (
-                    f"First job started in {earliest_job_start}, which is unreasonably early "
-                    f"compared to education starting in {earliest_edu_start}."
+        # Check: Total YOE exceeds time since education start + 2 years tolerance
+        max_possible_years = last_active.year - earliest_edu_start
+        if yoe > max_possible_years + 2:
+            details = (
+                f"Claimed years of experience ({yoe:.1f}) exceeds the maximum possible "
+                f"years since education timeline started in {earliest_edu_start} ({max_possible_years} years)."
+            )
+            return [
+                self.create_evidence(
+                    details,
+                    {
+                        "profile_yoe": yoe,
+                        "earliest_edu_start_year": earliest_edu_start,
+                        "max_possible_years": max_possible_years
+                    }
                 )
-                return [
-                    self.create_evidence(
-                        details,
-                        {
-                            "earliest_job_start_year": earliest_job_start,
-                            "earliest_edu_start_year": earliest_edu_start
-                        }
-                    )
-                ]
-
-        # Check 2: Total YOE exceeds time since education start + buffer
-        if yoe is not None:
-            max_possible_years = last_active.year - earliest_edu_start
-            if yoe > max_possible_years + 2:
-                details = (
-                    f"Claimed years of experience ({yoe:.1f}) exceeds the maximum possible "
-                    f"years since education timeline started in {earliest_edu_start} ({max_possible_years} years)."
-                )
-                return [
-                    self.create_evidence(
-                        details,
-                        {
-                            "profile_yoe": yoe,
-                            "earliest_edu_start_year": earliest_edu_start,
-                            "max_possible_years": max_possible_years
-                        }
-                    )
-                ]
+            ]
 
         return []
 
@@ -236,15 +208,17 @@ class EducationOrderConsistencyDetector(BaseDetector):
 
         # Compare pairs
         for i in range(len(degrees)):
-            for j in range(i + 1, len(degrees)):
+            for j in range(len(degrees)):
+                if i == j:
+                    continue
                 d1 = degrees[i]
                 d2 = degrees[j]
                 
+                # Check same institution and course/major
                 same_inst = d1["institution"].lower().strip() == d2["institution"].lower().strip()
                 same_field = d1["field_of_study"].lower().strip() == d2["field_of_study"].lower().strip()
 
                 if same_inst and same_field:
-                    # If d1 level > d2 level but d1 ended earlier
                     if d1["level"] > d2["level"] and d1["end_year"] < d2["end_year"]:
                         details = (
                             f"Higher degree '{d1['degree']}' ended in {d1['end_year']} "
@@ -261,26 +235,6 @@ class EducationOrderConsistencyDetector(BaseDetector):
                                     "lower_degree_end": d2["end_year"],
                                     "institution": d1["institution"],
                                     "field_of_study": d1["field_of_study"]
-                                }
-                            )
-                        ]
-                    # If d2 level > d1 level but d2 ended earlier
-                    elif d2["level"] > d1["level"] and d2["end_year"] < d1["end_year"]:
-                        details = (
-                            f"Higher degree '{d2['degree']}' ended in {d2['end_year']} "
-                            f"which is before lower degree '{d1['degree']}' ended in {d1['end_year']} "
-                            f"at the same institution ({d2['institution']}) and major ({d2['field_of_study']})."
-                        )
-                        return [
-                            self.create_evidence(
-                                details,
-                                {
-                                    "higher_degree": d2["degree"],
-                                    "higher_degree_end": d2["end_year"],
-                                    "lower_degree": d1["degree"],
-                                    "lower_degree_end": d1["end_year"],
-                                    "institution": d2["institution"],
-                                    "field_of_study": d2["field_of_study"]
                                 }
                             )
                         ]

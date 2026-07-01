@@ -1,0 +1,933 @@
+[
+    {
+        "candidate_id": "CAND_0000001",
+        "name": "Ira Vora",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000002",
+        "name": "Saanvi Sethi",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 43 mos, calculated: 36 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000003",
+        "name": "Yash Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000004",
+        "name": "Anil Bose",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000005",
+        "name": "Aisha Sethi",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Stark Industries (reported: 52 mos, calculated: 43 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000006",
+        "name": "Rajesh Desai",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000007",
+        "name": "Vihaan Bose",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000008",
+        "name": "Shaurya Chatterjee",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000009",
+        "name": "Amit Shah",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000010",
+        "name": "Aarav Kapoor",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000011",
+        "name": "Deepak Desai",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000012",
+        "name": "Anjali Krishnan",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Stark Industries (reported: 13 mos, calculated: 6 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000013",
+        "name": "Pari Nair",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000014",
+        "name": "Atharv Joshi",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000015",
+        "name": "Rahul Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000016",
+        "name": "Aanya Malhotra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000017",
+        "name": "Anil Pandey",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 27 mos, calculated: 20 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000018",
+        "name": "Vivaan Reddy",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000019",
+        "name": "Myra Mishra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000020",
+        "name": "Aditya Iyengar",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 36 mos, calculated: 28 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000021",
+        "name": "Rahul Joshi",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 30 mos, calculated: 23 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000022",
+        "name": "Shaurya Chatterjee",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000023",
+        "name": "Kavya Nair",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000024",
+        "name": "Rajesh Arora",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000025",
+        "name": "Anika Kumar",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000026",
+        "name": "Neha Rao",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Initech (reported: 43 mos, calculated: 35 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000027",
+        "name": "Avni Pandey",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000028",
+        "name": "Rohan Krishnan",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000029",
+        "name": "Priya Sethi",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 16 mos, calculated: 8 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000030",
+        "name": "Ritu Pillai",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Dunder Mifflin (reported: 51 mos, calculated: 43 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000031",
+        "name": "Ela Singh",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000032",
+        "name": "Pranav Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000033",
+        "name": "Shreya Nair",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000034",
+        "name": "Yash Chatterjee",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000035",
+        "name": "Vikram Verma",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000036",
+        "name": "Ananya Bose",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000037",
+        "name": "Ved Sen",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000038",
+        "name": "Myra Trivedi",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000039",
+        "name": "Sai Saxena",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000040",
+        "name": "Dev Vora",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000041",
+        "name": "Anjali Khanna",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000042",
+        "name": "Riya Mukherjee",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wayne Enterprises (reported: 26 mos, calculated: 19 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000043",
+        "name": "Aarav Sen",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000044",
+        "name": "Vihaan Naidu",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000045",
+        "name": "Vikram Mittal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000046",
+        "name": "Dev Nair",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000047",
+        "name": "Avni Bansal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000048",
+        "name": "Vihaan Saxena",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000049",
+        "name": "Tanya Chowdary",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000050",
+        "name": "Naina Bose",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Infosys (reported: 45 mos, calculated: 37 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000051",
+        "name": "Meera Arora",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000052",
+        "name": "Vivaan Khanna",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000053",
+        "name": "Ela Mishra",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 34 mos, calculated: 27 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000054",
+        "name": "Ved Malhotra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000055",
+        "name": "Pari Tiwari",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000056",
+        "name": "Anjali Sen",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000057",
+        "name": "Shreya Rao",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Acme Corp (reported: 33 mos, calculated: 26 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000058",
+        "name": "Pranav Naidu",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000059",
+        "name": "Suresh Mishra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000060",
+        "name": "Kavya Iyer",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000061",
+        "name": "Advaith Dalal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000062",
+        "name": "Nikhil Arora",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000063",
+        "name": "Myra Naidu",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000064",
+        "name": "Meera Pandey",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000065",
+        "name": "Ayaan Joshi",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000066",
+        "name": "Aanya Krishnan",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000067",
+        "name": "Shreya Bose",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000068",
+        "name": "Priya Hegde",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000069",
+        "name": "Diya Mittal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000070",
+        "name": "Siya Ghosh",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000071",
+        "name": "Vikram Shetty",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000072",
+        "name": "Diya Sharma",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000073",
+        "name": "Pari Rao",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000074",
+        "name": "Pari Banerjee",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Dunder Mifflin (reported: 22 mos, calculated: 15 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000075",
+        "name": "Kavya Nair",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000076",
+        "name": "Sanjay Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000077",
+        "name": "Ved Bhatia",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000078",
+        "name": "Shreya Reddy",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000079",
+        "name": "Aarohi Agarwal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000080",
+        "name": "Anjali Pandey",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000081",
+        "name": "Avni Verma",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: TCS (reported: 18 mos, calculated: 11 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000082",
+        "name": "Avni Malhotra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000083",
+        "name": "Pooja Malhotra",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000084",
+        "name": "Priya Banerjee",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000085",
+        "name": "Rajesh Joshi",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Pied Piper (reported: 39 mos, calculated: 32 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000086",
+        "name": "Mira Dutta",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000087",
+        "name": "Ritu Subramanian",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000088",
+        "name": "Riya Naidu",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000089",
+        "name": "Myra Bhatia",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Initech (reported: 13 mos, calculated: 5 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000090",
+        "name": "Tanya Banerjee",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000091",
+        "name": "Aisha Desai",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000092",
+        "name": "Siya Pandey",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 38 mos, calculated: 31 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000093",
+        "name": "Meera Singh",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: TCS (reported: 16 mos, calculated: 9 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000094",
+        "name": "Meera Pillai",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000095",
+        "name": "Sneha Bansal",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000096",
+        "name": "Pari Kumar",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000097",
+        "name": "Sai Pillai",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: TCS (reported: 50 mos, calculated: 43 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    },
+    {
+        "candidate_id": "CAND_0000098",
+        "name": "Rajesh Mehta",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000099",
+        "name": "Aarohi Kapoor",
+        "credibility_score": 1.0,
+        "status": "Credible",
+        "evidence": []
+    },
+    {
+        "candidate_id": "CAND_0000100",
+        "name": "Myra Agarwal",
+        "credibility_score": 0.85,
+        "status": "Credible",
+        "evidence": [
+            {
+                "check_id": "job_duration_vs_date_difference",
+                "category": "temporal_consistency",
+                "strength": "Strong",
+                "penalty": 0.15,
+                "details": "Reported job durations do not match date calculations for: Wipro (reported: 45 mos, calculated: 37 mos).",
+                "metrics": {
+                    "offending_count": 1
+                }
+            }
+        ]
+    }
+]

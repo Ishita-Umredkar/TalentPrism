@@ -13,15 +13,68 @@ from typing import List, Dict
 # Import all detectors
 from stage1.scripts import ALL_DETECTORS
 
+def load_candidates(file_path: str) -> List[Dict]:
+    """
+    Loads candidates from file_path, supporting:
+    1. Standard JSON (array of objects)
+    2. Standard JSONL (one JSON object per line)
+    3. Multiline concatenated JSON objects (like first100.json)
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Input file not found at: {file_path}")
+
+    # Strategy 1: Attempt to parse as standard JSON array/object
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                return data
+            elif isinstance(data, dict):
+                return [data]
+    except json.JSONDecodeError:
+        pass
+
+    # Strategy 2: Attempt to stream line by line as JSONLines
+    candidates = []
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    candidates.append(json.loads(line))
+        return candidates
+    except json.JSONDecodeError:
+        pass
+
+    # Strategy 3: Concatenated JSON objects (e.g. multiline JSONLines)
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read().strip()
+        if not content:
+            return []
+        
+        decoder = json.JSONDecoder()
+        pos = 0
+        candidates = []
+        while pos < len(content):
+            # Skip whitespace
+            while pos < len(content) and content[pos].isspace():
+                pos += 1
+            if pos >= len(content):
+                break
+            try:
+                obj, next_pos = decoder.raw_decode(content, pos)
+                candidates.append(obj)
+                pos = next_pos
+            except json.JSONDecodeError as e:
+                raise ValueError(f"Failed to parse JSON at position {pos}: {e}")
+        return candidates
+
+
 def run_honeypot_detection(input_path: str, output_path: str) -> List[Dict]:
     """
     Runs honeypot detection on the candidate JSON file.
     """
-    if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Input file not found at {input_path}")
-
-    with open(input_path, "r", encoding="utf-8") as f:
-        candidates = json.load(f)
+    candidates = load_candidates(input_path)
 
     # Instantiate all detectors
     detectors = [det_cls() for det_cls in ALL_DETECTORS]

@@ -8,47 +8,30 @@ from .base_detector import BaseDetector
 from .temporal_consistency import (
     JobDurationVsDateDiffDetector,
     CareerDurationVsYoeDetector,
-    ExperienceSinceEducationDetector,
     EducationOrderConsistencyDetector,
-    OverlappingJobsDetector,
     MultipleCurrentJobsDetector,
-    CurrentJobChronologyDetector,
-    FutureDatesDetector,
-    LastActiveBeforeSignupDetector
+    FutureDatesDetector
 )
 from .skill_consistency import (
     ExpertSkillZeroDurationDetector,
     SkillDurationVsTimelineDetector
 )
 from .career_consistency import (
-    SeniorTitleLowExperienceDetector,
-    UnrealisticPromotionVelocityDetector,
-    ExecutiveTitleWithoutProgressionDetector,
-    TitleExperienceInconsistencyDetector
+    ExecutiveTitleMinimalExperienceDetector,
+    HeadlineSummaryContradictionDetector
 )
-from .profile_integrity import (
-    HeadlineSummaryContradictionDetector,
-    SalaryInconsistentWithExperienceDetector
-)
-from .company_integrity import CompanyExperienceVsAgeDetector
+from .company_integrity import EmploymentBeforeCompanyExistedDetector
 
-# Export all detector classes for easy registry loading
+# Export all 10 active detector classes for the registry (T3 and T7 removed)
 ALL_DETECTORS = [
     JobDurationVsDateDiffDetector,
     CareerDurationVsYoeDetector,
-    ExperienceSinceEducationDetector,
     EducationOrderConsistencyDetector,
-    OverlappingJobsDetector,
     MultipleCurrentJobsDetector,
-    CurrentJobChronologyDetector,
     FutureDatesDetector,
-    LastActiveBeforeSignupDetector,
     ExpertSkillZeroDurationDetector,
     SkillDurationVsTimelineDetector,
-    SeniorTitleLowExperienceDetector,
-    UnrealisticPromotionVelocityDetector,
-    ExecutiveTitleWithoutProgressionDetector,
-    TitleExperienceInconsistencyDetector,
+    ExecutiveTitleMinimalExperienceDetector,
     HeadlineSummaryContradictionDetector,
-    SalaryInconsistentWithExperienceDetector
+    EmploymentBeforeCompanyExistedDetector
 ]

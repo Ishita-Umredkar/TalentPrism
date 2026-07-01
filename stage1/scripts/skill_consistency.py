@@ -4,19 +4,19 @@ skill_consistency.py
 Implements Skill Consistency detectors (Strong Evidence) for candidate profile validation.
 """
 
-from .base_detector import BaseDetector
+from .base_detector import BaseDetector, parse_date, get_last_active_date, calculate_months_between
 
 class ExpertSkillZeroDurationDetector(BaseDetector):
     """
-    10. Expert/Advanced skill with zero duration.
-    Checks if a skill with high proficiency claims zero duration.
+    S1. Expert Skill with Zero Experience.
+    Flags skills marked as Advanced or Expert while having 0 months of experience.
     """
     def __init__(self):
         super().__init__(
             check_id="expert_skill_zero_duration",
             category="skill_consistency",
             strength="Strong",
-            penalty=0.3
+            penalty=0.4
         )
 
     def detect(self, candidate: dict) -> list[dict]:
@@ -32,23 +32,24 @@ class ExpertSkillZeroDurationDetector(BaseDetector):
                 offending_skills.append(name)
 
         if offending_skills:
+            effective_penalty = min(0.4 * len(offending_skills), 0.8)
             details = (
                 f"Candidate claimed 'advanced' or 'expert' proficiency but with 0 months "
                 f"duration for skills: {', '.join(offending_skills)}."
             )
-            return [
-                self.create_evidence(
-                    details,
-                    {"offending_skills": offending_skills}
-                )
-            ]
+            evidence = self.create_evidence(
+                details,
+                {"offending_skills": offending_skills}
+            )
+            evidence["penalty"] = effective_penalty
+            return [evidence]
         return []
 
 
 class SkillDurationVsTimelineDetector(BaseDetector):
     """
-    11. Skill duration greater than career + education duration.
-    Checks if any skill duration exceeds the combined sum of career and education timelines (plus a 1-year buffer).
+    S2. Skill Duration Exceeds Career Timeline.
+    Detects skills whose reported duration exceeds the candidate's total possible career timeline (allowing a 12-month buffer).
     """
     def __init__(self):
         super().__init__(
@@ -59,26 +60,57 @@ class SkillDurationVsTimelineDetector(BaseDetector):
         )
 
     def detect(self, candidate: dict) -> list[dict]:
+        from datetime import date
+
         history = candidate.get("career_history", [])
         education = candidate.get("education", [])
         skills = candidate.get("skills", [])
+        last_active = get_last_active_date(candidate)
 
-        # Total career months
-        total_career_months = sum(job.get("duration_months", 0) for job in history)
-
-        # Total education months
-        total_education_months = 0
+        # Find earliest education start year
+        edu_starts = []
         for edu in education:
-            start = edu.get("start_year")
-            end = edu.get("end_year")
-            if start and end:
-                duration_yrs = max(end - start, 0)
-                total_education_months += duration_yrs * 12
-            elif end:
-                # Default 3 years (36 months) if only graduation year is present
-                total_education_months += 36
+            start_yr = edu.get("start_year")
+            end_yr = edu.get("end_year")
+            if start_yr:
+                edu_starts.append(start_yr)
+            elif end_yr:
+                # Fallback to end_year - 4
+                edu_starts.append(end_yr - 4)
 
-        max_allowed_months = total_career_months + total_education_months + 12 # 12 months buffer
+        earliest_edu_start_date = None
+        if edu_starts:
+            earliest_edu_year = min(edu_starts)
+            # Use January 1st of that year as a safe lower bound start date
+            earliest_edu_start_date = date(earliest_edu_year, 1, 1)
+
+        # Find earliest job start date
+        job_starts = []
+        for job in history:
+            start = parse_date(job.get("start_date"))
+            if start:
+                job_starts.append(start)
+
+        earliest_job_start_date = min(job_starts) if job_starts else None
+
+        # Determine the start of the possible timeline
+        timeline_starts = []
+        if earliest_edu_start_date:
+            timeline_starts.append(earliest_edu_start_date)
+        if earliest_job_start_date:
+            timeline_starts.append(earliest_job_start_date)
+
+        if not timeline_starts:
+            span_months = 0
+        else:
+            earliest_start = min(timeline_starts)
+            span_months = calculate_months_between(earliest_start, last_active)
+
+        # Calculate sum of all job durations (as a fallback in case it's larger)
+        sum_job_months = sum(job.get("duration_months", 0) for job in history)
+
+        total_career_months = max(sum_job_months, span_months)
+        max_allowed_months = total_career_months + 12 # 12 months buffer
         offending_skills = []
 
         for skill in skills:
@@ -90,21 +122,21 @@ class SkillDurationVsTimelineDetector(BaseDetector):
                 )
 
         if offending_skills:
+            effective_penalty = min(0.5 * len(offending_skills), 1.0)
             details = (
-                f"Skill duration exceeds combined career history and education timelines "
+                f"Skill duration exceeds combined career history timeline "
                 f"(max allowed: {max_allowed_months} months) for: {', '.join(offending_skills)}."
             )
-            return [
-                self.create_evidence(
-                    details,
-                    {
-                        "total_career_months": total_career_months,
-                        "total_education_months": total_education_months,
-                        "max_allowed_months": max_allowed_months,
-                        "offending_skills": offending_skills
-                    }
-                )
-            ]
+            evidence = self.create_evidence(
+                details,
+                {
+                    "total_career_months": total_career_months,
+                    "max_allowed_months": max_allowed_months,
+                    "offending_skills": offending_skills
+                }
+            )
+            evidence["penalty"] = effective_penalty
+            return [evidence]
         return []
 
 
