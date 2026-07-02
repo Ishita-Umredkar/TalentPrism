@@ -84,12 +84,19 @@ python pipelines/final_pipeline/rank.py --candidates candidates.jsonl --out subm
 ---
 
 ## Sandbox / Small-Sample Verification
-To verify the system end-to-end on a small sample (such as inside a Google Colab sandbox or test run) using a custom generated or pre-computed embeddings file:
+To verify the system end-to-end on a custom small test sample (such as inside a Google Colab sandbox or offline test run):
 
-```bash
-python pipelines/final_pipeline/rank.py --candidates ./data/test/test_candidates.json --embeddings ./pipelines/final_pipeline/stage2/outputs/test_candidates_embedded.pkl --out test_submission.csv
-```
-Completes in **under 1 second**.
+1. **Pre-compute embeddings for the test set**:
+   ```bash
+   python pipelines/final_pipeline/stage2/scripts/embeddings/generate_candidate_embeddings.py --candidates ./data/test/100candidates.json --output ./pipelines/final_pipeline/stage2/outputs/test_candidates_embedded.pkl
+   ```
+
+2. **Run the ranking engine with the custom embeddings**:
+   ```bash
+   python pipelines/final_pipeline/rank.py --candidates ./data/test/100candidates.json --embeddings ./pipelines/final_pipeline/stage2/outputs/test_candidates_embedded.pkl --out test_submission.csv
+   ```
+   * **Runtime**: Completes in **under 1 second** on CPU.
+   * **Note**: If no custom `--embeddings` file is specified, the ranker will automatically default to look for `test_candidates_embedded.pkl` if the input candidates file has 1,000 or fewer records.
 
 ---
 
