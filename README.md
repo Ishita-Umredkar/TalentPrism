@@ -71,6 +71,12 @@ python pipelines/final_pipeline/stage2/scripts/embeddings/generate_candidate_emb
 
 *(Note: Pre-computed test embeddings `test_candidates_embedded.pkl` and `embedded_constraints.pkl` are already whitelisted and included in the repository for sandbox verification).*
 
+> **💡 Optional (Failsafe Download)**: If pre-computation fails, or if you prefer to bypass generating embeddings from scratch, download the pre-computed 100K candidates embeddings file (`candidates_100k_embedded.pkl`) from the link below and save it directly inside:  
+> `pipelines/final_pipeline/stage2/outputs/`
+>
+> * **Public Embeddings Download Link**: [Google Drive Link (487 MB)](https://drive.google.com/file/d/1Bm6AzbBb55QUU0175yQanIQCZGXbfqMW/view?usp=sharing)
+
+
 ### Step 2: Final Candidate Ranking
 Once the candidate embeddings are generated, run the final candidate ranking orchestrator. This step runs entirely on **CPU only** without internet.
 
