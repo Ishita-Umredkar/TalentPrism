@@ -16,7 +16,7 @@ def parse_args():
     parser.add_argument(
         "--input",
         type=str,
-        default="resources/candidates.jsonl",
+        default="candidates.jsonl",
         help="Path to candidates dataset (JSON/JSONL format)"
     )
     parser.add_argument(

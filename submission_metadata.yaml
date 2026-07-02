@@ -21,7 +21,7 @@ team_members:
 # ============================================================================
 github_repo: "https://github.com/Ishita-Umredkar/TalentPrism"
 sandbox_link: "https://github.com/Ishita-Umredkar/TalentPrism"
-reproduce_command: "python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out submission.csv"
+reproduce_command: "python pipelines/final_pipeline/rank.py --candidates ./candidates.jsonl --out submission.csv"
 
 # ============================================================================
 # Compute environment

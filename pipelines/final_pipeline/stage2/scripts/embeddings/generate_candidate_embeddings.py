@@ -127,13 +127,13 @@ def main():
     parser.add_argument(
         "--candidates", 
         type=str, 
-        default="resources/candidates.jsonl",
+        default="candidates.jsonl",
         help="Path to candidates JSON/JSONL file"
     )
     parser.add_argument(
         "--output", 
         type=str, 
-        default=None,
+        default=str(ROOT / "stage2" / "outputs" / "candidates_100k_embedded.pkl"),
         help="Path to output pickle file"
     )
     args = parser.parse_args()

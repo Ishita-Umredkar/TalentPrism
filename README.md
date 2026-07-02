@@ -1,26 +1,11 @@
 # TalentPrism — Redrob Candidate Ranking System
 
 Three-stage candidate ranking engine for the Redrob Hackathon v4.  
-Scores, ranks, and justifies the top 100 candidates from a 100K pool — entirely on CPU, under 3 minutes.
+Scores, ranks, and justifies candidates from a 100K pool — entirely on CPU, with optimized stage-wise processing.
 
 ---
 
-## Quick Start — Reproduce the Submission
-
-```bash
-git clone https://github.com/Ishita-Umredkar/TalentPrism.git
-cd TalentPrism
-python -m venv venv && venv\Scripts\activate      # Windows
-pip install -r requirements.txt
-
-python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out submission.csv
-```
-
-> **Output**: `submission.csv` — 100 rows with `candidate_id`, `rank`, `score`, `reasoning`.
-
----
-
-## Architecture
+## Architecture Blueprint
 
 ```
 rank.py (orchestrator)
@@ -32,9 +17,7 @@ rank.py (orchestrator)
   │
   ├── Stage 2: Semantic Fit Scoring (stage2/)
   │   └── Scores each candidate against 17 JD constraints extracted
-  │       from the job description, grouped into 8 categories
-  │       (Retrieval, Production ML, LLMs, Domain, Career Quality,
-  │       Tech Breadth, External Validation, Hiring Readiness).
+  │       from the job description, grouped into 8 categories.
   │       Uses pre-embedded BGE cosine similarities.
   │
   └── Stage 3: Ranking, Tie-Breaking & Explainability (stage3/)
@@ -43,30 +26,8 @@ rank.py (orchestrator)
           language justifications per candidate.
 ```
 
-**Final Score** = `Fit Score × Credibility Score`  
-**Tie-break** = Hiring readiness score → Candidate ID (ascending)
-
----
-
-## Directory Structure
-
-```
-TalentPrism/
-├── pipelines/
-│   ├── final_pipeline/              # Production pipeline
-│   │   ├── rank.py                  # CLI entry point (single reproduce command)
-│   │   ├── stage1/                  # Honeypot detection (10 detectors)
-│   │   ├── stage2/                  # Constraint extraction, embeddings & scoring
-│   │   │   ├── outputs/             # Pre-computed artifacts (*.pkl, *.json)
-│   │   │   └── scripts/             # Embedding generation & ranking logic
-│   │   └── stage3/                  # Scoring, explainability & CSV reporting
-│   └── initial_pipeline/            # Baseline similarity pipeline (v1, superseded)
-├── data/test/                       # Small candidate samples for sandbox testing
-├── resources/                       # Official candidates.jsonl, JD, and specs
-├── submission.csv                   # Main output — the submission file
-├── submission_metadata.yaml         # Portal metadata (team, compute, AI tools)
-└── requirements.txt                 # Python dependencies
-```
+* **Final Score** = `Fit Score × Credibility Score`  
+* **Tie-break** = Hiring readiness score → Candidate ID (ascending)
 
 ---
 
@@ -94,38 +55,41 @@ TalentPrism/
 
 ---
 
-## Running the Pipeline
+## How to Run (Step-by-Step)
 
-### Full Ranking (100K candidates → submission CSV)
+For Stage 3 replication, the pipeline executes in two simple steps:
 
+### Step 1: Pre-Computation (Generate Embeddings)
+Before running the ranker, you must generate semantic embeddings for your candidate dataset. This step can run on GPU (if available) or CPU.
+
+Run the following command:
 ```bash
-python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out submission.csv
+python pipelines/final_pipeline/stage2/scripts/embeddings/generate_candidate_embeddings.py --candidates candidates.jsonl --output pipelines/final_pipeline/stage2/outputs/candidates_100k_embedded.pkl
 ```
+* **Runtime**: **~40 seconds** on GPU (or ~40 minutes on CPU).
+* **Output**: `pipelines/final_pipeline/stage2/outputs/candidates_100k_embedded.pkl`
 
-- **Runtime**: ~170s on Intel Core i7, 16GB RAM  
-- **Output**: `submission.csv` at the repo root
+*(Note: Pre-computed test embeddings `test_candidates_embedded.pkl` and `embedded_constraints.pkl` are already whitelisted and included in the repository for sandbox verification).*
 
-### Sandbox / Small-Sample Test
+### Step 2: Final Candidate Ranking
+Once the candidate embeddings are generated, run the final candidate ranking orchestrator. This step runs entirely on **CPU only** without internet.
 
+Run the following command:
 ```bash
-python pipelines/final_pipeline/rank.py --candidates ./data/test/test_candidates.json --out test_submission.csv
+python pipelines/final_pipeline/rank.py --candidates candidates.jsonl --out submission.csv
 ```
-
-Uses pre-computed test embeddings. Completes in seconds.
+* **Runtime**: **~70 seconds** on CPU.
+* **Output**: `submission.csv` at the repository root containing exactly the top 100 ranked candidates.
 
 ---
 
-## Pre-Computation (runs once, outside the 5-minute window)
+## Sandbox / Small-Sample Verification
+To verify the system end-to-end on a small sample (such as inside a Google Colab sandbox or test run) using a custom generated or pre-computed embeddings file:
 
-The ranking step (`rank.py`) depends on pre-computed embedding artifacts stored in `pipelines/final_pipeline/stage2/outputs/`. These are already included in the repo as `.pkl` files. To regenerate them from scratch:
-
-| Step | Script | Output | Time |
-|------|--------|--------|------|
-| 1. Extract JD constraints | `stage2/scripts/extract_constraints.py` | `extracted_constraints_v2.json` | ~30s (requires Gemini API key) |
-| 2. Embed constraints | `stage2/scripts/embeddings/generate_constraint_embeddings.py` | `embedded_constraints.pkl` | ~10s |
-| 3. Embed 100K candidates | `stage2/scripts/embeddings/generate_candidate_embeddings.py` | `candidates_100k_embedded.pkl` | ~40min |
-
-> Pre-computation is **not required** for reproduction — all artifacts are committed. The ranking step itself runs well within the 5-minute CPU budget.
+```bash
+python pipelines/final_pipeline/rank.py --candidates ./data/test/test_candidates.json --embeddings ./pipelines/final_pipeline/stage2/outputs/test_candidates_embedded.pkl --out test_submission.csv
+```
+Completes in **under 1 second**.
 
 ---
 
@@ -138,10 +102,7 @@ The ranking step (`rank.py`) depends on pre-computed embedding artifacts stored 
 | `numpy` | ≥ 1.20.0 | Array operations and scoring |
 | `tqdm` | ≥ 4.60.0 | Progress bars during embedding generation |
 
-No GPU required for the ranking step. Pre-computation (embedding generation) uses GPU if available. No network calls during ranking.
-
 ---
 
 ## Submission Metadata
-
 See [`submission_metadata.yaml`](submission_metadata.yaml) for full team details, compute environment, and AI tools declaration.

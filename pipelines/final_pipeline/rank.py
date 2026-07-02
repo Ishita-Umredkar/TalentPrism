@@ -72,8 +72,9 @@ def main():
     start_time = time.time()
     default_csv = str(ROOT / "ranking" / "top100.csv")
     parser = argparse.ArgumentParser(description="Rank candidates using Stage 1 and Stage 2 scores.")
-    parser.add_argument("--candidates", default="resources/candidates.jsonl", help="Path to candidates file")
+    parser.add_argument("--candidates", default="candidates.jsonl", help="Path to candidates file")
     parser.add_argument("--output-csv", "--out", default=default_csv, help="Path to output CSV")
+    parser.add_argument("--embeddings", "--embedding", default=None, help="Path to pre-computed candidate embeddings pickle file")
     args = parser.parse_args()
 
     # 1. Load candidates
@@ -101,10 +102,13 @@ def main():
         constraints_data = json.load(f)
 
     # Determine candidate embeddings file to load
-    if len(candidates) <= 1000:
-        emb_file = ROOT / "stage2" / "outputs" / "test_candidates_embedded.pkl"
+    if args.embeddings:
+        emb_file = Path(args.embeddings)
     else:
-        emb_file = ROOT / "stage2" / "outputs" / "candidates_100k_embedded.pkl"
+        if len(candidates) <= 1000:
+            emb_file = ROOT / "stage2" / "outputs" / "test_candidates_embedded.pkl"
+        else:
+            emb_file = ROOT / "stage2" / "outputs" / "candidates_100k_embedded.pkl"
 
     print(f"Loading candidate embeddings from: {emb_file}...")
     with open(emb_file, "rb") as f:

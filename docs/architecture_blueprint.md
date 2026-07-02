@@ -45,7 +45,7 @@ The runtime scoring loop operates end-to-end on CPU without network calls:
 
 ```mermaid
 flowchart TD
-    A[resources/candidates.jsonl] --> B[Ingest Profile]
+    A[candidates.jsonl] --> B[Ingest Profile]
     B --> C[Stage 1: Credibility Check]
     C -->|10 Timeline & Inconsistency Detectors| D[Credibility Score]
     B --> E[Stage 2: Fit Score Evaluator]

@@ -7,6 +7,9 @@ pip_cache/
 
 # Large files and data binaries
 resources/candidates.jsonl
-stage2/outputs/test_candidates_embedded.pkl
 *.pkl
 *.jsonl
+
+# Whitelist small test embeddings for sandbox testing
+!pipelines/final_pipeline/stage2/outputs/test_candidates_embedded.pkl
+!pipelines/final_pipeline/stage2/outputs/embedded_constraints.pkl
