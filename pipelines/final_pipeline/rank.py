@@ -6,6 +6,7 @@ Deconstructs processes into scoring, explainability, and reporting modules.
 """
 
 import os
+import time
 import sys
 import json
 import argparse
@@ -68,12 +69,11 @@ def load_candidate_profiles(candidates_path):
     return candidates
 
 def main():
+    start_time = time.time()
     default_csv = str(ROOT / "ranking" / "top100.csv")
-    default_exp = str(ROOT / "ranking" / "explanation.txt")
     parser = argparse.ArgumentParser(description="Rank candidates using Stage 1 and Stage 2 scores.")
     parser.add_argument("--candidates", default="resources/candidates.jsonl", help="Path to candidates file")
     parser.add_argument("--output-csv", "--out", default=default_csv, help="Path to output CSV")
-    parser.add_argument("--output-explanation", default=default_exp, help="Path to output explanation TXT")
     args = parser.parse_args()
 
     # 1. Load candidates
@@ -122,11 +122,10 @@ def main():
     templates_path = ROOT / "stage3" / "phrasing_templates.json"
     reasoning_generator = ReasoningGenerator(templates_path)
     
-    # Resolve output paths to absolute paths to prevent directory creation errors
+    # Resolve output path to absolute path to prevent directory creation errors
     output_csv = os.path.abspath(args.output_csv)
-    output_explanation = os.path.abspath(args.output_explanation)
     
-    report_writer = ReportWriter(output_csv, output_explanation)
+    report_writer = ReportWriter(output_csv)
     top_limit = min(len(ranked_results), 100)
     top_n = ranked_results[:top_limit]
     
@@ -134,7 +133,8 @@ def main():
         top_n, candidates, embedded_candidates_map, reasoning_generator, fit_evaluator
     )
     
-    print("Ranking process completed successfully!")
+    elapsed = time.time() - start_time
+    print(f"Ranking completed in {elapsed:.2f}s.")
 
 if __name__ == "__main__":
     main()

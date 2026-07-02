@@ -1,75 +1,147 @@
-# TalentPrism - Redrob Candidate Ranking System
+# TalentPrism — Redrob Candidate Ranking System
 
-This repository contains the candidate ranking engine for the Redrob Hackathon v4. 
-It implements two distinct candidate evaluation pipelines.
-
----
-
-## 1. Directory Structure
-
-*   `pipelines/`
-    *   `initial_pipeline/`: Represents the baseline semantic similarity pipeline. It calculates similarity score metrics across 6 distinct profile areas and ranks candidates based on simple sum aggregates.
-    *   `final_pipeline/`: Represents the advanced production pipeline incorporating:
-        *   `rank.py`: The orchestrator and CLI entry point.
-        *   `stage3/`: Contains clean SOLID-compliant modules (`scoring.py`, `explainability.py`, `reporting.py`) and text database (`phrasing_templates.json`).
-        *   **Stage 1 Credibility Check (in `stage1/`)**: An active honeypot detector (10 distinct detectors checking timeline discrepancies, company founding history, and profile inflation).
-        *   **Stage 2 Constraint Evaluator (in `stage2/`)**: A hierarchical gatekeeper that scores candidates against 17 distinct extracted JD requirements, grouping them into 8 high-level conceptual categories.
-*   `data/`: Contains raw taxonomy mappings and small-sample test candidate lists.
-*   `resources/`: Holds the official `candidates.jsonl` database (100,000 candidates), job description requirements, and hackathon specs.
-*   `pipelines/final_pipeline/ranking/`: Output folder for final submissions.
-    *   `top100.csv`: The official submission CSV containing candidate IDs, ranks, scores, and natural text justifications.
-    *   `top100.json`: Detailed JSON array listing the top 100 candidate profiles in ranked order with metadata.
-    *   `explanation.txt`: Distribution metrics and ranking reports.
+Three-stage candidate ranking engine for the Redrob Hackathon v4.  
+Scores, ranks, and justifies the top 100 candidates from a 100K pool — entirely on CPU, under 3 minutes.
 
 ---
 
-## 2. Setup & Installation
+## Quick Start — Reproduce the Submission
 
-1.  **Clone the Repository**:
+```bash
+git clone https://github.com/Ishita-Umredkar/TalentPrism.git
+cd TalentPrism
+python -m venv venv && venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+
+python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out submission.csv
+```
+
+> **Output**: `submission.csv` — 100 rows with `candidate_id`, `rank`, `score`, `reasoning`.
+
+---
+
+## Architecture
+
+```
+rank.py (orchestrator)
+  │
+  ├── Stage 1: Credibility Check (stage1/)
+  │   └── 10 honeypot detectors — flags timeline fraud, company age
+  │       mismatches, skill inflation, and profile inconsistencies.
+  │       Outputs a credibility multiplier per candidate (0.0–1.0).
+  │
+  ├── Stage 2: Semantic Fit Scoring (stage2/)
+  │   └── Scores each candidate against 17 JD constraints extracted
+  │       from the job description, grouped into 8 categories
+  │       (Retrieval, Production ML, LLMs, Domain, Career Quality,
+  │       Tech Breadth, External Validation, Hiring Readiness).
+  │       Uses pre-embedded BGE cosine similarities.
+  │
+  └── Stage 3: Ranking, Tie-Breaking & Explainability (stage3/)
+      └── Combines Stage 1 × Stage 2 scores, breaks ties
+          deterministically, and generates rank-aware natural
+          language justifications per candidate.
+```
+
+**Final Score** = `Fit Score × Credibility Score`  
+**Tie-break** = Hiring readiness score → Candidate ID (ascending)
+
+---
+
+## Directory Structure
+
+```
+TalentPrism/
+├── pipelines/
+│   ├── final_pipeline/              # Production pipeline
+│   │   ├── rank.py                  # CLI entry point (single reproduce command)
+│   │   ├── stage1/                  # Honeypot detection (10 detectors)
+│   │   ├── stage2/                  # Constraint extraction, embeddings & scoring
+│   │   │   ├── outputs/             # Pre-computed artifacts (*.pkl, *.json)
+│   │   │   └── scripts/             # Embedding generation & ranking logic
+│   │   └── stage3/                  # Scoring, explainability & CSV reporting
+│   └── initial_pipeline/            # Baseline similarity pipeline (v1, superseded)
+├── data/test/                       # Small candidate samples for sandbox testing
+├── resources/                       # Official candidates.jsonl, JD, and specs
+├── submission.csv                   # Main output — the submission file
+├── submission_metadata.yaml         # Portal metadata (team, compute, AI tools)
+└── requirements.txt                 # Python dependencies
+```
+
+---
+
+## Setup & Installation
+
+1. **Clone and enter the repository**:
     ```bash
     git clone https://github.com/Ishita-Umredkar/TalentPrism.git
     cd TalentPrism
     ```
 
-2.  **Initialize Virtual Environment**:
+2. **Create and activate a virtual environment**:
     ```bash
     python -m venv venv
-    # On Windows:
+    # Windows:
     .\venv\Scripts\activate
-    # On Linux/macOS:
+    # Linux/macOS:
     source venv/bin/activate
     ```
 
-3.  **Install Dependencies**:
+3. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
 ---
 
-## 3. How to Run the Pipelines
+## Running the Pipeline
 
-### A. Advanced Ranking Pipeline (Stage 1 + Stage 2 + Ranking)
-The advanced scoring and credibility pipeline is executed using `pipelines/final_pipeline/rank.py`.
+### Full Ranking (100K candidates → submission CSV)
 
-*   **Reproduce Command**:
-    ```bash
-    python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out ./pipelines/final_pipeline/ranking/top100.csv --output-explanation ./pipelines/final_pipeline/ranking/explanation.txt
-    ```
-*   **Sandbox / Test Command**:
-    For sandbox validation on a small subset (e.g., 10 candidates), the ranker dynamically detects candidate count and uses test embeddings:
-    ```bash
-    python pipelines/final_pipeline/rank.py --candidates ./data/test/test_candidates.json --out ./pipelines/final_pipeline/ranking/test_top10.csv --output-explanation ./pipelines/final_pipeline/ranking/test_explanation.txt
-    ```
-
-### B. Initial Semantic Similarity Pipeline
-The baseline similarity calculation pipeline can be executed using:
 ```bash
-python pipelines/initial_pipeline/scripts/similarity_calculation/compare_candidates.py
+python pipelines/final_pipeline/rank.py --candidates ./resources/candidates.jsonl --out submission.csv
 ```
+
+- **Runtime**: ~170s on Intel Core i7, 16GB RAM  
+- **Output**: `submission.csv` at the repo root
+
+### Sandbox / Small-Sample Test
+
+```bash
+python pipelines/final_pipeline/rank.py --candidates ./data/test/test_candidates.json --out test_submission.csv
+```
+
+Uses pre-computed test embeddings. Completes in seconds.
 
 ---
 
-## 4. Submission Metadata
+## Pre-Computation (runs once, outside the 5-minute window)
 
-Refer to `submission_metadata.yaml` at the root of the repository for full metadata details, Contact info, compute platform specs, and AI usage summaries.
+The ranking step (`rank.py`) depends on pre-computed embedding artifacts stored in `pipelines/final_pipeline/stage2/outputs/`. These are already included in the repo as `.pkl` files. To regenerate them from scratch:
+
+| Step | Script | Output | Time |
+|------|--------|--------|------|
+| 1. Extract JD constraints | `stage2/scripts/extract_constraints.py` | `extracted_constraints_v2.json` | ~30s (requires Gemini API key) |
+| 2. Embed constraints | `stage2/scripts/embeddings/generate_constraint_embeddings.py` | `embedded_constraints.pkl` | ~10s |
+| 3. Embed 100K candidates | `stage2/scripts/embeddings/generate_candidate_embeddings.py` | `candidates_100k_embedded.pkl` | ~40min |
+
+> Pre-computation is **not required** for reproduction — all artifacts are committed. The ranking step itself runs well within the 5-minute CPU budget.
+
+---
+
+## Dependencies
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| `sentence-transformers` | ≥ 2.2.0 | BGE embedding model (`BAAI/bge-base-en-v1.5`) |
+| `torch` | ≥ 2.0.0 | Tensor backend for sentence-transformers |
+| `numpy` | ≥ 1.20.0 | Array operations and scoring |
+| `tqdm` | ≥ 4.60.0 | Progress bars during embedding generation |
+
+No GPU required for the ranking step. Pre-computation (embedding generation) uses GPU if available. No network calls during ranking.
+
+---
+
+## Submission Metadata
+
+See [`submission_metadata.yaml`](submission_metadata.yaml) for full team details, compute environment, and AI tools declaration.

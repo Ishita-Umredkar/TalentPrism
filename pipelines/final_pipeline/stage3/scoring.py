@@ -57,11 +57,9 @@ class FitEvaluator:
             bad_score = 0.0
             for sub in sub_constraints:
                 sub_item = sub.get("item", "")
-                sub_type = sub.get("type", "good")
+                sub_type = sub.get("type", "bad")
                 categories = sub.get("categories", [])
-                query_emb = self.query_embeddings_cache.get(sub_item)
-                if query_emb is None:
-                    continue
+                query_emb = self.query_embeddings_cache[sub_item]
 
                 cat_score_sum = 0.0
                 cat_weight_sum = sum(cat.get("weight", 0.0) for cat in categories)
@@ -69,8 +67,6 @@ class FitEvaluator:
                 for cat in categories:
                     cat_item = cat.get("item", "")
                     cat_strategy = cat.get("matching_strategy", "")
-                    if not cat_strategy:
-                        cat_strategy = cat.get("strategy", "")
                     cat_weight = cat.get("weight", 0.0)
                     cat_field = cat.get("field", "")
                     
@@ -90,11 +86,9 @@ class FitEvaluator:
             for sub in sub_constraints:
                 sub_weight = sub.get("weight", 0.0)
                 sub_item = sub.get("item", "")
-                sub_type = sub.get("type", "good")
+                sub_type = sub.get("type", "bad")
                 categories = sub.get("categories", [])
-                query_emb = self.query_embeddings_cache.get(sub_item)
-                if query_emb is None:
-                    continue
+                query_emb = self.query_embeddings_cache[sub_item]
 
                 cat_score_sum = 0.0
                 cat_weight_sum = sum(cat.get("weight", 0.0) for cat in categories)
@@ -102,8 +96,6 @@ class FitEvaluator:
                 for cat in categories:
                     cat_item = cat.get("item", "")
                     cat_strategy = cat.get("matching_strategy", "")
-                    if not cat_strategy:
-                        cat_strategy = cat.get("strategy", "")
                     cat_weight = cat.get("weight", 0.0)
                     cat_field = cat.get("field", "")
                     
@@ -121,12 +113,16 @@ class FitEvaluator:
             
         return constraint_score
 
-    def get_candidate_categories(self, ec):
+    def get_candidate_categories(self, ec, mh=None, pref=None, neg=None, rej=None):
         """Computes custom category scores for a given embedded candidate."""
-        mh = [self.evaluate_single_constraint_score(c, ec, "must_have") for c in self.constraints_data.get("must_have", [])]
-        pref = [self.evaluate_single_constraint_score(c, ec, "preferred") for c in self.constraints_data.get("preferred", [])]
-        neg = [self.evaluate_single_constraint_score(c, ec, "negative") for c in self.constraints_data.get("negative", [])]
-        rej = [self.evaluate_single_constraint_score(c, ec, "rejection") for c in self.constraints_data.get("rejection", [])]
+        if mh is None:
+            mh = [self.evaluate_single_constraint_score(c, ec, "must_have") for c in self.constraints_data.get("must_have", [])]
+        if pref is None:
+            pref = [self.evaluate_single_constraint_score(c, ec, "preferred") for c in self.constraints_data.get("preferred", [])]
+        if neg is None:
+            neg = [self.evaluate_single_constraint_score(c, ec, "negative") for c in self.constraints_data.get("negative", [])]
+        if rej is None:
+            rej = [self.evaluate_single_constraint_score(c, ec, "rejection") for c in self.constraints_data.get("rejection", [])]
 
         return [
             {
@@ -174,16 +170,39 @@ class FitEvaluator:
     def evaluate_and_rank(self):
         """Scores and ranks all candidates using fit and credibility components, with logistics tie-breaking."""
         print("Evaluating fit scores...")
+        
+        must_have = self.constraints_data.get("must_have", [])
+        preferred = self.constraints_data.get("preferred", [])
+        rejection = self.constraints_data.get("rejection", [])
+        negative = self.constraints_data.get("negative", [])
+
+        mh_weights = [c.get("weight", 0.0) for c in must_have]
+        pref_weights = [c.get("weight", 0.0) for c in preferred]
+        rej_weights = [c.get("weight", 0.0) for c in rejection]
+        neg_weights = [c.get("weight", 0.0) for c in negative]
+
+        mh_total_weight = sum(mh_weights)
+        pref_total_weight = sum(pref_weights)
+        rej_total_weight = sum(rej_weights)
+        neg_total_weight = sum(neg_weights)
+
         combined = []
         for ec in self.embedded_candidates:
             cand_id = ec["candidate_id"]
             if cand_id not in self.candidates:
                 continue
 
-            s_must = evaluate_section_score("must_have", self.constraints_data.get("must_have", []), ec, self.query_embeddings_cache)
-            s_pref = evaluate_section_score("preferred", self.constraints_data.get("preferred", []), ec, self.query_embeddings_cache)
-            s_rej = evaluate_section_score("rejection", self.constraints_data.get("rejection", []), ec, self.query_embeddings_cache)
-            s_neg = evaluate_section_score("negative", self.constraints_data.get("negative", []), ec, self.query_embeddings_cache)
+            # Evaluate each constraint exactly once
+            mh = [self.evaluate_single_constraint_score(c, ec, "must_have") for c in must_have]
+            pref = [self.evaluate_single_constraint_score(c, ec, "preferred") for c in preferred]
+            rej = [self.evaluate_single_constraint_score(c, ec, "rejection") for c in rejection]
+            neg = [self.evaluate_single_constraint_score(c, ec, "negative") for c in negative]
+
+            # Compute section weighted averages
+            s_must = float(sum(score * w for score, w in zip(mh, mh_weights)) / mh_total_weight if mh_total_weight > 0.0 else 0.0)
+            s_pref = float(sum(score * w for score, w in zip(pref, pref_weights)) / pref_total_weight if pref_total_weight > 0.0 else 0.0)
+            s_rej = float(sum(score * w for score, w in zip(rej, rej_weights)) / rej_total_weight if rej_total_weight > 0.0 else 0.0)
+            s_neg = float(sum(score * w for score, w in zip(neg, neg_weights)) / neg_total_weight if neg_total_weight > 0.0 else 0.0)
 
             positive_score = 0.75 * s_must + 0.25 * s_pref
             negative_score = 0.75 * s_rej + 0.25 * s_neg
@@ -192,9 +211,8 @@ class FitEvaluator:
             cred_score = self.credibility_scores.get(cand_id, 1.0)
             combined_score = final_fit_score * cred_score
 
-            # Calculate logistics / hiring readiness score for tie breaking
-            cats = self.get_candidate_categories(ec)
-            hiring_readiness = next(c["score"] for c in cats if c["id"] == "hiring_readiness")
+            # Calculate logistics / hiring readiness score directly from pre-computed values
+            hiring_readiness = (mh[4] + pref[3] + (1.0 - neg[1])) / 3.0
 
             combined.append({
                 "candidate_id": cand_id,

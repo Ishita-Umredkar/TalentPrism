@@ -64,7 +64,10 @@ def parse_date(date_str: str) -> date:
     if not date_str:
         return None
     try:
-        return datetime.strptime(date_str.strip(), "%Y-%m-%d").date()
+        val = date_str.strip()
+        if len(val) == 10 and val[4] == '-' and val[7] == '-':
+            return date(int(val[:4]), int(val[5:7]), int(val[8:10]))
+        return datetime.strptime(val, "%Y-%m-%d").date()
     except ValueError:
         return None
 

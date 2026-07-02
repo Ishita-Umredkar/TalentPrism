@@ -40,6 +40,9 @@ def normalize_similarity(sim: float, min_val: float = 0.52, max_val: float = 0.6
 # SCORING ENGINE FUNCTIONS FROM FIT SCORE ENGINE
 # ============================================================
 def get_skill_multiplier(skill: dict) -> float:
+    cached = skill.get("_multiplier")
+    if cached is not None:
+        return cached
     prof = skill.get("proficiency", "").lower()
     if "adv" in prof or "expert" in prof or "proficient" in prof or "lead" in prof:
         prof_mult = 1.0
@@ -54,7 +57,9 @@ def get_skill_multiplier(skill: dict) -> float:
     if not isinstance(months, (int, float)):
         months = 0
     months_factor = min(1.0, max(0.0, months / 18.0))
-    return prof_mult * months_factor
+    val = prof_mult * months_factor
+    skill["_multiplier"] = val
+    return val
 
 def compute_skill_match_score(query_emb: np.ndarray, cand_skills: list) -> float:
     if not cand_skills:
