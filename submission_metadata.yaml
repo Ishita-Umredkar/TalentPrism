@@ -20,7 +20,7 @@ team_members:
 # Code and reproducibility
 # ============================================================================
 github_repo: "https://github.com/Ishita-Umredkar/TalentPrism"
-sandbox_link: "https://github.com/Ishita-Umredkar/TalentPrism"
+sandbox_link: "https://colab.research.google.com/drive/1FfJJWRFSX9WSMx3q2ap0Jy5WE_i0yrAQ?usp=sharing"
 reproduce_command: "python pipelines/final_pipeline/rank.py --candidates ./candidates.jsonl --out submission.csv"
 
 # ============================================================================

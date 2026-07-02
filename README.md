@@ -66,7 +66,7 @@ Run the following command:
 ```bash
 python pipelines/final_pipeline/stage2/scripts/embeddings/generate_candidate_embeddings.py --candidates candidates.jsonl --output pipelines/final_pipeline/stage2/outputs/candidates_100k_embedded.pkl
 ```
-* **Runtime**: **~40 seconds** on GPU (or ~40 minutes on CPU).
+* **Runtime**: **~40 minutes** (tested on local Intel Core i7 PC / CPU+GPU setup)
 * **Output**: `pipelines/final_pipeline/stage2/outputs/candidates_100k_embedded.pkl`
 
 *(Note: Pre-computed test embeddings `test_candidates_embedded.pkl` and `embedded_constraints.pkl` are already whitelisted and included in the repository for sandbox verification).*
